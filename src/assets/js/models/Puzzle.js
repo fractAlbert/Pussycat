@@ -142,9 +142,10 @@ export class Puzzle {
     if (record.blank && !(record.blank in BLANK_LABELS)) {
       return `"${record.id}" has unknown blank type "${record.blank}"`;
     }
-    // A grid without a blank type cannot yield a tile count, and vice versa.
-    if (Boolean(record.grid) !== Boolean(record.blank)) {
-      console.warn(`"${record.id}": grid and blank should be given together`);
+    // A grid alone is fine — it still sizes and filters, it just cannot yield
+    // a tile count. A blank type with no grid tells us nothing at all.
+    if (record.blank && !record.grid) {
+      console.warn(`"${record.id}": blank type given without a grid`);
     }
     return null;
   }

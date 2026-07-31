@@ -1006,6 +1006,54 @@
     "verified": false
   },
   {
+    "id": "op-art-100-piece",
+    "name": "Op art geometric (100 pieces)",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": {
+      "rows": 10,
+      "cols": 10
+    },
+    "blank": null,
+    "images": [],
+    "description": "Recorded from a single recollection, not a listing or a photograph. A BoardGameGeek user described a 100-piece Pussycat slider in a large black plastic frame with a geometric op art design — purple, with an orange and yellow (possibly blue) grid overlay — owned as a child around the mid 1990s, adding that no photograph of it could be found online. The attribution to Pussycat is the poster's own qualified guess (\"pretty sure\"), and nobody in the thread confirmed it. The grid is recorded as 10×10 because that holds whether the 100 counts tiles or cells; the blank format is deliberately left unset, since 100 could mean 100 tiles plus a spare corner or 99 tiles plus an inline blank. Treat this entry as a lead to confirm, not a catalogued puzzle.",
+    "source": "https://boardgamegeek.com/thread/1447044/looking-for-vintage-sliding-piece-puzzles",
+    "verified": false
+  },
+  {
+    "id": "safari",
+    "name": "Safari",
+    "artist": null,
+    "series": "Wildlife",
+    "artNumber": null,
+    "copyright": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
+    "images": [],
+    "description": "Listed at 49 tiles, matching the other wildlife puzzles.",
+    "source": "https://www.worthpoint.com/worthopedia/safari-slide-sliding-puzzle-german-21136561",
+    "verified": false
+  },
+  {
+    "id": "marilyn-monroe",
+    "name": "Marilyn Monroe",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [],
+    "description": "A portrait design rather than a painting reproduction.",
+    "source": "https://www.ebay.com/itm/116378665442",
+    "verified": false
+  },
+  {
     "id": "lufthansa-apfel",
     "name": "Apfel (Lufthansa advertising)",
     "artist": null,
