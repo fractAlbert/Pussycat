@@ -6,9 +6,12 @@
     "series": "Art",
     "artNumber": "80 23244",
     "copyright": 1999,
-    "grid": { "rows": 7, "cols": 9 },
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
     "blank": "extra",
-    "images": {},
+    "images": [],
     "description": "After Cézanne's Mardi Gras (Pierrot and Harlequin), 1888. Measured in hand: 7×9 fully tiled, with the extra empty cell in a corner outside the image.",
     "source": null,
     "owned": true,
@@ -23,7 +26,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "cezanne-card-players-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389561588862" } },
+    "images": [
+      {
+        "file": "cezanne-card-players-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561588862",
+        "label": null
+      }
+    ],
     "description": "Same 1999 Cézanne run as the Mardi Gras. Art number not visible in the listing photograph.",
     "source": "https://www.ebay.com/itm/389561588862",
     "verified": false
@@ -37,7 +46,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "cezanne-large-bathers-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389561530563" } },
+    "images": [
+      {
+        "file": "cezanne-large-bathers-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561530563",
+        "label": null
+      }
+    ],
     "description": "Same 1999 Cézanne run.",
     "source": "https://www.ebay.com/itm/389561530563",
     "verified": false
@@ -51,7 +66,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "monet-80-23215-front.jpg", "sourceUrl": "https://www.ebay.com/itm/158122752744" } },
+    "images": [
+      {
+        "file": "monet-80-23215-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/158122752744",
+        "label": null
+      }
+    ],
     "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63.",
     "source": "https://www.ebay.com/itm/158122752744",
     "verified": false
@@ -65,7 +86,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "kandinsky-80-2341-front.jpg", "sourceUrl": "https://www.ebay.com/itm/158122751325" } },
+    "images": [
+      {
+        "file": "kandinsky-80-2341-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/158122751325",
+        "label": null
+      }
+    ],
     "description": "Listed as 62 tiles. The art number may be truncated in the listing title — the rest of this run uses five digits after the 80.",
     "source": "https://www.ebay.com/itm/158122751325",
     "verified": false
@@ -77,9 +104,12 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": {},
+    "images": [],
     "description": "After Kandinsky's 1923 painting. Listed as a 49-tile sliding puzzle.",
     "source": "https://www.worthpoint.com/worthopedia/pussycat-49-sliding-tile-puzzle-1813453910",
     "verified": false
@@ -93,7 +123,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "kandinsky-kreise-im-kreis-front.jpg", "sourceUrl": "https://www.ebay.com/itm/364182678058" } },
+    "images": [
+      {
+        "file": "kandinsky-kreise-im-kreis-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/364182678058",
+        "label": null
+      }
+    ],
     "description": "After Kandinsky's Circles in a Circle, 1923.",
     "source": "https://www.ebay.com/itm/364182678058",
     "verified": false
@@ -107,7 +143,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "klee-80-23155-front.jpg", "sourceUrl": "https://www.ebay.com/itm/158122783599" } },
+    "images": [
+      {
+        "file": "klee-80-23155-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/158122783599",
+        "label": null
+      }
+    ],
     "description": "Listed as 62 tiles.",
     "source": "https://www.ebay.com/itm/158122783599",
     "verified": false
@@ -121,7 +163,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "klee-80-23151-front.jpg", "sourceUrl": "https://www.ebay.com/itm/158122755839" } },
+    "images": [
+      {
+        "file": "klee-80-23151-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/158122755839",
+        "label": null
+      }
+    ],
     "description": "Listed as 62 tiles. Art number one digit apart from 80 23155, so the two are likely neighbours in the same run.",
     "source": "https://www.ebay.com/itm/158122755839",
     "verified": false
@@ -135,7 +183,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "renoir-boating-party-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389561655830" } },
+    "images": [
+      {
+        "file": "renoir-boating-party-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561655830",
+        "label": null
+      }
+    ],
     "description": "After the 1880–81 painting. Part of the 1999 run.",
     "source": "https://www.ebay.com/itm/389561655830",
     "verified": false
@@ -149,7 +203,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "renoir-1881-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389561696442" } },
+    "images": [
+      {
+        "file": "renoir-1881-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561696442",
+        "label": null
+      }
+    ],
     "description": "Listed only by the year of the artwork, 1881. A separate listing describes a 72-piece Renoir dated 1881, which may be this same puzzle.",
     "source": "https://www.ebay.com/itm/389561696442",
     "verified": false
@@ -163,7 +223,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "renoir-1883-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389699047978" } },
+    "images": [
+      {
+        "file": "renoir-1883-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389699047978",
+        "label": null
+      }
+    ],
     "description": "Listed only by the year of the artwork, 1883.",
     "source": "https://www.ebay.com/itm/389699047978",
     "verified": false
@@ -177,7 +243,13 @@
     "copyright": 1999,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "renoir-1876-front.jpg", "sourceUrl": "https://www.ebay.com/itm/389561664409" } },
+    "images": [
+      {
+        "file": "renoir-1876-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561664409",
+        "label": null
+      }
+    ],
     "description": "Listed only by the year of the artwork, 1876 — likely the Moulin de la Galette.",
     "source": "https://www.ebay.com/itm/389561664409",
     "verified": false
@@ -189,9 +261,33 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1990,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "escher-eight-heads-front.jpg", "sourceUrl": "https://www.ebay.com/itm/326943093255" } },
+    "images": [
+      {
+        "file": "escher-eight-heads-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/326943093255",
+        "label": null
+      },
+      {
+        "file": "escher-eight-heads-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/326943093255",
+        "label": null
+      },
+      {
+        "file": "escher-eight-heads-3.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/326943093255",
+        "label": null
+      },
+      {
+        "file": "escher-eight-heads-4.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/326943093255",
+        "label": null
+      }
+    ],
     "description": "Escher woodcut of 1922. Listings describe 49 tiles in a 7×7 arrangement.",
     "source": "https://www.ebay.com/itm/326943093255",
     "verified": false
@@ -203,9 +299,18 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1990,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "escher-fishes-and-scales-front.jpg", "sourceUrl": "https://www.ebay.com/itm/236790249154" } },
+    "images": [
+      {
+        "file": "escher-fishes-and-scales-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236790249154",
+        "label": null
+      }
+    ],
     "description": "After Escher's 1959 work. The most frequently listed of the Escher puzzles.",
     "source": "https://www.ebay.com/itm/236790249154",
     "verified": false
@@ -219,7 +324,13 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "escher-circle-limit-iii-front.jpg", "sourceUrl": "https://www.ebay.com/itm/187249284836" } },
+    "images": [
+      {
+        "file": "escher-circle-limit-iii-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/187249284836",
+        "label": null
+      }
+    ],
     "description": "After Escher's 1959 woodcut. One listing credits Cordon Art, the Escher rights holder.",
     "source": "https://www.ebay.com/itm/187249284836",
     "verified": false
@@ -231,9 +342,33 @@
     "series": "Art",
     "artNumber": "E 128",
     "copyright": 1990,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "escher-e128-birds-front.jpg", "sourceUrl": "https://www.ebay.com/itm/236790244606" } },
+    "images": [
+      {
+        "file": "escher-e128-birds-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236790244606",
+        "label": null
+      },
+      {
+        "file": "escher-e128-birds-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236790244606",
+        "label": null
+      },
+      {
+        "file": "escher-e128-birds-3.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236790244606",
+        "label": null
+      },
+      {
+        "file": "escher-e128-birds-4.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236790244606",
+        "label": null
+      }
+    ],
     "description": "Sold both as \"E128\" and as \"Birds\", after an Escher drawing of 1967. Listed at 49 pieces, roughly 15 × 12.5 cm, produced 1990 for the Escher heirs with the original print reproduced on the back.",
     "source": "https://www.ebay.com/itm/236790244606",
     "verified": false
@@ -247,7 +382,13 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "escher-e118-lizards-front.jpg", "sourceUrl": "https://www.ebay.com/itm/377253450766" } },
+    "images": [
+      {
+        "file": "escher-e118-lizards-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/377253450766",
+        "label": null
+      }
+    ],
     "description": "After a 1963 Escher work.",
     "source": "https://www.ebay.com/itm/377253450766",
     "verified": false
@@ -261,7 +402,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "escher-e72-fish-front.jpg", "sourceUrl": "https://www.ebay.com/itm/326985925292" } },
+    "images": [
+      {
+        "file": "escher-e72-fish-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/326985925292",
+        "label": null
+      }
+    ],
     "description": "Listed at about 4.5 × 6 inches, smaller than the 15 × 12.5 cm Escher puzzles.",
     "source": "https://www.ebay.com/itm/326985925292",
     "verified": false
@@ -273,9 +420,18 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": { "rows": 6, "cols": 5 },
+    "grid": {
+      "rows": 6,
+      "cols": 5
+    },
     "blank": "extra",
-    "images": { "front": { "file": "escher-fish-and-boat-front.jpg", "sourceUrl": "https://www.ebay.com/itm/366546336485" } },
+    "images": [
+      {
+        "file": "escher-fish-and-boat-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366546336485",
+        "label": null
+      }
+    ],
     "description": "Listed as 6×5, the smallest grid recorded so far.",
     "source": "https://www.ebay.com/itm/366546336485",
     "verified": false
@@ -287,9 +443,12 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": { "rows": 7, "cols": 8 },
+    "grid": {
+      "rows": 7,
+      "cols": 8
+    },
     "blank": "inline",
-    "images": {},
+    "images": [],
     "description": "After Escher's 1952 woodcut. Described as 55 sliding pieces plus a place holder, which is why this one is recorded as an inline blank rather than an extra space. Worth checking in hand.",
     "source": "https://www.worthpoint.com/worthopedia/c-escher-puddle-slide-sliding-puzzle-25164216",
     "verified": false
@@ -303,7 +462,7 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "After Escher's 1948 wood engraving. One listing dates the artwork 1959, which is probably an error carried over from the Fishes and Scales puzzle sold alongside it.",
     "source": null,
     "verified": false
@@ -317,7 +476,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "After the 1939–40 woodcut. Seen in a listing title only.",
     "source": null,
     "verified": false
@@ -331,7 +490,7 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "Part of the 1990 Escher run. Tile count not recorded in the listing.",
     "source": "https://www.vintagemanstuff.com/product/m-c-escher-sliding-puzzle-game-1990-pussycat-holland-germany-sky-water/",
     "verified": false
@@ -343,9 +502,12 @@
     "series": "Art",
     "artNumber": "80 2971",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": {},
+    "images": [],
     "description": "Sold as \"E 28\", after a 1939 work. Listed at 49 pieces.",
     "source": "https://www.ebay.com/itm/225912736039",
     "verified": false
@@ -359,7 +521,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "After Klimt's 1907–08 painting.",
     "source": "https://www.worthpoint.com/worthopedia/2x-pussycat-art-slide-puzzle-germany-2067248399",
     "verified": false
@@ -371,9 +533,12 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": {},
+    "images": [],
     "description": "After the Saint-Rémy irises of May 1889. Reported at 49 pieces from a search summary rather than a listing I could open — provisional.",
     "source": null,
     "verified": false
@@ -387,7 +552,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "Art number places it in the same run as the Monet, Klee and Cézanne puzzles. The artwork is not named in the listing.",
     "source": "https://picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-puzzle-PABLO-PICASSO-Art-364124600176.html",
     "verified": false
@@ -399,9 +564,12 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": {},
+    "images": [],
     "description": "Listed as a Magritte art sliding puzzle with 49 tiles.",
     "source": "https://picclick.fr/Slide-Puzzle-Rene-Magritte-Schiebepuzzle-Kunst-182308507743.html",
     "verified": false
@@ -415,7 +583,7 @@
     "copyright": 1991,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "Dated 1991 in the listing.",
     "source": "https://www.ebay.de/itm/286670921664",
     "verified": false
@@ -429,7 +597,7 @@
     "copyright": 1996,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "Seen in a search summary only; needs a listing to confirm.",
     "source": null,
     "verified": false
@@ -443,7 +611,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "After Macke's 1913 painting.",
     "source": "https://www.ebay.com/itm/313980779921",
     "verified": false
@@ -457,7 +625,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "otmar-alt-lot-front.jpg", "sourceUrl": "https://www.ebay.com/itm/176692888938" } },
+    "images": [
+      {
+        "file": "otmar-alt-lot-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/176692888938",
+        "label": null
+      }
+    ],
     "description": "Sold as a pair. A contemporary German artist rather than an old master, and the B-prefixed article number differs from the 80-prefixed art series, so this may be a separate line.",
     "source": "https://www.ebay.com/itm/176692888938",
     "verified": false
@@ -469,9 +643,18 @@
     "series": "Wildlife",
     "artNumber": "80 2938",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "paradise-parrots-80-2938-front.jpg", "sourceUrl": "https://www.ebay.com/itm/388402042287" } },
+    "images": [
+      {
+        "file": "paradise-parrots-80-2938-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/388402042287",
+        "label": null
+      }
+    ],
     "description": "Listed at 49 tiles.",
     "source": "https://www.ebay.com/itm/388402042287",
     "verified": false
@@ -483,9 +666,18 @@
     "series": "Wildlife",
     "artNumber": "80 2983",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "paradise-parrots-80-2983-front.jpg", "sourceUrl": "https://www.ebay.com/itm/168222207476" } },
+    "images": [
+      {
+        "file": "paradise-parrots-80-2983-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/168222207476",
+        "label": null
+      }
+    ],
     "description": "Listed at 49 tiles, about 6 × 5 inches. A different art number from the other Paradise puzzle, so the two are distinct designs.",
     "source": "https://www.ebay.com/itm/168222207476",
     "verified": false
@@ -497,9 +689,18 @@
     "series": "Wildlife",
     "artNumber": "80 2982",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "miami-nice-80-2982-front.jpg", "sourceUrl": "https://www.ebay.com/itm/278187420199" } },
+    "images": [
+      {
+        "file": "miami-nice-80-2982-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/278187420199",
+        "label": null
+      }
+    ],
     "description": "Listed at 49 tiles.",
     "source": "https://www.ebay.com/itm/278187420199",
     "verified": false
@@ -511,9 +712,18 @@
     "series": "Wildlife",
     "artNumber": "80 2980",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "jungle-80-2980-front.jpg", "sourceUrl": "https://www.ebay.com/itm/117187285848" } },
+    "images": [
+      {
+        "file": "jungle-80-2980-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117187285848",
+        "label": null
+      }
+    ],
     "description": "Listed at 49 pieces.",
     "source": "https://www.ebay.com/itm/117187285848",
     "verified": false
@@ -525,9 +735,18 @@
     "series": "Wildlife",
     "artNumber": "80 2981",
     "copyright": null,
-    "grid": { "rows": 7, "cols": 7 },
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
     "blank": "extra",
-    "images": { "front": { "file": "tropical-reef-80-2981-front.jpg", "sourceUrl": "https://www.ebay.com/itm/146589671055" } },
+    "images": [
+      {
+        "file": "tropical-reef-80-2981-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/146589671055",
+        "label": null
+      }
+    ],
     "description": "Explicitly listed as 7×7, 49 tiles — the clearest confirmation of the grid for this run.",
     "source": "https://www.ebay.com/itm/146589671055",
     "verified": false
@@ -541,7 +760,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "t-rex-80-2806-front.jpg", "sourceUrl": "https://www.ebay.com/itm/198526059917" } },
+    "images": [
+      {
+        "file": "t-rex-80-2806-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/198526059917",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/198526059917",
     "verified": false
@@ -555,7 +780,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "stegosaurus-front.jpg", "sourceUrl": "https://www.ebay.com/itm/335615558097" } },
+    "images": [
+      {
+        "file": "stegosaurus-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/335615558097",
+        "label": null
+      }
+    ],
     "description": "Pairs with the T-Rex, so there is probably a dinosaur run with consecutive art numbers.",
     "source": "https://www.ebay.com/itm/335615558097",
     "verified": false
@@ -569,7 +800,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "people-puzzle-80-2943-front.jpg", "sourceUrl": "https://www.ebay.com/itm/188302346268" } },
+    "images": [
+      {
+        "file": "people-puzzle-80-2943-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/188302346268",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/188302346268",
     "verified": false
@@ -583,7 +820,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "alligator-14-tile-front.jpg", "sourceUrl": "https://www.ebay.com/itm/314522546151" } },
+    "images": [
+      {
+        "file": "alligator-14-tile-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/314522546151",
+        "label": null
+      }
+    ],
     "description": "Listed as a 14-tile puzzle — far smaller than the art series, and shaped to the animal rather than rectangular.",
     "source": "https://www.ebay.com/itm/314522546151",
     "verified": false
@@ -597,7 +840,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "pink-flamingo-14-tile-front.jpg", "sourceUrl": "https://www.ebay.com/itm/314522544265" } },
+    "images": [
+      {
+        "file": "pink-flamingo-14-tile-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/314522544265",
+        "label": null
+      }
+    ],
     "description": "Listed as a 14-tile puzzle, matching the Alligator.",
     "source": "https://www.ebay.com/itm/314522544265",
     "verified": false
@@ -611,7 +860,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "black-sheep-front.jpg", "sourceUrl": "https://www.ebay.com/itm/127153141509" } },
+    "images": [
+      {
+        "file": "black-sheep-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/127153141509",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/127153141509",
     "verified": false
@@ -625,7 +880,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "der-uhrmacher-front.jpg", "sourceUrl": "https://www.ebay.com/itm/267707528915" } },
+    "images": [
+      {
+        "file": "der-uhrmacher-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/267707528915",
+        "label": null
+      }
+    ],
     "description": "Described as 1970s, one of the older designs recorded here.",
     "source": "https://www.ebay.com/itm/267707528915",
     "verified": false
@@ -639,7 +900,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "titanic-sinking-front.jpg", "sourceUrl": "https://www.ebay.com/itm/127898108851" } },
+    "images": [
+      {
+        "file": "titanic-sinking-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/127898108851",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/127898108851",
     "verified": false
@@ -653,7 +920,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "teddy-bear-front.jpg", "sourceUrl": "https://www.ebay.com/itm/365150851654" } },
+    "images": [
+      {
+        "file": "teddy-bear-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/365150851654",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/365150851654",
     "verified": false
@@ -667,7 +940,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "dice-front.jpg", "sourceUrl": "https://www.ebay.com/itm/364674013571" } },
+    "images": [
+      {
+        "file": "dice-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/364674013571",
+        "label": null
+      }
+    ],
     "description": "",
     "source": "https://www.ebay.com/itm/364674013571",
     "verified": false
@@ -681,7 +960,13 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "iq-zebra-front.jpg", "sourceUrl": "https://www.ebay.com/itm/188294229980" } },
+    "images": [
+      {
+        "file": "iq-zebra-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/188294229980",
+        "label": null
+      }
+    ],
     "description": "Sold in a lot alongside an Escher puzzle.",
     "source": "https://www.ebay.com/itm/188294229980",
     "verified": false
@@ -695,7 +980,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "A crossword design rather than a picture.",
     "source": "https://www.ebay.de/itm/187519990789",
     "verified": false
@@ -709,9 +994,63 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": { "front": { "file": "french-crossword-front.jpg", "sourceUrl": "https://www.ebay.com/itm/365926143235" } },
+    "images": [
+      {
+        "file": "french-crossword-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/365926143235",
+        "label": null
+      }
+    ],
     "description": "A French-language version of the crossword design, so at least some puzzles were made for export markets.",
     "source": "https://www.ebay.com/itm/365926143235",
+    "verified": false
+  },
+  {
+    "id": "op-art-100-piece",
+    "name": "Op art geometric (100 pieces)",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": {
+      "rows": 10,
+      "cols": 10
+    },
+    "blank": null,
+    "images": [],
+    "description": "Recorded from a single recollection, not a listing or a photograph. A BoardGameGeek user described a 100-piece Pussycat slider in a large black plastic frame with a geometric op art design — purple, with an orange and yellow (possibly blue) grid overlay — owned as a child around the mid 1990s, adding that no photograph of it could be found online. The attribution to Pussycat is the poster's own qualified guess (\"pretty sure\"), and nobody in the thread confirmed it. The grid is recorded as 10×10 because that holds whether the 100 counts tiles or cells; the blank format is deliberately left unset, since 100 could mean 100 tiles plus a spare corner or 99 tiles plus an inline blank. Treat this entry as a lead to confirm, not a catalogued puzzle.",
+    "source": "https://boardgamegeek.com/thread/1447044/looking-for-vintage-sliding-piece-puzzles",
+    "verified": false
+  },
+  {
+    "id": "safari",
+    "name": "Safari",
+    "artist": null,
+    "series": "Wildlife",
+    "artNumber": null,
+    "copyright": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
+    "images": [],
+    "description": "Listed at 49 tiles, matching the other wildlife puzzles.",
+    "source": "https://www.worthpoint.com/worthopedia/safari-slide-sliding-puzzle-german-21136561",
+    "verified": false
+  },
+  {
+    "id": "marilyn-monroe",
+    "name": "Marilyn Monroe",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [],
+    "description": "A portrait design rather than a painting reproduction.",
+    "source": "https://www.ebay.com/itm/116378665442",
     "verified": false
   },
   {
@@ -723,7 +1062,7 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": {},
+    "images": [],
     "description": "A promotional mini puzzle carrying Lufthansa advertising, described as late 1980s.",
     "source": "https://www.ebay.com/itm/334759719911",
     "verified": false

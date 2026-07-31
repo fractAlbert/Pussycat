@@ -24,7 +24,7 @@ export class Puzzle {
     this.series = record.series ?? null;
     this.grid = record.grid ?? null;
     this.blank = record.blank ?? null;
-    this.images = record.images ?? {};
+    this.images = Puzzle.normalizeImages(record.images);
     this.description = record.description ?? '';
     this.source = record.source ?? null;
     this.verified = record.verified === true;
@@ -60,12 +60,42 @@ export class Puzzle {
     return this.blank === 'extra' ? cells : cells - 1;
   }
 
-  get frontImage() {
-    return this.images.front ?? null;
+  /**
+   * Photographs in display order. Accepts either a plain array or the older
+   * {front, back} shape.
+   *
+   * `label` is only set when the view is actually known — a listing photo is
+   * just a photo, and calling one "Back" because it happened to be second
+   * would put a guess in the catalog.
+   */
+  static normalizeImages(images) {
+    if (!images) return [];
+    const list = Array.isArray(images)
+      ? images
+      : [
+          images.front && { ...images.front, label: images.front.label ?? 'Front' },
+          images.back && { ...images.back, label: images.back.label ?? 'Back' },
+        ];
+    return list
+      .filter((image) => image && image.file)
+      .map((image) => ({
+        file: image.file,
+        sourceUrl: image.sourceUrl ?? null,
+        label: image.label ?? null,
+      }));
   }
 
-  get backImage() {
-    return this.images.back ?? null;
+  /** The one shown on the catalog card. */
+  get primaryImage() {
+    return this.images[0] ?? null;
+  }
+
+  get hasImages() {
+    return this.images.length > 0;
+  }
+
+  labelFor(image, index) {
+    return image.label ?? `View ${index + 1}`;
   }
 
   /** Art numbers are searchable with or without their internal spaces. */
@@ -112,9 +142,10 @@ export class Puzzle {
     if (record.blank && !(record.blank in BLANK_LABELS)) {
       return `"${record.id}" has unknown blank type "${record.blank}"`;
     }
-    // A grid without a blank type cannot yield a tile count, and vice versa.
-    if (Boolean(record.grid) !== Boolean(record.blank)) {
-      console.warn(`"${record.id}": grid and blank should be given together`);
+    // A grid alone is fine — it still sizes and filters, it just cannot yield
+    // a tile count. A blank type with no grid tells us nothing at all.
+    if (record.blank && !record.grid) {
+      console.warn(`"${record.id}": blank type given without a grid`);
     }
     return null;
   }
