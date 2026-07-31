@@ -66,6 +66,17 @@ axis, not a universal property.
 
 Both are filterable, and independently of grid size.
 
+## Never read a listing's dimensions as a grid
+
+Sellers quote the frame size in inches, and it looks exactly like a grid.
+`6x5` in a title is almost always 6 × 5 inches, not 30 tiles. One listing reads
+"49 Tiles ~ 6”x5”" — the same puzzle described both ways in one line.
+
+A grid may only be recorded when it follows from a **tile count** (49 → 7×7,
+55 plus a place holder → 7×8), from an explicit grid statement, or from
+measuring the puzzle in hand. This mistake created a phantom 6×5 entry that
+duplicated `escher-e72-fish`.
+
 ## Derived, never stored
 
 Computed at render time so they cannot drift from the source fields:

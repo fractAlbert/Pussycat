@@ -39,6 +39,9 @@ Only `id` and `name` are required. Record what is known and leave the rest out.
 ```
 
 - `grid` describes the **completed image**, not the frame.
+- **A size in a listing title is usually inches, not a grid.** `6x5` means a
+  6 × 5 inch frame. Only record a grid when it follows from a tile count, an
+  explicit grid statement, or the puzzle in hand.
 - `blank` is `"extra"` (image complete, spare cell in a corner) or `"inline"`
   (one tile missing from the image). Give it together with `grid` — one without
   the other cannot yield a tile count.
