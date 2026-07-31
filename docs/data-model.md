@@ -14,8 +14,7 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 | `grid` | no | `{rows, cols}` \| null | Integers. Dimensions of the **completed image**, not the frame. |
 | `blank` | no | `"extra"` \| `"inline"` \| null | See below. Give it together with `grid`. |
 | `series` | no | string \| null | |
-| `images.front` | no | image object | |
-| `images.back` | no | image object | |
+| `images` | no | array of image objects | Ordered. The first is the catalog card thumbnail. |
 | `description` | no | string | Free text. |
 | `artNumber` | no | string \| null | Printed on the puzzle, e.g. `80 23244`. Searchable with or without spaces. |
 | `copyright` | no | number \| null | Copyright year printed on the puzzle, not the year of the artwork. |
@@ -34,7 +33,20 @@ The closest thing to a catalogue key. Two families are visible so far:
 Escher puzzles instead use an `E nnn` reference from the Escher catalogue
 raisonné, which is stored in the same field.
 
-An image object is `{ "file": "...", "sourceUrl": "..." }`.
+An image object is `{ "file": "...", "sourceUrl": "...", "label": null }`.
+
+`file` is always a local file in `src/images/puzzles/`. Images are **never**
+hotlinked — a listing URL stops resolving as soon as the item sells, and a
+catalog whose pictures quietly vanish is worse than one with none. `sourceUrl`
+exists for attribution only and is never used to load an image.
+
+`label` is `"Front"`, `"Back"`, or `null`. It is set only when the view is
+actually known. Listing photographs arrive in arbitrary order, so calling the
+second one "Back" would record a guess as a fact; those stay `null` and display
+as "View 2", "View 3".
+
+The older `{ "front": …, "back": … }` shape is still accepted and normalised on
+load, so old hand-written entries keep working.
 
 Only `id` and `name` are required (D-009). Entries are built from sale
 listings, which routinely give a title and nothing else; a schema that

@@ -36,8 +36,8 @@ export class PuzzleCard {
   }
 
   #media() {
-    const image = this.puzzle.frontImage;
-    if (!image?.file) {
+    const image = this.puzzle.primaryImage;
+    if (!image) {
       return html`
         <span class="card__media card__media--empty" aria-hidden="true">
           <span class="card__placeholder">${this.puzzle.sizeLabel ?? '?'}</span>
