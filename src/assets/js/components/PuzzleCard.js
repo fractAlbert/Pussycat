@@ -22,11 +22,17 @@ export class PuzzleCard {
         <span class="card__body">
           <span class="card__name">${p.name}</span>
           <span class="card__artist">${p.artistLabel}</span>
-          <span class="card__meta">${p.sizeLabel} · ${p.blankLabel}</span>
+          <span class="card__meta">${this.#meta()}</span>
         </span>
       </button>
     `;
     return article;
+  }
+
+  /** Size and format, whichever of them is known. */
+  #meta() {
+    const parts = [this.puzzle.sizeLabel, this.puzzle.blankLabel].filter(Boolean);
+    return parts.length ? parts.join(' · ') : 'Format not recorded';
   }
 
   #media() {
@@ -34,7 +40,7 @@ export class PuzzleCard {
     if (!image?.file) {
       return html`
         <span class="card__media card__media--empty" aria-hidden="true">
-          <span class="card__placeholder">${this.puzzle.sizeLabel}</span>
+          <span class="card__placeholder">${this.puzzle.sizeLabel ?? '?'}</span>
         </span>
       `;
     }

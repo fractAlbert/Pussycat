@@ -29,12 +29,18 @@ export class FilterRegistry {
   }
 
   /**
-   * Filters with nothing to offer (a series filter when no entry has a series)
-   * are hidden rather than rendered as an empty group.
+   * Only shows a filter that can actually narrow the list: either it offers a
+   * choice between values, or a single value that some entries lack. A lone
+   * option still earns its place when other puzzles have nothing recorded —
+   * one "Art" button is what separates the art series from everything else.
    */
   withOptions(puzzles) {
     return this.all()
       .map((filter) => ({ filter, options: filter.options(puzzles) }))
-      .filter(({ options }) => options.length > 1);
+      .filter(({ filter, options }) => {
+        if (options.length === 0) return false;
+        if (options.length > 1) return true;
+        return puzzles.some((p) => filter.valueFor(p) === null);
+      });
   }
 }

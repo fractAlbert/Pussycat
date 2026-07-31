@@ -260,6 +260,26 @@ button:focus-visible {
 .modal__sources { margin: 1.25rem 0 0; font-size: 0.82rem; color: var(--ink-soft); }
 .modal__sources a { color: var(--accent); }
 
+.modal__unverified {
+  margin: -0.5rem 0 1rem;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+
+/* About page -------------------------------------------------------------- */
+
+.masthead__back { margin: 0 0 0.75rem; font-size: 0.9rem; }
+.masthead__back a, .masthead__tagline a { color: var(--accent); }
+
+.prose { max-width: 42rem; }
+.prose h2 { margin: 2rem 0 0.5rem; font-size: 1.15rem; }
+.prose p { margin: 0 0 1rem; }
+.prose code { font-size: 0.9em; background: var(--accent-soft); padding: 0.1em 0.35em; border-radius: 4px; }
+.prose q { font-style: italic; }
+
 /* Colophon ---------------------------------------------------------------- */
 
 .colophon {

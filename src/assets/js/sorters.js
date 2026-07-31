@@ -20,7 +20,14 @@ const byArtist = (a, b) => {
   return byName(a, b);
 };
 
-const bySize = (a, b) => a.tileCount - b.tileCount || byName(a, b);
+/** Puzzles with no recorded size sort last rather than as if they were zero. */
+const bySize = (a, b) => {
+  if (a.tileCount === null || b.tileCount === null) {
+    if (a.tileCount === b.tileCount) return byName(a, b);
+    return a.tileCount === null ? 1 : -1;
+  }
+  return a.tileCount - b.tileCount || byName(a, b);
+};
 
 export const SORTERS = [
   new Sorter({ key: 'name', label: 'Name', compare: byName }),

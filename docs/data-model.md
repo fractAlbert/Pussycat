@@ -10,16 +10,21 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 | --- | --- | --- | --- |
 | `id` | yes | string | Slug, unique. Used for the modal URL fragment and as the image filename stem. |
 | `name` | yes | string | Title only — artist is *not* part of it. `Van Gogh - Flowers` becomes name `Flowers`, artist `Van Gogh`. |
-| `artist` | yes | string \| null | `null` means genuinely unknown, rendered as "Unattributed" (D-007). |
-| `grid` | yes | `{rows, cols}` | Integers. Dimensions of the **completed image**, not the frame. |
-| `blank` | yes | `"extra"` \| `"inline"` | See below. |
-| `series` | no | string \| null | Proposed, not yet confirmed. |
+| `artist` | no | string \| null | `null` means genuinely unknown, rendered as "Unattributed" (D-007). |
+| `grid` | no | `{rows, cols}` \| null | Integers. Dimensions of the **completed image**, not the frame. |
+| `blank` | no | `"extra"` \| `"inline"` \| null | See below. Give it together with `grid`. |
+| `series` | no | string \| null | |
 | `images.front` | no | image object | |
 | `images.back` | no | image object | |
 | `description` | no | string | Free text. |
+| `source` | no | string \| null | URL the record was compiled from. |
+| `verified` | no | boolean | `true` only when checked against the physical puzzle. Defaults to `false`. |
 
-An image object is `{ "file": "...", "sourceUrl": "..." }`. `sourceUrl` is
-proposed, not yet confirmed.
+An image object is `{ "file": "...", "sourceUrl": "..." }`.
+
+Only `id` and `name` are required (D-009). Entries are built from sale
+listings, which routinely give a title and nothing else; a schema that
+demanded a grid would have made most of what is known unrecordable.
 
 ## `blank` — the two puzzle formats
 

@@ -3,35 +3,47 @@
 `puzzles.json` is the entire catalog. One array, one object per puzzle.
 Field reference: `../../docs/data-model.md`.
 
-## The current contents are seed data
+## Everything here is unverified
 
-Two entries are labelled `Placeholder` and describe no real puzzle. They exist
-only so the filters have more than one option to render. **Delete them** as soon
-as real entries go in — they are not catalog facts.
+All current entries were compiled from sale listings and auction archives, and
+every one carries `"verified": false`. Sellers describe the same puzzle several
+different ways, so titles, article numbers, and tile counts should be treated as
+leads rather than facts.
 
-The `van-gogh-flowers` entry comes from the example in the requirements; its
-details still need verifying.
+Set `"verified": true` on an entry only once it has been checked against the
+physical puzzle.
+
+**No images yet.** Listing photographs belong to the sellers who took them, so
+none have been copied into this repo. `source` records where each entry came
+from.
 
 ## Adding a puzzle
+
+Only `id` and `name` are required. Record what is known and leave the rest out.
 
 ```json
 {
   "id": "artist-title",
   "name": "Title",
   "artist": "Artist",
-  "series": null,
-  "grid": { "rows": 7, "cols": 9 },
+  "series": "Art",
+  "grid": { "rows": 7, "cols": 7 },
   "blank": "extra",
   "images": {
     "front": { "file": "artist-title-front.jpg", "sourceUrl": "https://…" }
   },
-  "description": ""
+  "description": "",
+  "source": "https://…",
+  "verified": false
 }
 ```
 
 - `grid` describes the **completed image**, not the frame.
 - `blank` is `"extra"` (image complete, spare cell in a corner) or `"inline"`
-  (one tile missing from the image).
+  (one tile missing from the image). Give it together with `grid` — one without
+  the other cannot yield a tile count.
+- A 49-tile puzzle in a 7×7 arrangement is `"extra"`. A puzzle sold as "55
+  pieces plus a place holder" in a 7×8 frame is `"inline"`.
 - Unknown values are `null`, never `""`.
 - Images go in `../images/puzzles/` named `<id>-front.jpg` / `<id>-back.jpg`.
 
