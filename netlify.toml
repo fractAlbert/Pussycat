@@ -1,0 +1,10 @@
+[build]
+  publish = "src"
+
+# No build step by design (D-005) — the repo is served as-is.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

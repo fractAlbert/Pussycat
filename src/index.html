@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pussycat Slide Puzzles</title>
+  <meta name="description" content="A catalog of Pussycat sliding puzzles, for collectors.">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="assets/js/main.js"></script>
+</head>
+<body>
+  <header class="masthead">
+    <h1 class="masthead__title">Pussycat Slide Puzzles</h1>
+    <p class="masthead__tagline">A catalog of known Pussycat sliding puzzles, for collectors.</p>
+  </header>
+
+  <main>
+    <section class="controls" aria-label="Browse the catalog">
+      <div class="controls__row">
+        <label class="field">
+          <span class="field__label">Search</span>
+          <input id="search" type="search" placeholder="Name, artist, description…" autocomplete="off">
+        </label>
+        <label class="field field--narrow">
+          <span class="field__label">Sort by</span>
+          <select id="sort"></select>
+        </label>
+      </div>
+      <div id="filters" class="filters"></div>
+      <button type="button" id="clear" class="clear" hidden>Clear all filters</button>
+    </section>
+
+    <p id="status" class="status" role="status"></p>
+    <p id="count" class="count"></p>
+
+    <div id="grid" class="grid"></div>
+
+    <p id="empty" class="empty" hidden>No puzzles match those filters.</p>
+  </main>
+
+  <footer class="colophon">
+    <p>Catalog data lives in <code>src/data/puzzles.json</code>.</p>
+  </footer>
+
+  <dialog id="detail" class="detail"></dialog>
+</body>
+</html>

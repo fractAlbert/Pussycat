@@ -1,0 +1,32 @@
+[
+  {
+    "id": "van-gogh-flowers",
+    "name": "Flowers",
+    "artist": "Van Gogh",
+    "series": "Art",
+    "grid": { "rows": 7, "cols": 9 },
+    "blank": "extra",
+    "images": {},
+    "description": "Seed entry taken from the example in the requirements. Verify the details and replace this description."
+  },
+  {
+    "id": "placeholder-inline-blank",
+    "name": "Placeholder — inline blank",
+    "artist": null,
+    "series": null,
+    "grid": { "rows": 4, "cols": 4 },
+    "blank": "inline",
+    "images": {},
+    "description": "Not a real puzzle. Exists so the format filter and the Unattributed case have something to show. Delete once real entries are in."
+  },
+  {
+    "id": "placeholder-second-artist",
+    "name": "Placeholder — second artist",
+    "artist": "Monet",
+    "series": "Art",
+    "grid": { "rows": 5, "cols": 5 },
+    "blank": "extra",
+    "images": {},
+    "description": "Not a real puzzle. Exists so the artist filter has more than one option. Delete once real entries are in."
+  }
+]

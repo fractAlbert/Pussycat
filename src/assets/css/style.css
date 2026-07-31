@@ -1,0 +1,273 @@
+/* Pussycat slide puzzle catalog
+   Plain CSS, no build step (D-005). */
+
+:root {
+  --ink: #1c1a18;
+  --ink-soft: #6b6560;
+  --paper: #faf7f2;
+  --card: #ffffff;
+  --line: #e2dcd3;
+  --accent: #9c3d2e;
+  --accent-soft: #f3e4e0;
+  --radius: 10px;
+  --shadow: 0 1px 2px rgba(28, 26, 24, 0.06), 0 6px 16px rgba(28, 26, 24, 0.06);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f0ece6;
+    --ink-soft: #a49d95;
+    --paper: #171513;
+    --card: #211e1b;
+    --line: #35302b;
+    --accent: #e08573;
+    --accent-soft: #3a2621;
+    --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 6px 16px rgba(0, 0, 0, 0.3);
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 1.25rem 4rem;
+  background: var(--paper);
+  color: var(--ink);
+  font: 16px/1.55 system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+main, .masthead, .colophon { max-width: 1100px; margin-inline: auto; }
+
+/* Masthead ---------------------------------------------------------------- */
+
+.masthead { padding: 3rem 0 1.5rem; }
+
+.masthead__title {
+  margin: 0;
+  font-size: clamp(1.9rem, 4vw, 2.6rem);
+  letter-spacing: -0.02em;
+}
+
+.masthead__tagline { margin: 0.4rem 0 0; color: var(--ink-soft); }
+
+/* Controls ---------------------------------------------------------------- */
+
+.controls {
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  padding: 1.25rem 0;
+  margin-bottom: 1.5rem;
+}
+
+.controls__row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.field { display: flex; flex-direction: column; gap: 0.35rem; flex: 1 1 18rem; }
+.field--narrow { flex: 0 1 11rem; }
+
+.field__label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+input[type="search"], select {
+  font: inherit;
+  color: inherit;
+  padding: 0.55rem 0.7rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+input[type="search"]:focus-visible,
+select:focus-visible,
+.chip:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.filters { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; }
+
+.filter { border: 0; padding: 0; margin: 0; }
+
+.filter__legend {
+  padding: 0;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  margin-bottom: 0.45rem;
+}
+
+.filter__options { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+
+.chip {
+  font: inherit;
+  font-size: 0.88rem;
+  color: inherit;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  cursor: pointer;
+}
+
+.chip:hover { border-color: var(--accent); }
+
+.chip[aria-pressed="true"] {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.clear {
+  margin-top: 1rem;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--accent);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Grid -------------------------------------------------------------------- */
+
+.count, .status, .empty { color: var(--ink-soft); font-size: 0.9rem; }
+.status:empty { display: none; }
+.count { margin: 0 0 1rem; }
+.empty { padding: 3rem 0; text-align: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.card { margin: 0; }
+.card[hidden] { display: none; }
+
+.card__open {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: left;
+  font: inherit;
+  color: inherit;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+}
+
+.card__open:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+}
+
+.card__media {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: var(--accent-soft);
+}
+
+.card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+.card__media--empty {
+  display: grid;
+  place-items: center;
+  color: var(--ink-soft);
+}
+
+.card__placeholder { font-size: 1.1rem; letter-spacing: 0.05em; }
+
+.card__body { display: block; padding: 0.8rem 0.9rem 1rem; }
+.card__name { display: block; font-weight: 600; }
+.card__artist { display: block; color: var(--ink-soft); font-size: 0.9rem; }
+
+.card__meta {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
+/* Detail modal ------------------------------------------------------------ */
+
+.detail {
+  width: min(680px, calc(100vw - 2rem));
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--card);
+  color: var(--ink);
+}
+
+.detail::backdrop { background: rgba(0, 0, 0, 0.55); }
+
+.modal { padding: 1.75rem; position: relative; }
+
+.modal__close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.75rem;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: var(--ink-soft);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal__title { margin: 0 2rem 1rem 0; font-size: 1.5rem; }
+
+.modal__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.75rem;
+}
+
+.modal__images:empty { display: none; }
+
+.modal__image { width: 100%; border-radius: 6px; display: block; }
+
+.facts {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.35rem 1rem;
+  margin: 1.25rem 0 0;
+}
+
+.facts dt { color: var(--ink-soft); font-size: 0.85rem; }
+.facts dd { margin: 0; }
+
+.modal__description { margin: 1.25rem 0 0; }
+
+.modal__sources { margin: 1.25rem 0 0; font-size: 0.82rem; color: var(--ink-soft); }
+.modal__sources a { color: var(--accent); }
+
+/* Colophon ---------------------------------------------------------------- */
+
+.colophon {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+.colophon code { font-size: 0.95em; }
