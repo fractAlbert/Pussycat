@@ -1,0 +1,27 @@
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local env / secrets
+.env
+.env.*
+!.env.example
+
+# Scratch
+tmp/
+*.log
+
+# Image working files — export finished versions into src/images/puzzles/
+*.psd
+*.xcf
+*.tif
+*.tiff
