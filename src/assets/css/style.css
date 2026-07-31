@@ -153,7 +153,7 @@ button:focus-visible {
   gap: 1.25rem;
 }
 
-.card { margin: 0; }
+.card { margin: 0; display: flex; }
 .card[hidden] { display: none; }
 
 .card__open {
@@ -181,11 +181,22 @@ button:focus-visible {
 
 .card__media {
   display: block;
+  width: 100%;
   aspect-ratio: 4 / 3;
   background: var(--accent-soft);
+  overflow: hidden;
 }
 
-.card__media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* The ratio is pinned on the image itself, not just the wrapper: listing
+   photos arrive in wildly different shapes and would otherwise set the card
+   height, leaving the grid ragged. */
+.card__media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 
 .card__media--empty {
   display: grid;
@@ -273,6 +284,63 @@ button:focus-visible {
 
 .masthead__back { margin: 0 0 0.75rem; font-size: 0.9rem; }
 .masthead__back a, .masthead__tagline a { color: var(--accent); }
+
+/* Checklist --------------------------------------------------------------- */
+
+.checklist { max-width: 46rem; columns: 2; column-gap: 2.5rem; }
+
+.checklist__group { break-inside: avoid; margin: 0 0 1.5rem; }
+
+.checklist__heading {
+  margin: 0 0 0.4rem;
+  font-size: 0.95rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.2rem;
+}
+
+.checklist__tally { float: right; color: var(--ink-soft); font-weight: 400; }
+
+.checklist__list { list-style: none; margin: 0; padding: 0; }
+
+.checklist__item {
+  display: grid;
+  grid-template-columns: 1.1rem 1fr;
+  gap: 0.1rem 0.5rem;
+  padding: 0.22rem 0;
+  font-size: 0.88rem;
+}
+
+.checklist__box {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-top: 0.2rem;
+  border: 1px solid var(--ink-soft);
+  border-radius: 2px;
+  text-align: center;
+  line-height: 0.8rem;
+  font-size: 0.8rem;
+}
+
+.checklist__item.is-owned .checklist__name { font-weight: 600; }
+
+.checklist__notes {
+  grid-column: 2;
+  font-size: 0.75rem;
+  color: var(--ink-soft);
+}
+
+.checklist__notes:empty { display: none; }
+
+@media (max-width: 640px) {
+  .checklist { columns: 1; }
+}
+
+@media print {
+  .no-print { display: none; }
+  body { padding: 0; font-size: 11pt; background: #fff; color: #000; }
+  .checklist__box { border-color: #000; }
+  .checklist__notes { color: #444; }
+}
 
 .prose { max-width: 42rem; }
 .prose h2 { margin: 2rem 0 0.5rem; font-size: 1.15rem; }

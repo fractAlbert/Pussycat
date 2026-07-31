@@ -28,6 +28,10 @@ export class Puzzle {
     this.description = record.description ?? '';
     this.source = record.source ?? null;
     this.verified = record.verified === true;
+    this.owned = record.owned === true;
+    // Printed on the puzzle itself — the closest thing to a catalogue key.
+    this.artNumber = record.artNumber ?? null;
+    this.copyright = record.copyright ?? null;
   }
 
   get artistLabel() {
@@ -64,8 +68,10 @@ export class Puzzle {
     return this.images.back ?? null;
   }
 
+  /** Art numbers are searchable with or without their internal spaces. */
   get searchText() {
-    return [this.name, this.artistLabel, this.series, this.description]
+    const art = this.artNumber ? [this.artNumber, this.artNumber.replace(/\s+/g, '')] : [];
+    return [this.name, this.artistLabel, this.series, this.description, ...art]
       .filter(Boolean)
       .join(' ')
       .toLowerCase();

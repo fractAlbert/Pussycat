@@ -17,8 +17,22 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 | `images.front` | no | image object | |
 | `images.back` | no | image object | |
 | `description` | no | string | Free text. |
+| `artNumber` | no | string \| null | Printed on the puzzle, e.g. `80 23244`. Searchable with or without spaces. |
+| `copyright` | no | number \| null | Copyright year printed on the puzzle, not the year of the artwork. |
 | `source` | no | string \| null | URL the record was compiled from. |
+| `owned` | no | boolean | Drives the checklist. Defaults to `false`. |
 | `verified` | no | boolean | `true` only when checked against the physical puzzle. Defaults to `false`. |
+
+## Art numbers
+
+The closest thing to a catalogue key. Two families are visible so far:
+
+- `80 29xx` — 49-tile 7×7 puzzles (wildlife, dinosaurs, crosswords).
+- `80 23xxx` — the fine-art run carrying a 1999 copyright (Cézanne, Monet,
+  Klee, Picasso).
+
+Escher puzzles instead use an `E nnn` reference from the Escher catalogue
+raisonné, which is stored in the same field.
 
 An image object is `{ "file": "...", "sourceUrl": "..." }`.
 
