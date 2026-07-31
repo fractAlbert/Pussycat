@@ -11,6 +11,10 @@ export const BLANK_LABELS = {
  * Everything derivable from the stored fields is a getter, never a stored
  * property, so it cannot drift out of sync with the source data.
  * See docs/data-model.md.
+ *
+ * Most fields are optional because entries are built from sale listings, which
+ * routinely give a title and a tile count and nothing else. An entry with a
+ * name is worth recording; the rest can be filled in later.
  */
 export class Puzzle {
   constructor(record) {
@@ -18,10 +22,16 @@ export class Puzzle {
     this.name = record.name;
     this.artist = record.artist ?? null;
     this.series = record.series ?? null;
-    this.grid = record.grid;
-    this.blank = record.blank;
+    this.grid = record.grid ?? null;
+    this.blank = record.blank ?? null;
     this.images = record.images ?? {};
     this.description = record.description ?? '';
+    this.source = record.source ?? null;
+    this.verified = record.verified === true;
+    this.owned = record.owned === true;
+    // Printed on the puzzle itself — the closest thing to a catalogue key.
+    this.artNumber = record.artNumber ?? null;
+    this.copyright = record.copyright ?? null;
   }
 
   get artistLabel() {
@@ -29,15 +39,15 @@ export class Puzzle {
   }
 
   get sizeKey() {
-    return `${this.grid.rows}x${this.grid.cols}`;
+    return this.grid ? `${this.grid.rows}x${this.grid.cols}` : null;
   }
 
   get sizeLabel() {
-    return `${this.grid.rows}×${this.grid.cols}`;
+    return this.grid ? `${this.grid.rows}×${this.grid.cols}` : null;
   }
 
   get blankLabel() {
-    return BLANK_LABELS[this.blank] ?? this.blank;
+    return this.blank ? BLANK_LABELS[this.blank] ?? this.blank : null;
   }
 
   /**
@@ -45,6 +55,7 @@ export class Puzzle {
    * "inline" puzzles are missing one tile from the image itself (D-008).
    */
   get tileCount() {
+    if (!this.grid || !this.blank) return null;
     const cells = this.grid.rows * this.grid.cols;
     return this.blank === 'extra' ? cells : cells - 1;
   }
@@ -57,8 +68,10 @@ export class Puzzle {
     return this.images.back ?? null;
   }
 
+  /** Art numbers are searchable with or without their internal spaces. */
   get searchText() {
-    return [this.name, this.artistLabel, this.series, this.description]
+    const art = this.artNumber ? [this.artNumber, this.artNumber.replace(/\s+/g, '')] : [];
+    return [this.name, this.artistLabel, this.series, this.description, ...art]
       .filter(Boolean)
       .join(' ')
       .toLowerCase();
@@ -93,11 +106,15 @@ export class Puzzle {
     if (!record.id) return 'missing id';
     if (seen.has(record.id)) return `duplicate id "${record.id}"`;
     if (!record.name) return `"${record.id}" is missing a name`;
-    if (!record.grid?.rows || !record.grid?.cols) {
-      return `"${record.id}" is missing grid rows/cols`;
+    if (record.grid && !(record.grid.rows && record.grid.cols)) {
+      return `"${record.id}" has a grid without both rows and cols`;
     }
-    if (!(record.blank in BLANK_LABELS)) {
+    if (record.blank && !(record.blank in BLANK_LABELS)) {
       return `"${record.id}" has unknown blank type "${record.blank}"`;
+    }
+    // A grid without a blank type cannot yield a tile count, and vice versa.
+    if (Boolean(record.grid) !== Boolean(record.blank)) {
+      console.warn(`"${record.id}": grid and blank should be given together`);
     }
     return null;
   }

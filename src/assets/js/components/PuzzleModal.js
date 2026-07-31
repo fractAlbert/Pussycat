@@ -73,6 +73,8 @@ export class PuzzleModal extends Component {
     const facts = [
       ['Artist', puzzle.artistLabel],
       ['Series', puzzle.series],
+      ['Art no.', puzzle.artNumber],
+      ['Copyright', puzzle.copyright],
       ['Size', puzzle.sizeLabel],
       ['Format', puzzle.blankLabel],
       ['Tiles', puzzle.tileCount],
@@ -82,6 +84,11 @@ export class PuzzleModal extends Component {
       <div class="modal">
         <button type="button" class="modal__close" data-close aria-label="Close">×</button>
         <h2 class="modal__title">${puzzle.name}</h2>
+        ${raw(puzzle.verified ? '' : html`
+          <p class="modal__unverified">
+            Compiled from a sale listing and not yet checked against the puzzle itself.
+          </p>
+        `)}
         <div class="modal__images">
           ${raw(this.#image(puzzle.frontImage, `${puzzle.name}, front`))}
           ${raw(this.#image(puzzle.backImage, `${puzzle.name}, back`))}
@@ -103,18 +110,19 @@ export class PuzzleModal extends Component {
   }
 
   #sources(puzzle) {
-    const links = [puzzle.frontImage, puzzle.backImage]
-      .filter((image) => image?.sourceUrl)
-      .map((image) => image.sourceUrl);
-    const unique = [...new Set(links)];
-    if (unique.length === 0) return '';
+    const links = [
+      puzzle.source && ['Record', puzzle.source],
+      puzzle.frontImage?.sourceUrl && ['Front image', puzzle.frontImage.sourceUrl],
+      puzzle.backImage?.sourceUrl && ['Back image', puzzle.backImage.sourceUrl],
+    ].filter(Boolean);
+    if (links.length === 0) return '';
 
     return html`
       <p class="modal__sources">
-        Image source${unique.length > 1 ? 's' : ''}:
-        ${raw(unique.map((url, i) => html`
-          <a href="${url}" target="_blank" rel="noopener noreferrer">${i + 1}</a>
-        `).join(' '))}
+        Source:
+        ${raw(links.map(([label, url]) => html`
+          <a href="${url}" target="_blank" rel="noopener noreferrer">${label}</a>
+        `).join(' · '))}
       </p>
     `;
   }

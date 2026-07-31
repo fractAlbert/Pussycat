@@ -115,3 +115,30 @@ numbers or left as prose.
 Consequences: Numbers sort correctly and group into a short filter list. Tile
 count is derived, not stored: `rows × cols` for `"extra"`, `rows × cols - 1`
 for `"inline"`.
+
+### D-009 — Only id and name are required; records carry provenance
+Date: 2026-07-30
+Decision: Every field except `id` and `name` is optional. Two fields are added:
+`source` (the URL a record was compiled from) and `verified` (false unless
+checked against the physical puzzle).
+Supersedes: the required `grid`/`blank`/`artist` of D-007 and D-008. Those
+decisions still stand on *how* the fields are shaped; only their obligation is
+relaxed.
+Rationale: Discovered when the first real data went in. Catalog entries are
+compiled from sale listings, which typically give a title, sometimes an artist
+and a tile count, and often nothing else. Requiring a grid would have made most
+of what is actually known unrecordable, and the alternative — guessing the
+missing values — would put invented measurements in a reference collectors are
+meant to trust.
+Consequences:
+- Unknown size and format read as "Format not recorded" on the card, and their
+  rows are omitted from the detail view rather than shown empty.
+- Filters skip entries with no value for that filter, so filtering by size
+  narrows to entries whose size is actually known.
+- Sorting by size puts unrecorded entries last instead of treating them as
+  zero.
+- A filter offering a single value is still shown when some entries lack that
+  value, since it can still narrow the list — one "Art" button separates the
+  art series from the promotional and puzzle-book designs.
+- The detail view states plainly when an entry is unverified and links to the
+  listing it came from.
