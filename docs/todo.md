@@ -9,6 +9,12 @@ there is no address to make the request to. It currently points at GitHub
 issues as a stand-in. Replace the `callout` block in that page once an address
 exists.
 
+## Photographs for the 38 entries added by the August 2026 scan
+
+Every entry added in that pass went in with `"images": []` — the scan reads
+PicClick listing summaries, which do not carry usable photographs. They are
+listed in `image-wishlist.md` alongside the entries that need extra views.
+
 ## Back and detail photographs for the remaining 34 entries
 
 Only two entries (`escher-eight-heads`, `escher-e128-birds`) have more than one
@@ -43,6 +49,29 @@ Notes before starting:
 Sellers list the `80 23xxx` art puzzles at 62 tiles. The owned Cézanne from
 that run is 7×9 fully tiled with a spare corner cell, which is 63. Nine entries
 are missing a grid because of this. One recount settles all of them.
+
+A third number has now turned up: one Renoir listing is titled "VTG 72 PIECES
+Sliding Puzzle 1881". 72 is 8×9, which is neither of the other two. Either the
+art run used more than one size or that seller counted badly.
+
+## Two crosswords, one art number
+
+`kreuzwortraetsel-802931` and `french-crossword` both carry art number 802931.
+They may be language editions sharing a number, or one listing may have misread
+it. They have not been compared side by side. Both descriptions say so.
+
+## Possible duplicate Escher listing
+
+A listing titled "MC Escher Slide Sliding Tile Puzzle Sun and Moon Birds" was
+found during the scan and deliberately *not* added — it is likely to be the
+existing `escher-e128-birds` or `escher-sky-and-water` under a seller's own
+wording. Worth one look before it is either added or dismissed.
+
+## Collector's Edition sets need their designs named
+
+Thirteen `Collector's Edition` entries are boxes of six mini puzzles whose
+individual designs no listing names. Each box is really six catalog entries
+waiting to be identified. Photographs of the box backs would settle them.
 
 ## Fill in the owner's own puzzles
 

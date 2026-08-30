@@ -390,3 +390,248 @@ button:focus-visible {
 }
 
 .colophon code { font-size: 0.95em; }
+
+/* Annotate mode ----------------------------------------------------------- */
+
+.controls__row--end {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+  gap: 0.75rem;
+}
+.controls__row--end .clear { margin-top: 0; }
+
+.annotate-toggle {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-left: auto;
+  padding: 0.4rem 0.9rem;
+  color: var(--accent);
+  background: none;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  cursor: pointer;
+}
+.annotate-toggle:hover { background: var(--accent-soft); }
+.annotate-toggle[aria-pressed="true"] {
+  background: var(--accent);
+  color: var(--paper);
+}
+
+.annobar {
+  border: 1px solid var(--accent);
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  margin-bottom: 1.5rem;
+}
+.annobar[hidden] { display: none; }
+
+.annobar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.annobar__counts { font-size: 0.9rem; }
+.annobar__size { color: var(--ink-soft); margin-left: 0.5rem; font-size: 0.85rem; }
+.annobar__idle { color: var(--ink-soft); }
+
+.annobar__actions { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+
+.annobar__btn, .annoedit__btn {
+  font: inherit;
+  font-size: 0.85rem;
+  padding: 0.35rem 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--accent);
+  cursor: pointer;
+}
+.annobar__btn:hover, .annoedit__btn:hover { background: var(--accent-soft); }
+.annobar__btn--quiet, .annoedit__btn--quiet {
+  border-color: var(--line);
+  color: var(--ink-soft);
+}
+
+.annobar__notes { display: block; margin-top: 0.85rem; }
+.annobar__notes textarea {
+  width: 100%;
+  font: inherit;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--card);
+  color: var(--ink);
+  resize: vertical;
+}
+
+.annobar__warning {
+  margin: 0.75rem 0 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+.annobar__warning--error { color: #b3261e; }
+
+/* Cards while annotating */
+
+.card--draggable .card__open { cursor: grab; }
+.card--draggable { position: relative; }
+.card.is-dragging { opacity: 0.4; }
+.card.is-drop-target .card__open { outline: 2px dashed var(--accent); outline-offset: 2px; }
+
+.card--deleted .card__open { opacity: 0.45; }
+.card--deleted .card__name { text-decoration: line-through; }
+
+.card__badge {
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  background: var(--accent);
+  color: var(--paper);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 4px;
+}
+
+/* The per-entry editor */
+
+.annoedit {
+  border: 0;
+  border-radius: var(--radius);
+  padding: 0;
+  width: min(46rem, 92vw);
+  max-height: 88vh;
+  background: var(--card);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+}
+.annoedit::backdrop { background: rgba(0, 0, 0, 0.55); }
+
+.annoedit__form { padding: 1.25rem 1.5rem 1.75rem; }
+
+.annoedit__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.75rem;
+}
+.annoedit__title { margin: 0; font-size: 1.3rem; }
+.annoedit__id { margin: 0.2rem 0 0; font-size: 0.8rem; color: var(--ink-soft); }
+
+.annoedit__close {
+  font: inherit;
+  font-size: 1.6rem;
+  line-height: 1;
+  background: none;
+  border: 0;
+  color: var(--ink-soft);
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+
+.annoedit.is-deleted .annoedit__title { text-decoration: line-through; opacity: 0.6; }
+
+.annoedit__section { margin-top: 1.4rem; }
+
+.annoedit__legend {
+  margin: 0 0 0.6rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+}
+
+.annoedit__field { display: block; margin-bottom: 0.9rem; }
+.annoedit__field.is-changed { border-left: 3px solid var(--accent); padding-left: 0.6rem; }
+
+.annoedit__field input[type="text"],
+.annoedit__field input[type="url"],
+.annoedit__field input[type="number"],
+.annoedit__field select,
+.annoedit__field textarea,
+.annoedit__input {
+  width: 100%;
+  font: inherit;
+  font-size: 0.92rem;
+  margin-top: 0.25rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--paper);
+  color: var(--ink);
+}
+.annoedit__field textarea { resize: vertical; }
+
+.annoedit__grid { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.25rem; }
+.annoedit__grid input { width: 5rem; }
+
+.annoedit__check { display: flex; align-items: center; gap: 0.5rem; }
+.annoedit__check input { margin: 0; }
+.annoedit__field.annoedit__check { margin-bottom: 0.6rem; }
+
+.annoedit__hint {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  margin-top: 0.2rem;
+}
+
+.annoedit__reasons {
+  margin-top: 0.6rem;
+  padding-left: 1.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  align-items: center;
+}
+.annoedit__reasons[hidden] { display: none; }
+.annoedit__radio { display: flex; align-items: center; gap: 0.35rem; font-size: 0.9rem; }
+.annoedit__reasons .annoedit__input { flex: 1 1 100%; }
+
+.annoedit__images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.annoedit__image {
+  margin: 0;
+  width: 8.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+.annoedit__image img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.annoedit__image.is-pending img { border-color: var(--accent); border-width: 2px; }
+.annoedit__image figcaption {
+  font-size: 0.72rem;
+  color: var(--ink-soft);
+  word-break: break-all;
+}
+.annoedit__new {
+  color: var(--accent);
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+}
+.annoedit__empty { color: var(--ink-soft); font-size: 0.9rem; margin: 0 0 0.75rem; }

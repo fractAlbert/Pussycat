@@ -142,3 +142,37 @@ Consequences:
   art series from the promotional and puzzle-book designs.
 - The detail view states plainly when an entry is unverified and links to the
   listing it came from.
+
+### D-010 — Cleanup happens in the browser and leaves by way of an edit file
+Date: 2026-08-30
+Decision: The catalog page has an annotate mode for correcting data — marking
+entries for deletion with a reason, editing any field, attaching photographs
+from disk, and hand-arranging the order. None of it writes to the site. The
+work leaves as a downloaded JSON *edit file*, which is later handed over to be
+applied, and which can be loaded back in to carry on.
+Rationale: Cleaning the catalog by hand-editing `puzzles.json` means holding an
+entry's id, its current values and the change all in your head at once, with no
+picture in front of you. The corrections that actually matter — this is a
+duplicate, that title is wrong, this photograph is the right one — are obvious
+when looking at the grid and invisible in a text editor. Doing it in the page
+puts the judgement where the evidence is.
+Consequences:
+- **Nothing is modified by construction, not by promise.** A static page cannot
+  reach the file system. `src/data/puzzles.json` and `src/images/puzzles/` are
+  unreachable from annotate mode whatever it does.
+- Photographs are embedded in the edit file as base64 data URLs, so a single
+  file carries both the intent and the bytes. It is the only way an image
+  picked from disk can reach the repo, and it means there is one thing to hand
+  over rather than a file plus a folder.
+- The page shows edits as you make them — an edited card retitles itself, a
+  replaced photograph appears immediately — so the effect is visible before it
+  is committed to anything.
+- Work is mirrored to `localStorage` between visits, but that holds only a few
+  megabytes and attached photographs fill it quickly. On overflow the edits stay
+  live in memory and the toolbar says so. **The downloaded file is the
+  artefact; browser storage is a safety net.**
+- Every field edit records `from` as well as `to`, so an edit made against data
+  that has since changed underneath can be spotted rather than applied blindly.
+- Filter buttons are still derived from the catalog on disk, so an artist or
+  series typed in annotate mode gets no button of its own until the edit file
+  is applied for real.
