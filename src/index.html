@@ -30,8 +30,15 @@
         </label>
       </div>
       <div id="filters" class="filters"></div>
-      <button type="button" id="clear" class="clear" hidden>Clear all filters</button>
+      <div class="controls__row controls__row--end">
+        <button type="button" id="clear" class="clear" hidden>Clear all filters</button>
+        <button type="button" id="annotate-toggle" class="annotate-toggle" aria-pressed="false">
+          Annotate
+        </button>
+      </div>
     </section>
+
+    <section id="annotate-bar" class="annobar" aria-label="Annotation tools" hidden></section>
 
     <p id="status" class="status" role="status"></p>
     <p id="count" class="count"></p>
@@ -46,5 +53,6 @@
   </footer>
 
   <dialog id="detail" class="detail"></dialog>
+  <dialog id="annotate-editor" class="annoedit"></dialog>
 </body>
 </html>

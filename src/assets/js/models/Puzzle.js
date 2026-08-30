@@ -82,7 +82,38 @@ export class Puzzle {
         file: image.file,
         sourceUrl: image.sourceUrl ?? null,
         label: image.label ?? null,
+        // Set only for a photograph picked in annotate mode that has not been
+        // written to src/images/puzzles/ yet. Rendering prefers it over `file`.
+        dataUrl: image.dataUrl ?? null,
       }));
+  }
+
+  /** Where to load this image from — a pending pick, or the catalog folder. */
+  static srcFor(image, imagePath) {
+    return image.dataUrl ?? imagePath + image.file;
+  }
+
+  /**
+   * The plain record this was built from. Round-trips through the constructor,
+   * which is what lets annotate mode overlay edits without special-casing
+   * every field.
+   */
+  toRecord() {
+    return {
+      id: this.id,
+      name: this.name,
+      artist: this.artist,
+      series: this.series,
+      artNumber: this.artNumber,
+      copyright: this.copyright,
+      grid: this.grid ? { ...this.grid } : null,
+      blank: this.blank,
+      images: this.images.map((image) => ({ ...image })),
+      description: this.description,
+      source: this.source,
+      owned: this.owned,
+      verified: this.verified,
+    };
   }
 
   /** The one shown on the catalog card. */
