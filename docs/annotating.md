@@ -119,3 +119,26 @@ Two details that matter when applying it:
 - Photographs are stored at full size. A dozen phone photos make a large file.
 - The checklist and about pages have no annotate mode; this is the catalog grid
   only.
+
+## The checklist
+
+`checklist.html` is a separate, simpler thing on the same principle: tick the
+puzzles you hold, and the ticks leave as a file.
+
+The boxes **start empty**. They are not pre-filled from `owned` in the catalog,
+because a list you carry to a fair is one you fill in — pre-ticking it would
+mean rubbing marks out to correct them. Entries the catalog already records as
+held are tagged `recorded` beside the name instead, so the two never get
+confused.
+
+Ticks are kept in this browser as you go. **Save ticks to a file** writes
+`pussycat-checklist-<date>.json`; **Load a file…** reads one back.
+
+The file carries the ticked ids, and two fields that exist to stop a half-done
+pass from quietly destroying data:
+
+- `recordedOwnedButNotTicked` — entries the catalog marks as held that were not
+  ticked. These are questioned before anything is cleared, since the likely
+  cause is an unfinished pass rather than a puzzle leaving the collection.
+- `tickedButNotInCatalog` — ticks whose entry has since been merged or renamed
+  away. They survive a save-and-load rather than being dropped.

@@ -1,6 +1,7 @@
 import { Store } from './core/Store.js';
 import { Puzzle } from './models/Puzzle.js';
 import { Checklist } from './components/Checklist.js';
+import { ChecklistState } from './checklist/ChecklistState.js';
 import { DATA_PATH } from './config.js';
 
 async function start() {
@@ -18,7 +19,67 @@ async function start() {
   }
 
   const store = new Store({ puzzles });
-  new Checklist($('checklist'), store, { countEl: $('owned-count') }).mount();
+  const ticks = new ChecklistState(store);
+  const restored = ticks.restore();
+
+  const list = new Checklist($('checklist'), store, {
+    countEl: $('owned-count'),
+    ticks,
+  }).mount();
+
+  wireToolbar({ $, ticks, list, puzzles, restored });
+  document.body.dataset.ready = 'true';
+}
+
+function wireToolbar({ $, ticks, list, puzzles, restored }) {
+  const status = $('status');
+  const fileInput = $('checklist-file');
+  let timer;
+
+  const say = (message, isError = false) => {
+    status.textContent = message;
+    status.classList.toggle('status--error', isError);
+    clearTimeout(timer);
+    timer = setTimeout(() => {
+      status.textContent = '';
+      status.classList.remove('status--error');
+    }, 5000);
+  };
+
+  if (restored) say(`Picked up ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from last time.`);
+
+  $('checklist-save').addEventListener('click', () => {
+    if (ticks.size === 0) {
+      say('Nothing ticked yet.');
+      return;
+    }
+    ticks.download(puzzles);
+    say(`Saved ${ticks.size} tick${ticks.size === 1 ? '' : 's'}.`);
+  });
+
+  $('checklist-load').addEventListener('click', () => fileInput.click());
+
+  fileInput.addEventListener('change', async () => {
+    const file = fileInput.files?.[0];
+    fileInput.value = '';
+    if (!file) return;
+    if (ticks.size > 0 && !confirm('Replace the ticks on this page with that file?')) return;
+    try {
+      await ticks.load(file);
+      list.refreshAll();
+      say(`Loaded ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from ${file.name}.`);
+    } catch (error) {
+      say(`Could not load that file — ${error.message}`, true);
+    }
+  });
+
+  $('checklist-clear').addEventListener('click', () => {
+    if (ticks.size === 0) return;
+    if (!confirm(`Clear all ${ticks.size} ticks?`)) return;
+    ticks.clear();
+    list.refreshAll();
+    say('Cleared.');
+  });
 }
 
 start();

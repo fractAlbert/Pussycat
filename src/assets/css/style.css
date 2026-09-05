@@ -326,12 +326,38 @@ button:focus-visible {
 
 .checklist__list { list-style: none; margin: 0; padding: 0; }
 
+.checklist__tools {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
 .checklist__item {
+  position: relative;
   display: grid;
   grid-template-columns: 1.1rem 1fr;
   gap: 0.1rem 0.5rem;
   padding: 0.22rem 0;
   font-size: 0.88rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.checklist__item:hover { background: var(--accent-soft); }
+
+/* Out of flow so it never takes a grid cell; still focusable for the keyboard. */
+.checklist__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  margin: 0;
+}
+
+.checklist__item:focus-within {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
 }
 
 .checklist__box {
@@ -341,11 +367,34 @@ button:focus-visible {
   border: 1px solid var(--ink-soft);
   border-radius: 2px;
   text-align: center;
-  line-height: 0.8rem;
+  line-height: 0.75rem;
   font-size: 0.8rem;
 }
 
-.checklist__item.is-owned .checklist__name { font-weight: 600; }
+/* Drawn rather than a text glyph, so it prints the same as it appears. */
+.checklist__item.is-ticked .checklist__box {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--paper);
+}
+.checklist__item.is-ticked .checklist__box::after { content: "¹3"; }
+
+.checklist__item.is-ticked .checklist__name { font-weight: 600; }
+
+/* What puzzles.json already says, kept clearly apart from the reader's tick. */
+.checklist__recorded {
+  display: inline-block;
+  margin-left: 0.4rem;
+  padding: 0 0.3rem;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  font-size: 0.65rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ink-soft);
+  vertical-align: 0.08em;
+}
 
 .checklist__notes {
   grid-column: 2;
@@ -363,6 +412,15 @@ button:focus-visible {
   .no-print { display: none; }
   body { padding: 0; font-size: 11pt; background: #fff; color: #000; }
   .checklist__box { border-color: #000; }
+  .checklist__item:hover { background: none; }
+  .checklist__item.is-ticked .checklist__box {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  .checklist__recorded { border-color: #999; color: #555; }
   .checklist__notes { color: #444; }
 }
 

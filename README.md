@@ -51,6 +51,9 @@ your machine, drag cards into a new order. Nothing on disk is touched — the
 work downloads as a single edit file to be applied later, and can be loaded back
 in to carry on another day.
 
+The checklist page works the same way: tick what you hold, save the ticks to a
+file, load them back another day.
+
 See `docs/annotating.md`.
 
 ## Deploying
