@@ -36,17 +36,27 @@ function wireToolbar({ $, ticks, list, puzzles, restored }) {
   const fileInput = $('checklist-file');
   let timer;
 
-  const say = (message, isError = false) => {
+  /**
+   * Feedback on an action fades; a standing fact does not. Coming back to
+   * ticks made days ago is worth saying until something else happens, rather
+   * than for five seconds while you are still reading the page.
+   */
+  const say = (message, { isError = false, sticky = false } = {}) => {
     status.textContent = message;
     status.classList.toggle('status--error', isError);
     clearTimeout(timer);
+    if (sticky) return;
     timer = setTimeout(() => {
       status.textContent = '';
       status.classList.remove('status--error');
     }, 5000);
   };
 
-  if (restored) say(`Picked up ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from last time.`);
+  if (restored) {
+    say(`Picked up ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from last time.`, {
+      sticky: true,
+    });
+  }
 
   $('checklist-save').addEventListener('click', () => {
     if (ticks.size === 0) {
@@ -69,7 +79,7 @@ function wireToolbar({ $, ticks, list, puzzles, restored }) {
       list.refreshAll();
       say(`Loaded ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from ${file.name}.`);
     } catch (error) {
-      say(`Could not load that file — ${error.message}`, true);
+      say(`Could not load that file — ${error.message}`, { isError: true });
     }
   });
 

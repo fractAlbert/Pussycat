@@ -377,7 +377,8 @@ button:focus-visible {
   background: var(--accent);
   color: var(--paper);
 }
-.checklist__item.is-ticked .checklist__box::after { content: "¹3"; }
+/* A literal glyph, not a "\\2713" escape — the escape is too easy to mangle. */
+.checklist__item.is-ticked .checklist__box::after { content: "✓"; }
 
 .checklist__item.is-ticked .checklist__name { font-weight: 600; }
 
