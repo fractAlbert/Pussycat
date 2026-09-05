@@ -7,7 +7,7 @@ import { BLANK_LABELS } from '../models/Puzzle.js';
  */
 export class BlankFilter extends Filter {
   constructor() {
-    super({ key: 'blank', label: 'Format' });
+    super({ key: 'blank', label: 'Format', includeUnknown: true });
   }
 
   valueFor(puzzle) {

@@ -38,7 +38,7 @@ export class FilterPanel extends Component {
               class="chip"
               data-filter="${filter.key}"
               data-value="${value}"
-              aria-pressed="false">${filter.labelFor(value)}</button>
+              aria-pressed="false">${filter.displayLabel(value)}</button>
     `).join('');
 
     return html`

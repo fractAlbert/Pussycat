@@ -1,13 +1,27 @@
 /**
+ * Stands in for "this puzzle has no value recorded for this filter".
+ *
+ * A plain string rather than a symbol because option values round-trip through
+ * a `data-value` attribute, which can only carry text. Real values are grid
+ * sizes and format names, so nothing can collide with it.
+ */
+export const UNKNOWN = '__unknown__';
+
+/**
  * Base class for a catalog filter.
  *
  * To add a filter: subclass this, implement valueFor(), and register it in
  * filters/index.js. Nothing else in the app needs to change (D-006).
+ *
+ * Pass `includeUnknown: true` to give the filter an extra "Unknown" option
+ * that selects the entries it has nothing recorded for. Worth having wherever
+ * the gaps are themselves interesting — the unmeasured puzzles are a worklist.
  */
 export class Filter {
-  constructor({ key, label }) {
+  constructor({ key, label, includeUnknown = false }) {
     this.key = key;
     this.label = label;
+    this.includeUnknown = includeUnknown;
   }
 
   /** The value this puzzle should be filed under. Return null to exclude it. */
@@ -25,14 +39,27 @@ export class Filter {
     return String(a).localeCompare(String(b));
   }
 
+  /** The text on the option button. */
+  displayLabel(value) {
+    return value === UNKNOWN ? 'Unknown' : this.labelFor(value);
+  }
+
   /** Every distinct value present in the data, in display order. */
   options(puzzles) {
     const values = new Set();
+    let anyMissing = false;
     for (const puzzle of puzzles) {
       const value = this.valueFor(puzzle);
-      if (value !== null && value !== undefined) values.add(value);
+      if (value === null || value === undefined) anyMissing = true;
+      else values.add(value);
     }
-    return [...values].sort((a, b) => this.compare(a, b));
+
+    const sorted = [...values].sort((a, b) => this.compare(a, b));
+    // Appended rather than sorted in, so compare() never has to know about the
+    // sentinel. Unknown is the absence of a value, not one of them, and it
+    // belongs at the end of the row.
+    if (this.includeUnknown && anyMissing) sorted.push(UNKNOWN);
+    return sorted;
   }
 
   /**
@@ -41,6 +68,10 @@ export class Filter {
    */
   matches(puzzle, selected) {
     if (!selected || selected.size === 0) return true;
-    return selected.has(this.valueFor(puzzle));
+    const value = this.valueFor(puzzle);
+    if (value === null || value === undefined) {
+      return this.includeUnknown && selected.has(UNKNOWN);
+    }
+    return selected.has(value);
   }
 }

@@ -134,7 +134,11 @@ Consequences:
 - Unknown size and format read as "Format not recorded" on the card, and their
   rows are omitted from the detail view rather than shown empty.
 - Filters skip entries with no value for that filter, so filtering by size
-  narrows to entries whose size is actually known.
+  narrows to entries whose size is actually known. *Amended 2026-09-05:* Size
+  and Format also offer an **Unknown** option that selects exactly the entries
+  with nothing recorded, because with most of the catalog unmeasured the gaps
+  are a worklist. It is opt-in per filter (`includeUnknown`), so Artist and
+  Series are unaffected.
 - Sorting by size puts unrecorded entries last instead of treating them as
   zero.
 - A filter offering a single value is still shown when some entries lack that
