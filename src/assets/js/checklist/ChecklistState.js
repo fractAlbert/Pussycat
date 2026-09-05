@@ -1,6 +1,9 @@
+import { saveLinked } from '../core/linkedFile.js';
+
 export const CHECKLIST_FORMAT = 'pussycat-checklist';
 export const CHECKLIST_VERSION = 1;
 const STORAGE_KEY = 'pussycat.checklist.v1';
+export const LINKED_KEY = 'checklist';
 
 /**
  * Which puzzles are ticked on the checklist.
@@ -103,18 +106,25 @@ export class ChecklistState {
     };
   }
 
-  download(puzzles) {
+  /** Writes the checklist, reusing the same file once one has been chosen. */
+  async download(puzzles) {
     const payload = JSON.stringify(this.toJSON(puzzles), null, 2);
-    const blob = new Blob([payload], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `pussycat-checklist-${stamp()}.json`;
-    document.body.append(link);
-    link.click();
-    link.remove();
-    setTimeout(() => URL.revokeObjectURL(url), 30_000);
-    return payload.length;
+    const result = await saveLinked(LINKED_KEY, {
+      suggestedName: `pussycat-checklist-${stamp()}.json`,
+      text: payload,
+      description: 'Pussycat checklist',
+    });
+    return { ...result, bytes: payload.length };
+  }
+
+  /** Applies the contents of a linked file that was read back on load. */
+  loadText(text) {
+    const data = JSON.parse(text);
+    if (data.format !== CHECKLIST_FORMAT) throw new Error('not a checklist file');
+    const ids = (Array.isArray(data.checked) ? data.checked : [])
+      .map((entry) => (typeof entry === 'string' ? entry : entry?.id))
+      .filter((id) => typeof id === 'string');
+    this.replace([...ids, ...(data.tickedButNotInCatalog ?? [])]);
   }
 
   async load(file) {

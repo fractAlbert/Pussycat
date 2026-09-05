@@ -53,12 +53,42 @@ If it overflows, the toolbar turns red and says the changes will not survive the
 tab closing. **Download the file when that happens.** The file is the real
 artefact; browser storage is only a safety net.
 
-- **Download edit file** writes `pussycat-edits-<date>.json` to your downloads.
+- **Save edit file** writes `pussycat-edits-<date>.json`.
 - **Load edit file…** reads one back in, so you can stop and continue another
   day, or on another machine.
 - **Discard all** throws away everything pending.
 
 Then hand the file over to be applied.
+
+## The page remembers the file you saved to
+
+In Chrome and Edge, **Save edit file** opens a *Save As* dialog. Once you pick a
+place, the page remembers that file: later saves overwrite it silently instead
+of dropping numbered copies in Downloads, and the next visit offers to open it
+again. The checklist page does the same with its own file.
+
+This only works with Save As. A plain download tells the page nothing about
+where the file went, so Firefox and Safari — which have no file picker API —
+fall back to an ordinary download with nothing remembered.
+
+What is stored is a `FileSystemFileHandle`, which lives in IndexedDB rather than
+a cookie: a handle is an opaque object, not text, so `document.cookie` cannot
+hold one. It also has no expiry to renew.
+
+Two things follow:
+
+- **Permission.** A browser will not hand a page access to a file on a fresh
+  load without asking, and it can only ask from a click. When permission has
+  lapsed the page shows *Continue from &lt;file&gt;?* with an **Open it** button
+  instead of loading silently.
+- **Precedence.** Work already in this browser wins over the file, because
+  localStorage is written on every change and so is never older. The file is
+  read automatically only when there is nothing local to lose — a new browser,
+  a different machine, or cleared storage. Otherwise the page just says which
+  file it is linked to.
+
+If the file has been deleted or moved, the page says so once and stops looking
+for it — the handle is dropped rather than left to fail again.
 
 ## What is in the file
 

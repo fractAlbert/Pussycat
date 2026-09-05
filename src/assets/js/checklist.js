@@ -1,7 +1,8 @@
 import { Store } from './core/Store.js';
 import { Puzzle } from './models/Puzzle.js';
 import { Checklist } from './components/Checklist.js';
-import { ChecklistState } from './checklist/ChecklistState.js';
+import { ChecklistState, LINKED_KEY } from './checklist/ChecklistState.js';
+import { readLinked } from './core/linkedFile.js';
 import { DATA_PATH } from './config.js';
 
 async function start() {
@@ -58,13 +59,23 @@ function wireToolbar({ $, ticks, list, puzzles, restored }) {
     });
   }
 
-  $('checklist-save').addEventListener('click', () => {
+  // A file saved through the picker can be read back on a later visit. This
+  // does not override work already in this browser — localStorage is written on
+  // every tick, so it is never older than the file.
+  resumeFromLinkedFile({ ticks, list, say, hadLocalWork: restored });
+
+  $('checklist-save').addEventListener('click', async () => {
     if (ticks.size === 0) {
       say('Nothing ticked yet.');
       return;
     }
-    ticks.download(puzzles);
-    say(`Saved ${ticks.size} tick${ticks.size === 1 ? '' : 's'}.`);
+    const { mode, name } = await ticks.download(puzzles);
+    if (mode === 'cancelled') return;
+    say(
+      mode === 'linked'
+        ? `Saved ${ticks.size} tick${ticks.size === 1 ? '' : 's'} to ${name}. This page will offer it back next visit.`
+        : `Downloaded ${name}.`,
+    );
   });
 
   $('checklist-load').addEventListener('click', () => fileInput.click());
@@ -90,6 +101,66 @@ function wireToolbar({ $, ticks, list, puzzles, restored }) {
     list.refreshAll();
     say('Cleared.');
   });
+}
+
+/**
+ * Reads back the file this page last saved to, if the browser still allows it.
+ *
+ * Permission can only be asked for from a click, so on load this either loads
+ * the file outright or puts a button up. A file that has been deleted or moved
+ * is forgotten rather than nagged about.
+ */
+async function resumeFromLinkedFile({ ticks, list, say, hadLocalWork }) {
+  const result = await readLinked(LINKED_KEY);
+  if (!result) return;
+
+  if (result.status === 'missing') {
+    say(`${result.name} is gone, so this page has stopped looking for it.`, { sticky: true });
+    return;
+  }
+
+  const apply = (text, name) => {
+    try {
+      ticks.loadText(text);
+      list.refreshAll();
+      say(`Loaded ${ticks.size} tick${ticks.size === 1 ? '' : 's'} from ${name}.`, { sticky: true });
+    } catch (error) {
+      say(`${name} could not be read — ${error.message}`, { isError: true, sticky: true });
+    }
+  };
+
+  if (result.status === 'ok') {
+    // Work in this browser is at least as new as the file, so it wins.
+    if (hadLocalWork) {
+      say(`Ticks from last time. Linked to ${result.name}.`, { sticky: true });
+      return;
+    }
+    apply(result.text, result.name);
+    return;
+  }
+
+  if (result.status === 'needs-permission') {
+    offerResume(result.name, say, async () => {
+      const granted = await readLinked(LINKED_KEY, { interactive: true });
+      if (granted?.status === 'ok') apply(granted.text, granted.name);
+      else if (granted?.status === 'missing') {
+        say(`${granted.name} is gone, so this page has stopped looking for it.`, { sticky: true });
+      }
+    });
+  }
+}
+
+/** A one-click resume, because the browser will not grant access without one. */
+function offerResume(name, say, onClick) {
+  const status = document.getElementById('status');
+  say('', { sticky: true });
+  status.append(`Continue from ${name}? `);
+  const button = document.createElement('button');
+  button.type = 'button';
+  button.className = 'annobar__btn';
+  button.textContent = 'Open it';
+  button.addEventListener('click', onClick);
+  status.append(button);
 }
 
 start();
