@@ -161,6 +161,11 @@ mean rubbing marks out to correct them. Entries the catalog already records as
 held are tagged `recorded` beside the name instead, so the two never get
 confused.
 
+A row has two targets: the box ticks it, and the **name opens the puzzle's
+details** in the same modal the catalog uses, deep-linkable by fragment. One row
+cannot both toggle and open, so they are separate controls rather than the whole
+row being clickable.
+
 Ticks are kept in this browser as you go. **Save ticks to a file** writes
 `pussycat-checklist-<date>.json`; **Load a file…** reads one back.
 

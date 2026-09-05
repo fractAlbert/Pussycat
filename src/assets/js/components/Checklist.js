@@ -39,6 +39,11 @@ export class Checklist extends Component {
       if (box) this.#onTick(box);
     });
 
+    this.el.addEventListener('click', (event) => {
+      const trigger = event.target.closest('[data-open]');
+      if (trigger) this.store.patch({ selected: trigger.dataset.open });
+    });
+
     this.refreshCounts();
   }
 
@@ -100,17 +105,26 @@ export class Checklist extends Component {
 
     const on = this.ticks.has(puzzle.id);
 
+    // The box and the name are separate controls. One row cannot both toggle a
+    // tick and open the details, so the tick keeps the box it belongs to and
+    // the name becomes the way in to the puzzle.
     return html`
       <li>
-        <label class="checklist__item ${raw(on ? 'is-ticked' : '')}">
-          <input type="checkbox" class="checklist__input" data-tick="${puzzle.id}"
-                 ${raw(on ? 'checked' : '')}>
-          <span class="checklist__box" aria-hidden="true"></span>
-          <span class="checklist__name">${puzzle.name}${raw(
-            puzzle.owned ? html`<span class="checklist__recorded">recorded</span>` : '',
-          )}</span>
-          <span class="checklist__notes">${notes.join(' · ')}</span>
-        </label>
+        <div class="checklist__item ${raw(on ? 'is-ticked' : '')}">
+          <label class="checklist__tick">
+            <input type="checkbox" class="checklist__input" data-tick="${puzzle.id}"
+                   aria-label="Held: ${puzzle.name}"
+                   ${raw(on ? 'checked' : '')}>
+            <span class="checklist__box" aria-hidden="true"></span>
+          </label>
+          <button type="button" class="checklist__open" data-open="${puzzle.id}"
+                  aria-haspopup="dialog">
+            <span class="checklist__name">${puzzle.name}${raw(
+              puzzle.owned ? html`<span class="checklist__recorded">recorded</span>` : '',
+            )}</span>
+            <span class="checklist__notes">${notes.join(' · ')}</span>
+          </button>
+        </div>
       </li>
     `;
   }

@@ -1,6 +1,7 @@
 import { Store } from './core/Store.js';
 import { Puzzle } from './models/Puzzle.js';
 import { Checklist } from './components/Checklist.js';
+import { PuzzleModal } from './components/PuzzleModal.js';
 import { ChecklistState, LINKED_KEY } from './checklist/ChecklistState.js';
 import { readLinked } from './core/linkedFile.js';
 import { DATA_PATH } from './config.js';
@@ -19,7 +20,8 @@ async function start() {
     return;
   }
 
-  const store = new Store({ puzzles });
+  // `selected` drives the detail modal, the same as on the catalog page.
+  const store = new Store({ puzzles, selected: null });
   const ticks = new ChecklistState(store);
   const restored = ticks.restore();
 
@@ -27,6 +29,8 @@ async function start() {
     countEl: $('owned-count'),
     ticks,
   }).mount();
+
+  new PuzzleModal($('detail'), store).mount();
 
   wireToolbar({ $, ticks, list, puzzles, restored });
   document.body.dataset.ready = 'true';

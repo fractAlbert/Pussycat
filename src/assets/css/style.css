@@ -340,9 +340,25 @@ button:focus-visible {
   gap: 0.1rem 0.5rem;
   padding: 0.22rem 0;
   font-size: 0.88rem;
-  cursor: pointer;
   border-radius: 4px;
 }
+
+/* Two targets in one row: the box ticks, the name opens the puzzle. */
+.checklist__tick { display: flex; cursor: pointer; }
+
+.checklist__open {
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.checklist__tick:hover ~ .checklist__open .checklist__name,
+.checklist__open:hover .checklist__name { text-decoration: underline; }
 
 .checklist__item:hover { background: var(--accent-soft); }
 
@@ -355,9 +371,10 @@ button:focus-visible {
   margin: 0;
 }
 
-.checklist__item:focus-within {
+.checklist__input:focus-visible ~ .checklist__box,
+.checklist__open:focus-visible {
   outline: 2px solid var(--accent);
-  outline-offset: 1px;
+  outline-offset: 2px;
 }
 
 .checklist__box {
@@ -397,8 +414,10 @@ button:focus-visible {
   vertical-align: 0.08em;
 }
 
+.checklist__name { display: block; }
+
 .checklist__notes {
-  grid-column: 2;
+  display: block;
   font-size: 0.75rem;
   color: var(--ink-soft);
 }
@@ -414,6 +433,8 @@ button:focus-visible {
   body { padding: 0; font-size: 11pt; background: #fff; color: #000; }
   .checklist__box { border-color: #000; }
   .checklist__item:hover { background: none; }
+  .checklist__open { cursor: auto; }
+  .checklist__open:hover .checklist__name { text-decoration: none; }
   .checklist__item.is-ticked .checklist__box {
     background: #000;
     border-color: #000;
