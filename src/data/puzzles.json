@@ -84,8 +84,11 @@
     "series": "Art",
     "artNumber": "80 2341",
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "kandinsky-80-2341-front.jpg",
@@ -95,7 +98,8 @@
     ],
     "description": "Listed as 62 tiles. The art number may be truncated in the listing title — the rest of this run uses five digits after the 80.",
     "source": "https://www.ebay.com/itm/158122751325",
-    "verified": false
+    "verified": true,
+    "owned": true
   },
   {
     "id": "kandinsky-auf-weiss-ii",
@@ -121,8 +125,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
     "images": [
       {
         "file": "kandinsky-kreise-im-kreis-front.jpg",
@@ -322,8 +329,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1990,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
     "images": [
       {
         "file": "escher-circle-limit-iii-front.jpg",
@@ -400,8 +410,11 @@
     "series": "Art",
     "artNumber": "E 72",
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
     "images": [
       {
         "file": "escher-e72-fish-front.jpg",
@@ -416,7 +429,8 @@
     ],
     "description": "Escher tessellation of fish interlocking with small boats. Listed at about 4.5 x 6 inches. Catalogued twice by different sellers - one listing titled it \"Fish and Boat\" and gave the frame size as 6x5 inches, which is the physical measurement, not a grid. The two photographs here are the same puzzle, one of them rotated.",
     "source": "https://www.ebay.com/itm/326985925292",
-    "verified": false
+    "verified": true,
+    "owned": true
   },
   {
     "id": "escher-puddle",
@@ -619,31 +633,8 @@
     "verified": false
   },
   {
-    "id": "paradise-parrots-80-2938",
-    "name": "Paradise (parrots)",
-    "artist": null,
-    "series": "Wildlife",
-    "artNumber": "80 2938",
-    "copyright": null,
-    "grid": {
-      "rows": 7,
-      "cols": 7
-    },
-    "blank": "extra",
-    "images": [
-      {
-        "file": "paradise-parrots-80-2938-front.jpg",
-        "sourceUrl": "https://www.ebay.com/itm/388402042287",
-        "label": null
-      }
-    ],
-    "description": "Listed at 49 tiles.",
-    "source": "https://www.ebay.com/itm/388402042287",
-    "verified": false
-  },
-  {
     "id": "paradise-parrots-80-2983",
-    "name": "Paradise (parrots, second design)",
+    "name": "Paradise (parrots)",
     "artist": null,
     "series": "Wildlife",
     "artNumber": "80 2983",
@@ -658,9 +649,14 @@
         "file": "paradise-parrots-80-2983-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/168222207476",
         "label": null
+      },
+      {
+        "file": "paradise-parrots-80-2983-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/388402042287",
+        "label": null
       }
     ],
-    "description": "Listed at 49 tiles, about 6 × 5 inches. A different art number from the other Paradise puzzle, so the two are distinct designs.",
+    "description": "Listed at 49 tiles, about 6 × 5 inches. Recorded twice at first, under art numbers 80 2983 and 80 2938; the photographs show the same artwork, so the two listings transpose the same number and only one spelling is right. Which one is unconfirmed. The second photograph came from the other listing.",
     "source": "https://www.ebay.com/itm/168222207476",
     "verified": false
   },
@@ -1126,12 +1122,16 @@
     "series": "Art",
     "artNumber": "80 2924",
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
     "images": [],
     "description": "",
     "source": "https://picclick.co.uk/Rare-vintage-Pussycat-Slide-puzzle-Magrettes-LEclat-du-327306928996.html",
-    "verified": false
+    "verified": true,
+    "owned": true
   },
   {
     "id": "magritte-le-poison",

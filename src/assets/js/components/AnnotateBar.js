@@ -19,7 +19,7 @@ export class AnnotateBar extends Component {
         <div class="annobar__counts" id="anno-counts" role="status"></div>
         <div class="annobar__actions">
           <button type="button" class="annobar__btn" data-act="download">
-            Download edit file
+            Save edit file
           </button>
           <button type="button" class="annobar__btn" data-act="load">
             Load edit file…
@@ -104,13 +104,20 @@ export class AnnotateBar extends Component {
     void state;
   }
 
-  #download() {
+  async #download() {
     if (this.session.doc.isEmpty) {
-      this.#flash('Nothing to download yet.');
+      this.#flash('Nothing to save yet.');
       return;
     }
-    const size = this.session.download(this.store.state.puzzles);
-    this.#flash(`Downloaded — ${formatBytes(size)}.`);
+    const { mode, name, bytes } = await this.session.download(this.store.state.puzzles);
+    if (mode === 'cancelled') return;
+    if (mode === 'linked') {
+      // Saved to a file the page can find again, so say so — that is the
+      // difference between this and dropping a copy in Downloads.
+      this.#flash(`Saved to ${name} — ${formatBytes(bytes)}. This page will offer it back next visit.`);
+    } else {
+      this.#flash(`Downloaded ${name} — ${formatBytes(bytes)}.`);
+    }
   }
 
   async #load() {

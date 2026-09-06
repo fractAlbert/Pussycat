@@ -2,7 +2,7 @@ import { Filter } from './Filter.js';
 
 export class SizeFilter extends Filter {
   constructor() {
-    super({ key: 'size', label: 'Size' });
+    super({ key: 'size', label: 'Size', includeUnknown: true });
   }
 
   valueFor(puzzle) {

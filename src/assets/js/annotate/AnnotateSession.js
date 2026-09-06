@@ -1,6 +1,8 @@
 import { EditDocument } from './EditDocument.js';
+import { saveLinked } from '../core/linkedFile.js';
 
 const STORAGE_KEY = 'pussycat.edits.v1';
+export const LINKED_KEY = 'edits';
 
 /** Anything larger than this in one photograph is worth a warning first. */
 export const LARGE_IMAGE_BYTES = 8 * 1024 * 1024;
@@ -82,19 +84,18 @@ export class AnnotateSession {
 
   // ---- the file --------------------------------------------------------
 
-  download(catalog) {
+  /**
+   * Writes the edit file, reusing the same file on disk once one has been
+   * chosen. Returns { mode, name, bytes } — see core/linkedFile.js.
+   */
+  async download(catalog) {
     const payload = JSON.stringify(this.doc.toJSON(catalog), null, 2);
-    const blob = new Blob([payload], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    const link = document.createElement('a');
-    link.href = url;
-    link.download = `pussycat-edits-${stamp()}.json`;
-    document.body.append(link);
-    link.click();
-    link.remove();
-    // Revoking immediately can cancel the download in some browsers.
-    setTimeout(() => URL.revokeObjectURL(url), 30_000);
-    return payload.length;
+    const result = await saveLinked(LINKED_KEY, {
+      suggestedName: `pussycat-edits-${stamp()}.json`,
+      text: payload,
+      description: 'Pussycat edit file',
+    });
+    return { ...result, bytes: payload.length };
   }
 
   async load(file) {

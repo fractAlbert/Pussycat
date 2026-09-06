@@ -8,7 +8,9 @@ import { SortSelect } from './components/SortSelect.js';
 import { PuzzleModal } from './components/PuzzleModal.js';
 import { AnnotateBar } from './components/AnnotateBar.js';
 import { AnnotateEditor } from './components/AnnotateEditor.js';
-import { AnnotateSession } from './annotate/AnnotateSession.js';
+import { AnnotateSession, LINKED_KEY } from './annotate/AnnotateSession.js';
+import { EditDocument } from './annotate/EditDocument.js';
+import { readLinked } from './core/linkedFile.js';
 import { DATA_PATH } from './config.js';
 
 async function loadPuzzles() {
@@ -77,10 +79,65 @@ async function start() {
     store.patch({ annotating: true });
     $('status').textContent =
       'Picked up where you left off — unsaved annotations were restored. ' +
-      'Download the edit file when you are done.';
+      'Save the edit file when you are done.';
   }
 
+  resumeFromLinkedFile({ session, store, statusEl: $('status'), hadLocalWork: restored });
+
   document.body.dataset.ready = 'true';
+}
+
+/**
+ * Reads back the edit file this page last saved to.
+ *
+ * Permission can only be asked for from a click, so on load this either loads
+ * the file outright or puts a button up. A file that has been deleted or moved
+ * is forgotten rather than nagged about.
+ */
+async function resumeFromLinkedFile({ session, store, statusEl, hadLocalWork }) {
+  const result = await readLinked(LINKED_KEY);
+  if (!result) return;
+
+  if (result.status === 'missing') {
+    statusEl.textContent = `${result.name} is gone, so this page has stopped looking for it.`;
+    return;
+  }
+
+  const apply = (text, name) => {
+    try {
+      session.replace(EditDocument.fromJSON(JSON.parse(text)));
+      store.patch({ annotating: true });
+      statusEl.textContent = `Loaded your annotations from ${name}.`;
+    } catch (error) {
+      statusEl.textContent = `${name} could not be read — ${error.message}`;
+    }
+  };
+
+  if (result.status === 'ok') {
+    // Work in this browser is at least as new as the file, so it wins.
+    if (hadLocalWork) {
+      statusEl.textContent += ` Linked to ${result.name}.`;
+      return;
+    }
+    apply(result.text, result.name);
+    return;
+  }
+
+  if (result.status === 'needs-permission') {
+    statusEl.textContent = `Continue from ${result.name}? `;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'annobar__btn';
+    button.textContent = 'Open it';
+    button.addEventListener('click', async () => {
+      const granted = await readLinked(LINKED_KEY, { interactive: true });
+      if (granted?.status === 'ok') apply(granted.text, granted.name);
+      else if (granted?.status === 'missing') {
+        statusEl.textContent = `${granted.name} is gone, so this page has stopped looking for it.`;
+      }
+    });
+    statusEl.append(button);
+  }
 }
 
 start();

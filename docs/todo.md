@@ -44,15 +44,30 @@ Notes before starting:
 - Dragging must not break the click-to-open behaviour, and needs a keyboard
   equivalent.
 
-## Resolve the 62 vs 63 tile conflict
+## Settled: 62 vs 63 is a difference of format, not a miscount
 
-Sellers list the `80 23xxx` art puzzles at 62 tiles. The owned Cézanne from
-that run is 7×9 fully tiled with a spare corner cell, which is 63. Nine entries
-are missing a grid because of this. One recount settles all of them.
+*Resolved 2026-09-05 by measuring two owned puzzles.*
 
-A third number has now turned up: one Renoir listing is titled "VTG 72 PIECES
-Sliding Puzzle 1881". 72 is 8×9, which is neither of the other two. Either the
-art run used more than one size or that seller counted badly.
+Both are 7×9, and they differ in the blank:
+
+- Cézanne *Mardi Gras* (`80 23244`) — 7×9 **extra**, spare corner cell, **63**.
+- Kandinsky (`80 2341`) — 7×9 **inline**, blank inside the picture, **62**.
+
+So the art run used both layouts, and the sellers quoting 62 tiles were
+describing the inline ones rather than counting badly. Neither number is wrong.
+A 7×9 art puzzle therefore cannot have its tile count assumed from its grid —
+the format has to be seen.
+
+Still open: one Renoir listing is titled "VTG 72 PIECES Sliding Puzzle 1881".
+72 is 8×9, which is neither. That one is still unexplained.
+
+## Which Paradise article number is real
+
+`paradise-parrots-80-2938` and `-80-2983` turned out to photograph the same
+puzzle, and were merged on 2026-09-05. The two article numbers are a digit
+transposition of one another, so only one is right and the surviving entry
+keeps `80 2983` by accident of which id was deleted. The puzzle in hand, or a
+clearer photograph of the back, settles it.
 
 ## Two crosswords, one art number
 
@@ -75,5 +90,10 @@ waiting to be identified. Photographs of the box backs would settle them.
 
 ## Fill in the owner's own puzzles
 
-Six or so puzzles beyond the Cézanne are held but not yet recorded. Each one
-gives a verified anchor: art number, copyright year, grid, and format.
+Four are now recorded and verified: the Cézanne, the Kandinsky (`80 2341`),
+Escher *Fish and Boats* (E 72), and Magritte *L'Éclat du Jour*. Any others in
+the collection are still unrecorded, and each one is worth more than a listing:
+it gives a verified anchor for art number, copyright year, grid and format.
+
+Two of the four still have no copyright year recorded, which is printed on the
+puzzle and would help date the runs.
