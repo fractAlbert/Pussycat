@@ -10,6 +10,7 @@ import { BLANK_LABELS } from '../models/Puzzle.js';
 export const FIELDS = [
   { key: 'name', label: 'Name', type: 'text', hint: 'Title only — the artist goes in its own field.' },
   { key: 'artist', label: 'Artist', type: 'text', hint: 'Leave blank for Unattributed.' },
+  { key: 'brand', label: 'Brand', type: 'text', hint: 'As marked on the puzzle — Pussycat or Pussy.' },
   { key: 'series', label: 'Series', type: 'text' },
   { key: 'artNumber', label: 'Art number', type: 'text', hint: 'As printed, e.g. 80 23244.' },
   { key: 'copyright', label: 'Copyright year', type: 'number' },

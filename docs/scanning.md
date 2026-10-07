@@ -26,6 +26,14 @@ Fetch these four, each of which turns up stock the others miss:
 | `https://picclick.com/?q=pussycat+slide+puzzle&page=2` | the long tail, where the rarities sit |
 | `https://picclick.de/?q=pussycat+schiebepuzzle` | German listings — different inventory entirely |
 | `https://picclick.co.uk/?q=pussycat+slide+puzzle` | UK listings |
+| `https://picclick.com/?q=pussy+slide+puzzle` | the **Pussy** brand (D-011) |
+| `https://picclick.de/?q=original+pussy+puzzle` | German Pussy listings |
+
+**On picclick.de, "Pussy" in a title is machine-translated to "Muschi".** The
+Pussy listings appear as "Original Muschi" there, so search `pussy`, not the
+translation (`muschi schiebepuzzle` finds nothing), and read "Muschi" in a
+result title as the brand. A "Pussy" search also returns a lot of unrelated
+stock; keep only the sliders.
 
 Page 2 of the US search is not optional. It is where the Dalí, Franz Marc and
 Collector's Edition finds came from.
@@ -64,6 +72,8 @@ Three rules, each of which exists because breaking it caused a real problem:
 - **Check art numbers for collisions before adding.** Two entries sharing a
   number means either a language variant or a misread listing, and it needs
   saying out loud in both descriptions rather than quietly merging them.
+- **Mark Pussy puzzles with `"brand": "Pussy"`.** Ignore a listing's
+  "made in China" for them; the puzzles are not marked that way (D-011).
 - **Everything from a listing is `"verified": false`.** Sellers describe the
   same puzzle several different ways.
 

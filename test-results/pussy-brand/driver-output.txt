@@ -1,0 +1,35 @@
+> nav /
+> wait-for .card
+> text #count
+109 puzzles
+> eval [...document.querySelectorAll('[data-filter="brand"]')].map(b=>b.textContent.trim())
+["Pussycat","Pussy"]
+> click [data-filter="brand"][data-value="Pussy"]
+> text #count
+4 of 109 puzzles
+> shot brand-filter
+test-results/pussy-brand/brand-filter.png
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> eval [...document.querySelectorAll('#detail .facts dt')].map(e=>e.textContent+'='+e.nextElementSibling.textContent)
+["Artist=Unattributed","Brand=Pussy"]
+> shot pussy-detail
+test-results/pussy-brand/pussy-detail.png
+> press Escape
+> click [data-filter="brand"][data-value="Pussy"]
+> fill #search sunflowers
+> text #count
+1 of 109 puzzles
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> eval [...document.querySelectorAll('#detail .facts dt')].map(e=>e.textContent+'='+e.nextElementSibling.textContent)
+["Artist=Vincent van Gogh","Brand=Pussycat","Series=Art"]
+> shot pussycat-detail
+test-results/pussy-brand/pussycat-detail.png
+> press Escape
+> nav /checklist.html
+> wait-for input[type=checkbox]
+> eval document.body.innerText.match(//d+ of /d+ ticked/)[0]
+"0 of 109 ticked"
+> errors
+(no errors)

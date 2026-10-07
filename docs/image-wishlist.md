@@ -13,7 +13,7 @@ attribution.
 
 ## No photograph at all
 
-57 entries. Save the first image as `<id>-front.jpg`, then any
+75 entries. Save the first image as `<id>-front.jpg`, then any
 further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 | Entry | Save as | Listing |
@@ -75,10 +75,28 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | BOUTIQUE (Collector's Edition) | `ce-boutique-front.jpg`, `ce-boutique-2.jpg`, … | [www.ebay.com/itm/395814574244](https://www.ebay.com/itm/395814574244) |
 | ZOO (Collector's Edition) | `ce-zoo-front.jpg`, `ce-zoo-2.jpg`, … | [www.ebay.com/itm/395816197949](https://www.ebay.com/itm/395816197949) |
 | WORLD FLAGS 2026 (Collector's Edition) | `ce-world-flags-2026-front.jpg`, `ce-world-flags-2026-2.jpg`, … | [www.ebay.com/itm/318542997430](https://www.ebay.com/itm/318542997430) |
+| Schokolade (chocolate bar) | `pussy-schokolade-front.jpg`, `pussy-schokolade-2.jpg`, … | [www.ebay.com/itm/366637828321](https://www.ebay.com/itm/366637828321) |
+| Eis (ice cream) | `pussy-eis-front.jpg`, `pussy-eis-2.jpg`, … | [www.ebay.com/itm/366164356613](https://www.ebay.com/itm/366164356613) |
+| Chemie Erde (Molycorp advertising) | `pussy-molycorp-chemie-erde-front.jpg`, `pussy-molycorp-chemie-erde-2.jpg`, … | [www.ebay.com/itm/237090789758](https://www.ebay.com/itm/237090789758) |
+| Optical Illusion | `pussy-optical-illusion-front.jpg`, `pussy-optical-illusion-2.jpg`, … | [www.ebay.com/itm/236709407563](https://www.ebay.com/itm/236709407563) |
+| Le Mal du Pays | `magritte-le-mal-du-pays-front.jpg`, `magritte-le-mal-du-pays-2.jpg`, … | [www.ebay.com/itm/117441955266](https://www.ebay.com/itm/117441955266) |
+| Sunflowers | `van-gogh-sunflowers-front.jpg`, `van-gogh-sunflowers-2.jpg`, … | [www.ebay.com/itm/394559714255](https://www.ebay.com/itm/394559714255) |
+| Spaziergänger am See | `macke-spaziergaenger-am-see-front.jpg`, `macke-spaziergaenger-am-see-2.jpg`, … | [www.ebay.com/itm/318217802734](https://www.ebay.com/itm/318217802734) |
+| Sun and Moon | `escher-sun-and-moon-front.jpg`, `escher-sun-and-moon-2.jpg`, … | [www.ebay.com/itm/287499625564](https://www.ebay.com/itm/287499625564) |
+| Magic Square | `magic-square-front.jpg`, `magic-square-2.jpg`, … | [www.ebay.com/itm/317774207686](https://www.ebay.com/itm/317774207686) |
+| Dreieck (triangle slider) | `reutersvard-dreieck-front.jpg`, `reutersvard-dreieck-2.jpg`, … | [www.ebay.com/itm/236317691177](https://www.ebay.com/itm/236317691177) |
+| DINOSAUR (Collector's Edition) | `ce-dinosaur-front.jpg`, `ce-dinosaur-2.jpg`, … | [www.ebay.com/itm/395816335465](https://www.ebay.com/itm/395816335465) |
+| LONDON (Collector's Edition) | `ce-london-front.jpg`, `ce-london-2.jpg`, … | [www.ebay.com/itm/397540664602](https://www.ebay.com/itm/397540664602) |
+| FLAGS (Collector's Edition) | `ce-flags-front.jpg`, `ce-flags-2.jpg`, … | [www.ebay.com/itm/395816261302](https://www.ebay.com/itm/395816261302) |
+| TEDDY BEARS (Collector's Edition) | `ce-teddy-bears-front.jpg`, `ce-teddy-bears-2.jpg`, … | [www.ebay.com/itm/395816266705](https://www.ebay.com/itm/395816266705) |
+| Gauguin (Collector's Edition) | `ce-gauguin-front.jpg`, `ce-gauguin-2.jpg`, … | [www.ebay.com/itm/397588569022](https://www.ebay.com/itm/397588569022) |
+| Paul Klee (Collector's Edition) | `ce-paul-klee-front.jpg`, `ce-paul-klee-2.jpg`, … | [www.ebay.com/itm/397588563568](https://www.ebay.com/itm/397588563568) |
+| Macke (Collector's Edition) | `ce-macke-front.jpg`, `ce-macke-2.jpg`, … | [www.ebay.com/itm/397588558975](https://www.ebay.com/itm/397588558975) |
+| Toulouse-Lautrec (Collector's Edition) | `ce-toulouse-lautrec-front.jpg`, `ce-toulouse-lautrec-2.jpg`, … | [www.ebay.com/itm/397588567005](https://www.ebay.com/itm/397588567005) |
 
 ## One photograph, extra views wanted
 
-32 entries. Numbering continues from 2, in whatever order the
+30 entries. Numbering continues from 2, in whatever order the
 listing shows them — ordering is not meaningful, so do not worry about which
 is the back. If you *can* tell, say so and the entry gets a proper label.
 
@@ -99,8 +117,6 @@ is the back. If you *can* tell, say so and the entry gets a proper label.
 | Circle Limit III | `escher-circle-limit-iii-2.jpg`, `escher-circle-limit-iii-3.jpg`, … | [www.ebay.com/itm/187249284836](https://www.ebay.com/itm/187249284836) |
 | Lizards (E 118) | `escher-e118-lizards-2.jpg`, `escher-e118-lizards-3.jpg`, … | [www.ebay.com/itm/377253450766](https://www.ebay.com/itm/377253450766) |
 | Otmar Alt (designs unrecorded) | `otmar-alt-lot-2.jpg`, `otmar-alt-lot-3.jpg`, … | [www.ebay.com/itm/176692888938](https://www.ebay.com/itm/176692888938) |
-| Paradise (parrots) | `paradise-parrots-80-2938-2.jpg`, `paradise-parrots-80-2938-3.jpg`, … | [www.ebay.com/itm/388402042287](https://www.ebay.com/itm/388402042287) |
-| Paradise (parrots, second design) | `paradise-parrots-80-2983-2.jpg`, `paradise-parrots-80-2983-3.jpg`, … | [www.ebay.com/itm/168222207476](https://www.ebay.com/itm/168222207476) |
 | Miami Nice (flamingo) | `miami-nice-80-2982-2.jpg`, `miami-nice-80-2982-3.jpg`, … | [www.ebay.com/itm/278187420199](https://www.ebay.com/itm/278187420199) |
 | Jungle | `jungle-80-2980-2.jpg`, `jungle-80-2980-3.jpg`, … | [www.ebay.com/itm/117187285848](https://www.ebay.com/itm/117187285848) |
 | Tropical Reef | `tropical-reef-80-2981-2.jpg`, `tropical-reef-80-2981-3.jpg`, … | [www.ebay.com/itm/146589671055](https://www.ebay.com/itm/146589671055) |
