@@ -85,6 +85,7 @@ export class PuzzleModal extends Component {
   #content(puzzle) {
     const facts = [
       ['Artist', puzzle.artistLabel],
+      ['Brand', puzzle.brand],
       ['Series', puzzle.series],
       ['Art no.', puzzle.artNumber],
       ['Copyright', puzzle.copyright],

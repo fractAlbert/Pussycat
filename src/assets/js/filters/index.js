@@ -1,5 +1,6 @@
 import { FilterRegistry } from './FilterRegistry.js';
 import { ArtistFilter } from './ArtistFilter.js';
+import { BrandFilter } from './BrandFilter.js';
 import { SeriesFilter } from './SeriesFilter.js';
 import { SizeFilter } from './SizeFilter.js';
 import { BlankFilter } from './BlankFilter.js';
@@ -12,6 +13,7 @@ import { BlankFilter } from './BlankFilter.js';
 export function buildRegistry() {
   return new FilterRegistry()
     .add(new ArtistFilter())
+    .add(new BrandFilter())
     .add(new SeriesFilter())
     .add(new SizeFilter())
     .add(new BlankFilter());

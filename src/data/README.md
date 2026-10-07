@@ -38,6 +38,8 @@ Only `id` and `name` are required. Record what is known and leave the rest out.
 }
 ```
 
+- Leave `brand` out for Pussycat puzzles. Set `"brand": "Pussy"` for the ones
+  marked Pussy (D-011).
 - `grid` describes the **completed image**, not the frame.
 - **A size in a listing title is usually inches, not a grid.** `6x5` means a
   6 × 5 inch frame. Only record a grid when it follows from a tile count, an

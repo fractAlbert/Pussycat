@@ -15,6 +15,7 @@ What counts as "in the catalog" and what is explicitly out?
 
 - In scope:  Pussycat brand slide puzzles
 - Out of scope:  other puzzles.  other brands
+- *Amended 2026-10-07 (D-011):* puzzles marked **Pussy** are in scope too.
 
 ## 3. Catalog entry — what describes one puzzle?
 

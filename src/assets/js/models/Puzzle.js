@@ -1,5 +1,8 @@
 export const UNATTRIBUTED = 'Unattributed';
 
+/** The brand an entry carries when it names none — the catalog's own (D-011). */
+export const DEFAULT_BRAND = 'Pussycat';
+
 export const BLANK_LABELS = {
   extra: 'Extra space',
   inline: 'Inline blank',
@@ -21,6 +24,7 @@ export class Puzzle {
     this.id = record.id;
     this.name = record.name;
     this.artist = record.artist ?? null;
+    this.brand = record.brand ?? DEFAULT_BRAND;
     this.series = record.series ?? null;
     this.grid = record.grid ?? null;
     this.blank = record.blank ?? null;
@@ -103,6 +107,7 @@ export class Puzzle {
       id: this.id,
       name: this.name,
       artist: this.artist,
+      brand: this.brand,
       series: this.series,
       artNumber: this.artNumber,
       copyright: this.copyright,
@@ -132,7 +137,7 @@ export class Puzzle {
   /** Art numbers are searchable with or without their internal spaces. */
   get searchText() {
     const art = this.artNumber ? [this.artNumber, this.artNumber.replace(/\s+/g, '')] : [];
-    return [this.name, this.artistLabel, this.series, this.description, ...art]
+    return [this.name, this.artistLabel, this.brand, this.series, this.description, ...art]
       .filter(Boolean)
       .join(' ')
       .toLowerCase();
