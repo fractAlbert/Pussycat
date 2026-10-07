@@ -13,6 +13,7 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 | `artist` | no | string \| null | `null` means genuinely unknown, rendered as "Unattributed" (D-007). |
 | `grid` | no | `{rows, cols}` \| null | Integers. Dimensions of the **completed image**, not the frame. |
 | `blank` | no | `"extra"` \| `"inline"` \| null | See below. Give it together with `grid`. |
+| `brand` | no | string | As marked on the puzzle. Absent means `"Pussycat"`; set only for other names, so far `"Pussy"` (D-011). |
 | `series` | no | string \| null | |
 | `images` | no | array of image objects | Ordered. The first is the catalog card thumbnail. |
 | `description` | no | string | Free text. |

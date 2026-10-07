@@ -180,3 +180,23 @@ Consequences:
 - Filter buttons are still derived from the catalog on disk, so an artist or
   series typed in annotate mode gets no button of its own until the edit file
   is applied for real.
+
+### D-011 — Puzzles marked "Pussy" are in the catalog, with brand as a field
+Date: 2026-10-07
+Decision: Sliding puzzles sold under the name **Pussy** ("Original Pussy") are
+catalogued alongside Pussycat. Each entry carries an optional `brand`; absent
+means Pussycat, so only the Pussy entries set it.
+Alternatives considered: Keeping Pussy out under the "other brands" rule of
+requirements §2; adding Pussy entries without marking them.
+Rationale: Decided by the project owner. The Pussy puzzles are German, from the
+1970s and early 1980s, in the same moulded-plastic slider format, and turn up
+in the same collections. Whether Pussy was an earlier name for the Breiter
+brand or a separate maker is not yet established, so the brand is recorded
+rather than assumed.
+Consequences:
+- A Brand filter separates the two, and the detail view names the brand.
+- Scans search "Pussy" as well as "Pussycat" (`docs/scanning.md`). On
+  picclick.de those titles are machine-translated to "Muschi", which is why
+  earlier scans never surfaced them.
+- Listings that say a Pussy puzzle was made in China are treated as
+  mislabelled: the puzzles carry no such marking.

@@ -1,0 +1,43 @@
+> nav /
+> wait-for .card
+> text #count
+110 puzzles
+> eval [...document.querySelectorAll('[data-filter="brand"]')].map(b=>b.textContent.trim())
+["Pussycat","Pussy"]
+> click [data-filter="brand"][data-value="Pussy"]
+> text #count
+4 of 110 puzzles
+> shot brand-filter
+test-results/pussy-brand/brand-filter.png
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> eval [...document.querySelectorAll('#detail .facts dt')].map(e=>e.textContent+'='+e.nextElementSibling.textContent)
+["Artist=Unattributed","Brand=Pussy"]
+> shot pussy-detail
+test-results/pussy-brand/pussy-detail.png
+> press Escape
+> click [data-filter="brand"][data-value="Pussy"]
+> fill #search sunflowers
+> text #count
+1 of 110 puzzles
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> eval [...document.querySelectorAll('#detail .facts dt')].map(e=>e.textContent+'='+e.nextElementSibling.textContent)
+["Artist=Vincent van Gogh","Brand=Pussycat","Series=Art"]
+> shot pussycat-detail
+test-results/pussy-brand/pussycat-detail.png
+> press Escape
+> fill #search
+> click [data-filter="series"][data-value="Dinosaurs"]
+> text #count
+3 of 110 puzzles
+> eval [...document.querySelectorAll(".card")].filter(e=>e.offsetParent).map(e=>e.querySelector(".card__name").textContent+" | "+e.querySelector(".card__meta").textContent.trim())
+["Saurier (dinosaurs) | 7×7 · Extra space","Stegosaurus | 3×3","T-Rex | 3×3"]
+> shot dinosaurs
+test-results/pussy-brand/dinosaurs.png
+> nav /checklist.html
+> wait-for input[type=checkbox]
+> eval document.body.innerText.match(/\d+ of \d+ ticked/)[0]
+"0 of 110 ticked"
+> errors
+(no errors)
