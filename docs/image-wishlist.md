@@ -13,7 +13,7 @@ attribution.
 
 ## No photograph at all
 
-75 entries. Save the first image as `<id>-front.jpg`, then any
+76 entries. Save the first image as `<id>-front.jpg`, then any
 further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 | Entry | Save as | Listing |
@@ -93,6 +93,7 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Paul Klee (Collector's Edition) | `ce-paul-klee-front.jpg`, `ce-paul-klee-2.jpg`, … | [www.ebay.com/itm/397588563568](https://www.ebay.com/itm/397588563568) |
 | Macke (Collector's Edition) | `ce-macke-front.jpg`, `ce-macke-2.jpg`, … | [www.ebay.com/itm/397588558975](https://www.ebay.com/itm/397588558975) |
 | Toulouse-Lautrec (Collector's Edition) | `ce-toulouse-lautrec-front.jpg`, `ce-toulouse-lautrec-2.jpg`, … | [www.ebay.com/itm/397588567005](https://www.ebay.com/itm/397588567005) |
+| Saurier (dinosaurs) | `saurier-49-front.jpg`, `saurier-49-2.jpg`, … | [www.ebay.com/itm/336259194174](https://www.ebay.com/itm/336259194174) |
 
 ## One photograph, extra views wanted
 

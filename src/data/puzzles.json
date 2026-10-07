@@ -736,7 +736,10 @@
     "series": "Dinosaurs",
     "artNumber": "80 2806",
     "copyright": null,
-    "grid": null,
+    "grid": {
+      "rows": 3,
+      "cols": 3
+    },
     "blank": null,
     "images": [
       {
@@ -745,7 +748,7 @@
         "label": null
       }
     ],
-    "description": "",
+    "description": "3 × 3, per the project owner; the format (extra or inline) is not recorded.",
     "source": "https://www.ebay.com/itm/198526059917",
     "verified": false
   },
@@ -756,7 +759,10 @@
     "series": "Dinosaurs",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
+    "grid": {
+      "rows": 3,
+      "cols": 3
+    },
     "blank": null,
     "images": [
       {
@@ -765,7 +771,7 @@
         "label": null
       }
     ],
-    "description": "Pairs with the T-Rex, so there is probably a dinosaur run with consecutive art numbers.",
+    "description": "Pairs with the T-Rex, so there is probably a dinosaur run with consecutive art numbers. 3 × 3, per the project owner; the format (extra or inline) is not recorded.",
     "source": "https://www.ebay.com/itm/335615558097",
     "verified": false
   },
@@ -1838,6 +1844,23 @@
     "images": [],
     "source": "https://www.ebay.com/itm/397588567005",
     "description": "A set of five mini sliding puzzles. The individual designs are not named in the listing.",
+    "verified": false
+  },
+  {
+    "id": "saurier-49",
+    "name": "Saurier (dinosaurs)",
+    "artist": null,
+    "series": "Dinosaurs",
+    "artNumber": null,
+    "copyright": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
+    "images": [],
+    "source": "https://www.ebay.com/itm/336259194174",
+    "description": "Sold as \"Saurier Puzzle, Schiebespiel, Geduldspiel 49-teilig\", about 15 × 12 × 0.7 cm, unused. A full-size 49-tile puzzle, not one of the 3 × 3 T-Rex and Stegosaurus minis. The listing does not name the dinosaurs shown.",
     "verified": false
   }
 ]
