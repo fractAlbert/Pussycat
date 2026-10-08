@@ -1,0 +1,30 @@
+> nav /
+> wait-for .card
+> text #count
+110 puzzles
+> eval (async()=>{const imgs=[...document.querySelectorAll('.card img')];for(const i of imgs){i.loading='eager';i.scrollIntoView();}await new Promise(r=>setTimeout(r,3000));const bad=imgs.filter(i=>!(i.complete&&i.naturalWidth>0)).map(i=>i.getAttribute('src'));return {cardImages:imgs.length,broken:bad}})()
+{"cardImages":49,"broken":[]}
+> click [data-filter="brand"][data-value="Pussy"]
+> shot pussy-with-photos
+test-results/photos/pussy-with-photos.png
+> click [data-filter="brand"][data-value="Pussy"]
+> fill #search reutersv
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> eval [...document.querySelectorAll('#detail .gallery__thumb')].map(b=>b.getAttribute('data-thumb')+' '+b.getAttribute('data-alt'))
+["images/puzzles/reutersvard-dreieck-front.jpg Dreieck (triangle slider), View 1","images/puzzles/reutersvard-dreieck-back.jpg Dreieck (triangle slider), Back","images/puzzles/reutersvard-dreieck-2.jpg Dreieck (triangle slider), View 3"]
+> shot reutersvard-detail
+test-results/photos/reutersvard-detail.png
+> press Escape
+> fill #search saurier
+> click .card:visible .card__open
+> wait-for dialog#detail[open]
+> shot saurier-detail
+test-results/photos/saurier-detail.png
+> press Escape
+> fill #search
+> click [data-filter="artist"][data-value="M.C. Escher"]
+> shot escher
+test-results/photos/escher.png
+> errors
+(no errors)
