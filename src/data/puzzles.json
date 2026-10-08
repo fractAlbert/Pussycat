@@ -458,7 +458,23 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-stars-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": null
+      },
+      {
+        "file": "escher-stars-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": "Back"
+      },
+      {
+        "file": "escher-stars-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": null
+      }
+    ],
     "description": "After Escher's 1948 wood engraving. One listing dates the artwork 1959, which is probably an error carried over from the Fishes and Scales puzzle sold alongside it.",
     "source": null,
     "verified": false
@@ -472,7 +488,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-metamorphosis-ii-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/396667724023",
+        "label": null
+      },
+      {
+        "file": "escher-metamorphosis-ii-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/396667724023",
+        "label": "Back"
+      }
+    ],
     "description": "After the 1939–40 woodcut. Seen in a listing title only.",
     "source": null,
     "verified": false
@@ -1060,7 +1087,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "cezanne-kitchen-table-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": null
+      },
+      {
+        "file": "cezanne-kitchen-table-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": "Back"
+      },
+      {
+        "file": "cezanne-kitchen-table-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": null
+      }
+    ],
     "description": "A fourth Cézanne, from the same seller as the Card Players and the Large Bathers.",
     "source": "https://www.ebay.com/itm/389561565887",
     "verified": false
@@ -1148,7 +1191,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magritte-le-poison-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774050104",
+        "label": null
+      },
+      {
+        "file": "magritte-le-poison-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774050104",
+        "label": "Back"
+      }
+    ],
     "description": "Artwork dated 1939 in the listing.",
     "source": "https://www.ebay.com/itm/317774050104",
     "verified": false
@@ -1599,7 +1653,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-schokolade-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": null
+      },
+      {
+        "file": "pussy-schokolade-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": "Back"
+      },
+      {
+        "file": "pussy-schokolade-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": null
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/366637828321",
     "description": "Sold as \"Original Pussy\". A narrow slider whose tiles make up a chocolate bar, 15 × 4.5 × 1 cm, described as made in Germany in the early 1980s.",
@@ -1614,7 +1684,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-eis-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      },
+      {
+        "file": "pussy-eis-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      },
+      {
+        "file": "pussy-eis-3.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/366164356613",
     "description": "Sold as \"Original Pussy\". The same narrow 15 × 4.5 × 1 cm format as the chocolate bar, with the tiles making up an ice cream; described as made in Germany in the early 1980s.",
@@ -1629,7 +1715,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-molycorp-chemie-erde-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/237090789758",
+        "label": null
+      },
+      {
+        "file": "pussy-molycorp-chemie-erde-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/237090789758",
+        "label": "Back"
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/237090789758",
     "description": "A promotional puzzle for Molycorp, the rare-earths producer, marked PUSSY and West Germany. The listing gives 15 to 25 pieces without saying which.",
@@ -1644,7 +1741,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-optical-illusion-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236709407563",
+        "label": null
+      },
+      {
+        "file": "pussy-optical-illusion-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236709407563",
+        "label": "Back"
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/236709407563",
     "description": "A handheld optical-illusion slider, about 3.5 × 3 inches. The listing says made in China, but the Pussy puzzles carry no such marking, so that is taken to be the seller's mislabelling.",
@@ -1659,7 +1767,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magritte-le-mal-du-pays-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": null
+      },
+      {
+        "file": "magritte-le-mal-du-pays-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": "Back"
+      },
+      {
+        "file": "magritte-le-mal-du-pays-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/117441955266",
     "description": "After the 1940 painting. About 15.2 × 12.4 cm, bought new in the 1990s according to the seller. May be the title of the Magritte recorded only as art number 80 2923 (magritte-slide-puzzle).",
     "verified": false
@@ -1673,7 +1797,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "van-gogh-sunflowers-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/394559714255",
+        "label": null
+      },
+      {
+        "file": "van-gogh-sunflowers-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/394559714255",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/394559714255",
     "description": "After \"Sunflowers, Arles, 1888\". Sold unused; the seller puts the plastic at over 33 years old, so early 1990s.",
     "verified": false
@@ -1687,7 +1822,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "macke-spaziergaenger-am-see-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217802734",
+        "label": null
+      },
+      {
+        "file": "macke-spaziergaenger-am-see-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217802734",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/318217802734",
     "description": "After the 1912 painting, also listed in English as \"Walker by the Lake\". Sold unused.",
     "verified": false
@@ -1701,7 +1847,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-sun-and-moon-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287499625564",
+        "label": null
+      },
+      {
+        "file": "escher-sun-and-moon-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287499625564",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/287499625564",
     "description": "After the 1948 woodcut. The listing gives 16 pieces and names Pussycat only in its item details, not the title.",
     "verified": false
@@ -1715,7 +1872,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magic-square-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774207686",
+        "label": null
+      },
+      {
+        "file": "magic-square-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774207686",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/317774207686",
     "description": "A number slider in which every row, column and diagonal sums to 30. 75 × 75 × 8 mm.",
     "verified": false
@@ -1729,7 +1897,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "reutersvard-dreieck-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": null
+      },
+      {
+        "file": "reutersvard-dreieck-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": "Back"
+      },
+      {
+        "file": "reutersvard-dreieck-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/236317691177",
     "description": "A triangle slider after Reutersvärd's impossible figures, listed as \"Vintage 1997 W. Breiter GmbH & Co. Pussycat\". Possibly one of the IMPUZZABLES Collector's Edition designs.",
     "verified": false
@@ -1858,7 +2042,23 @@
       "cols": 7
     },
     "blank": "extra",
-    "images": [],
+    "images": [
+      {
+        "file": "saurier-49-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": null
+      },
+      {
+        "file": "saurier-49-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": "Back"
+      },
+      {
+        "file": "saurier-49-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/336259194174",
     "description": "Sold as \"Saurier Puzzle, Schiebespiel, Geduldspiel 49-teilig\", about 15 × 12 × 0.7 cm, unused. A full-size 49-tile puzzle, not one of the 3 × 3 T-Rex and Stegosaurus minis. The listing does not name the dinosaurs shown.",
     "verified": false

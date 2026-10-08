@@ -13,7 +13,7 @@ attribution.
 
 ## No photograph at all
 
-76 entries. Save the first image as `<id>-front.jpg`, then any
+61 entries. Save the first image as `<id>-front.jpg`, then any
 further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 | Entry | Save as | Listing |
@@ -21,8 +21,6 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Mardi Gras | `cezanne-mardi-gras-front.jpg`, `cezanne-mardi-gras-2.jpg`, … | — |
 | Auf Weiß II | `kandinsky-auf-weiss-ii-front.jpg`, `kandinsky-auf-weiss-ii-2.jpg`, … | [www.worthpoint.com/worthopedia/pussycat-49-sl…](https://www.worthpoint.com/worthopedia/pussycat-49-sliding-tile-puzzle-1813453910) |
 | Puddle | `escher-puddle-front.jpg`, `escher-puddle-2.jpg`, … | [www.worthpoint.com/worthopedia/c-escher-puddl…](https://www.worthpoint.com/worthopedia/c-escher-puddle-slide-sliding-puzzle-25164216) |
-| Stars | `escher-stars-front.jpg`, `escher-stars-2.jpg`, … | — |
-| Metamorphosis II | `escher-metamorphosis-ii-front.jpg`, `escher-metamorphosis-ii-2.jpg`, … | — |
 | Sky and Water | `escher-sky-and-water-front.jpg`, `escher-sky-and-water-2.jpg`, … | [www.vintagemanstuff.com/product/m-c-escher-sl…](https://www.vintagemanstuff.com/product/m-c-escher-sliding-puzzle-game-1990-pussycat-holland-germany-sky-water/) |
 | E 28 | `escher-e28-front.jpg`, `escher-e28-2.jpg`, … | [www.ebay.com/itm/225912736039](https://www.ebay.com/itm/225912736039) |
 | The Kiss | `klimt-the-kiss-front.jpg`, `klimt-the-kiss-2.jpg`, … | [www.worthpoint.com/worthopedia/2x-pussycat-ar…](https://www.worthpoint.com/worthopedia/2x-pussycat-art-slide-puzzle-germany-2067248399) |
@@ -37,13 +35,11 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Safari | `safari-front.jpg`, `safari-2.jpg`, … | [www.worthpoint.com/worthopedia/safari-slide-s…](https://www.worthpoint.com/worthopedia/safari-slide-sliding-puzzle-german-21136561) |
 | Marilyn Monroe | `marilyn-monroe-front.jpg`, `marilyn-monroe-2.jpg`, … | [www.ebay.com/itm/116378665442](https://www.ebay.com/itm/116378665442) |
 | Apfel (Lufthansa advertising) | `lufthansa-apfel-front.jpg`, `lufthansa-apfel-2.jpg`, … | [www.ebay.com/itm/334759719911](https://www.ebay.com/itm/334759719911) |
-| The Kitchen Table | `cezanne-kitchen-table-front.jpg`, `cezanne-kitchen-table-2.jpg`, … | [www.ebay.com/itm/389561565887](https://www.ebay.com/itm/389561565887) |
 | Miró (title unrecorded) | `miro-80-2991-front.jpg`, `miro-80-2991-2.jpg`, … | [www.ebay.com/itm/147480789992](https://www.ebay.com/itm/147480789992) |
 | Der Rucksackmann | `miro-der-rucksackmann-front.jpg`, `miro-der-rucksackmann-2.jpg`, … | [picclick.co.uk/Rare-vintage-Pussycat-Slide-pu…](https://picclick.co.uk/Rare-vintage-Pussycat-Slide-puzzle-Mir%C3%B3s-Der-Rucksackmann-327306947986.html) |
 | Magie Blanche | `miro-magie-blanche-front.jpg`, `miro-magie-blanche-2.jpg`, … | [picclick.de/Joan-Miro-Schiebepuzzle-Kunst-198…](https://picclick.de/Joan-Miro-Schiebepuzzle-Kunst-1981-Spiel-Puzzle-Magie-227023446101.html) |
 | Pygmies under the Moon | `miro-pygmies-under-the-moon-front.jpg`, `miro-pygmies-under-the-moon-2.jpg`, … | [www.ebay.com/itm/394559761048](https://www.ebay.com/itm/394559761048) |
 | L'Éclat du Jour | `magritte-leclat-du-jour-front.jpg`, `magritte-leclat-du-jour-2.jpg`, … | [picclick.co.uk/Rare-vintage-Pussycat-Slide-pu…](https://picclick.co.uk/Rare-vintage-Pussycat-Slide-puzzle-Magrettes-LEclat-du-327306928996.html) |
-| Le Poison | `magritte-le-poison-front.jpg`, `magritte-le-poison-2.jpg`, … | [www.ebay.com/itm/317774050104](https://www.ebay.com/itm/317774050104) |
 | Soft Hard (Weiches Hart) | `kandinsky-weiches-hart-front.jpg`, `kandinsky-weiches-hart-2.jpg`, … | [www.ebay.com/itm/317774036109](https://www.ebay.com/itm/317774036109) |
 | Cat Under a Tree | `marc-cat-under-a-tree-front.jpg`, `marc-cat-under-a-tree-2.jpg`, … | [www.ebay.com/itm/317774070834](https://www.ebay.com/itm/317774070834) |
 | Blauschwarzer Fuchs | `marc-blauschwarzer-fuchs-front.jpg`, `marc-blauschwarzer-fuchs-2.jpg`, … | [picclick.de/F-Marc-Schiebepuzzle-PUSSYCAT-Bla…](https://picclick.de/F-Marc-Schiebepuzzle-PUSSYCAT-Blauschwarzer-Fuchs-1911-Kunst-397037208271.html) |
@@ -75,16 +71,6 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | BOUTIQUE (Collector's Edition) | `ce-boutique-front.jpg`, `ce-boutique-2.jpg`, … | [www.ebay.com/itm/395814574244](https://www.ebay.com/itm/395814574244) |
 | ZOO (Collector's Edition) | `ce-zoo-front.jpg`, `ce-zoo-2.jpg`, … | [www.ebay.com/itm/395816197949](https://www.ebay.com/itm/395816197949) |
 | WORLD FLAGS 2026 (Collector's Edition) | `ce-world-flags-2026-front.jpg`, `ce-world-flags-2026-2.jpg`, … | [www.ebay.com/itm/318542997430](https://www.ebay.com/itm/318542997430) |
-| Schokolade (chocolate bar) | `pussy-schokolade-front.jpg`, `pussy-schokolade-2.jpg`, … | [www.ebay.com/itm/366637828321](https://www.ebay.com/itm/366637828321) |
-| Eis (ice cream) | `pussy-eis-front.jpg`, `pussy-eis-2.jpg`, … | [www.ebay.com/itm/366164356613](https://www.ebay.com/itm/366164356613) |
-| Chemie Erde (Molycorp advertising) | `pussy-molycorp-chemie-erde-front.jpg`, `pussy-molycorp-chemie-erde-2.jpg`, … | [www.ebay.com/itm/237090789758](https://www.ebay.com/itm/237090789758) |
-| Optical Illusion | `pussy-optical-illusion-front.jpg`, `pussy-optical-illusion-2.jpg`, … | [www.ebay.com/itm/236709407563](https://www.ebay.com/itm/236709407563) |
-| Le Mal du Pays | `magritte-le-mal-du-pays-front.jpg`, `magritte-le-mal-du-pays-2.jpg`, … | [www.ebay.com/itm/117441955266](https://www.ebay.com/itm/117441955266) |
-| Sunflowers | `van-gogh-sunflowers-front.jpg`, `van-gogh-sunflowers-2.jpg`, … | [www.ebay.com/itm/394559714255](https://www.ebay.com/itm/394559714255) |
-| Spaziergänger am See | `macke-spaziergaenger-am-see-front.jpg`, `macke-spaziergaenger-am-see-2.jpg`, … | [www.ebay.com/itm/318217802734](https://www.ebay.com/itm/318217802734) |
-| Sun and Moon | `escher-sun-and-moon-front.jpg`, `escher-sun-and-moon-2.jpg`, … | [www.ebay.com/itm/287499625564](https://www.ebay.com/itm/287499625564) |
-| Magic Square | `magic-square-front.jpg`, `magic-square-2.jpg`, … | [www.ebay.com/itm/317774207686](https://www.ebay.com/itm/317774207686) |
-| Dreieck (triangle slider) | `reutersvard-dreieck-front.jpg`, `reutersvard-dreieck-2.jpg`, … | [www.ebay.com/itm/236317691177](https://www.ebay.com/itm/236317691177) |
 | DINOSAUR (Collector's Edition) | `ce-dinosaur-front.jpg`, `ce-dinosaur-2.jpg`, … | [www.ebay.com/itm/395816335465](https://www.ebay.com/itm/395816335465) |
 | LONDON (Collector's Edition) | `ce-london-front.jpg`, `ce-london-2.jpg`, … | [www.ebay.com/itm/397540664602](https://www.ebay.com/itm/397540664602) |
 | FLAGS (Collector's Edition) | `ce-flags-front.jpg`, `ce-flags-2.jpg`, … | [www.ebay.com/itm/395816261302](https://www.ebay.com/itm/395816261302) |
@@ -93,7 +79,6 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Paul Klee (Collector's Edition) | `ce-paul-klee-front.jpg`, `ce-paul-klee-2.jpg`, … | [www.ebay.com/itm/397588563568](https://www.ebay.com/itm/397588563568) |
 | Macke (Collector's Edition) | `ce-macke-front.jpg`, `ce-macke-2.jpg`, … | [www.ebay.com/itm/397588558975](https://www.ebay.com/itm/397588558975) |
 | Toulouse-Lautrec (Collector's Edition) | `ce-toulouse-lautrec-front.jpg`, `ce-toulouse-lautrec-2.jpg`, … | [www.ebay.com/itm/397588567005](https://www.ebay.com/itm/397588567005) |
-| Saurier (dinosaurs) | `saurier-49-front.jpg`, `saurier-49-2.jpg`, … | [www.ebay.com/itm/336259194174](https://www.ebay.com/itm/336259194174) |
 
 ## One photograph, extra views wanted
 
