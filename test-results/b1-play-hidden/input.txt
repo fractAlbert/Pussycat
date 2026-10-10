@@ -1,6 +1,0 @@
-nav /#escher-e72-fish
-wait-for dialog#detail[open]
-text .modal__title
-count .play-button
-shot play-hidden
-errors
