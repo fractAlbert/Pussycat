@@ -1,6 +1,7 @@
 import { Component } from '../core/Component.js';
 import { html, raw } from '../core/html.js';
 import { IMAGE_PATH } from '../config.js';
+import { PlayView } from './PlayView.js';
 
 /**
  * Detail view. Uses a native <dialog>, which brings focus trapping, Esc to
@@ -26,6 +27,9 @@ export class PuzzleModal extends Component {
       const thumb = event.target.closest('[data-thumb]');
       if (thumb) { this.#showView(thumb); return; }
 
+      if (event.target.closest('.play-button')) { this.#startPlay(); return; }
+      if (event.target.closest('.play__back')) { this.#stopPlay(); return; }
+
       if (event.target.closest('[data-close]')) this.#close();
       // A click landing on the dialog itself is the backdrop; the content
       // sits inside a child element.
@@ -44,6 +48,7 @@ export class PuzzleModal extends Component {
     const puzzle = state.puzzles.find((p) => p.id === state.selected) ?? null;
 
     if (!puzzle) {
+      this.#destroyPlay();
       this.shownId = null;
       if (this.el.open) this.el.close();
       if (location.hash) history.replaceState(null, '', location.pathname);
@@ -53,6 +58,7 @@ export class PuzzleModal extends Component {
     // Rebuild only when the puzzle changes. Otherwise an unrelated state
     // change — a keystroke in the search box — would wipe out focus in here.
     if (this.shownId !== puzzle.id) {
+      this.#destroyPlay();
       this.el.innerHTML = this.#content(puzzle);
       this.shownId = puzzle.id;
     }
@@ -78,7 +84,39 @@ export class PuzzleModal extends Component {
     }
   }
 
+  /**
+   * Swaps the details for the game inside the same .modal, so the close button
+   * and the dialog's focus trap stay put. The hash never changes: reloading
+   * opens the details, not a game.
+   */
+  #startPlay() {
+    const puzzle = this.store.state.puzzles.find((p) => p.id === this.shownId);
+    if (!puzzle?.isPlayable) return;
+    const modal = this.el.querySelector('.modal');
+    modal.innerHTML = html`
+      <button type="button" class="modal__close" data-close aria-label="Close">×</button>
+      <div class="play-host"></div>
+    `;
+    this.play = new PlayView(modal.querySelector('.play-host'), puzzle);
+    this.play.focus();
+  }
+
+  #stopPlay() {
+    const puzzle = this.store.state.puzzles.find((p) => p.id === this.shownId);
+    this.#destroyPlay();
+    if (!puzzle) return;
+    this.el.innerHTML = this.#content(puzzle);
+    this.el.querySelector('.play-button')?.focus();
+  }
+
+  // Every way out of a game goes through here, so no interval outlives it.
+  #destroyPlay() {
+    this.play?.destroy();
+    this.play = null;
+  }
+
   #close() {
+    this.#destroyPlay();
     if (this.store.state.selected !== null) this.store.patch({ selected: null });
   }
 
@@ -103,6 +141,7 @@ export class PuzzleModal extends Component {
             Compiled from a sale listing and not yet checked against the puzzle itself.
           </p>
         `)}
+        ${raw(puzzle.isPlayable ? '<button type="button" class="play-button">Play</button>' : '')}
         ${raw(this.#gallery(puzzle))}
         <dl class="facts">
           ${raw(facts.map(([term, value]) => html`
