@@ -13,7 +13,7 @@ attribution.
 
 ## No photograph at all
 
-61 entries. Save the first image as `<id>-front.jpg`, then any
+60 entries. Save the first image as `<id>-front.jpg`, then any
 further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 | Entry | Save as | Listing |
@@ -25,7 +25,6 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | E 28 | `escher-e28-front.jpg`, `escher-e28-2.jpg`, … | [www.ebay.com/itm/225912736039](https://www.ebay.com/itm/225912736039) |
 | The Kiss | `klimt-the-kiss-front.jpg`, `klimt-the-kiss-2.jpg`, … | [www.worthpoint.com/worthopedia/2x-pussycat-ar…](https://www.worthpoint.com/worthopedia/2x-pussycat-art-slide-puzzle-germany-2067248399) |
 | Schwertlilien (Irises) | `van-gogh-schwertlilien-front.jpg`, `van-gogh-schwertlilien-2.jpg`, … | — |
-| Picasso (title unrecorded) | `picasso-80-23185-front.jpg`, `picasso-80-23185-2.jpg`, … | [picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-…](https://picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-puzzle-PABLO-PICASSO-Art-364124600176.html) |
 | Magritte (title unrecorded) | `magritte-slide-puzzle-front.jpg`, `magritte-slide-puzzle-2.jpg`, … | [picclick.fr/Slide-Puzzle-Rene-Magritte-Schieb…](https://picclick.fr/Slide-Puzzle-Rene-Magritte-Schiebepuzzle-Kunst-182308507743.html) |
 | L'automobiliste à moustaches | `miro-automobiliste-a-moustaches-front.jpg`, `miro-automobiliste-a-moustaches-2.jpg`, … | [www.ebay.de/itm/286670921664](https://www.ebay.de/itm/286670921664) |
 | Ziffern und Sternbilder | `miro-ziffern-und-sternbilder-front.jpg`, `miro-ziffern-und-sternbilder-2.jpg`, … | — |
@@ -90,8 +89,8 @@ is the back. If you *can* tell, say so and the entry gets a proper label.
 | --- | --- | --- |
 | The Card Players | `cezanne-card-players-2.jpg`, `cezanne-card-players-3.jpg`, … | [www.ebay.com/itm/389561588862](https://www.ebay.com/itm/389561588862) |
 | The Large Bathers | `cezanne-large-bathers-2.jpg`, `cezanne-large-bathers-3.jpg`, … | [www.ebay.com/itm/389561530563](https://www.ebay.com/itm/389561530563) |
-| Monet (title unrecorded) | `monet-80-23215-2.jpg`, `monet-80-23215-3.jpg`, … | [www.ebay.com/itm/158122752744](https://www.ebay.com/itm/158122752744) |
-| Kandinsky (title unrecorded) | `kandinsky-80-2341-2.jpg`, `kandinsky-80-2341-3.jpg`, … | [www.ebay.com/itm/158122751325](https://www.ebay.com/itm/158122751325) |
+| The Artist's Garden at Vétheuil | `monet-80-23215-2.jpg`, `monet-80-23215-3.jpg`, … | [www.ebay.com/itm/158122752744](https://www.ebay.com/itm/158122752744) |
+| Farbstudie – Quadrate mit konzentrischen Ringen | `kandinsky-80-2341-2.jpg`, `kandinsky-80-2341-3.jpg`, … | [www.ebay.com/itm/158122751325](https://www.ebay.com/itm/158122751325) |
 | Kreise im Kreis | `kandinsky-kreise-im-kreis-2.jpg`, `kandinsky-kreise-im-kreis-3.jpg`, … | [www.ebay.com/itm/364182678058](https://www.ebay.com/itm/364182678058) |
 | Paul Klee (title unrecorded) | `klee-80-23155-2.jpg`, `klee-80-23155-3.jpg`, … | [www.ebay.com/itm/158122783599](https://www.ebay.com/itm/158122783599) |
 | Paul Klee (title unrecorded, second design) | `klee-80-23151-2.jpg`, `klee-80-23151-3.jpg`, … | [www.ebay.com/itm/158122755839](https://www.ebay.com/itm/158122755839) |

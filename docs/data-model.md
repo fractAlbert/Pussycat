@@ -30,8 +30,8 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 The closest thing to a catalogue key. Two families are visible so far:
 
 - `80 29xx` — 49-tile 7×7 puzzles (wildlife, dinosaurs, crosswords).
-- `80 23xxx` — the fine-art run carrying a 1999 copyright (Cézanne, Monet,
-  Klee, Picasso).
+- `80 23xxx` — the fine-art run (Cézanne, Monet, Klee, Picasso), mostly
+  carrying a 1999 copyright; the owned Picasso `80 23185` is marked 1996.
 
 Escher puzzles instead use an `E nnn` reference from the Escher catalogue
 raisonné, which is stored in the same field.

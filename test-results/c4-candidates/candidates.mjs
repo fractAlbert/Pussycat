@@ -18,7 +18,8 @@ const list = Array.isArray(data) ? data : data.puzzles;
 const candidates = list.filter((p) => ARTISTS.includes(p.artist) && p.series !== "Collector's Edition");
 let filled = 0, reasoned = 0, missing = 0;
 for (const p of candidates) {
-  if (p.art) { filled++; console.log(`filled   ${p.id}`); }
+  if (p.art && NOT_DONE[p.id]) { missing++; console.log(`CONFLICT ${p.id}: has art but is listed as not done`); }
+  else if (p.art) { filled++; console.log(`filled   ${p.id}`); }
   else if (NOT_DONE[p.id]) { reasoned++; console.log(`reason   ${p.id}: ${NOT_DONE[p.id]}`); }
   else { missing++; console.log(`MISSING  ${p.id}`); }
 }

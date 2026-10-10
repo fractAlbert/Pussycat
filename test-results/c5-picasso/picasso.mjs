@@ -8,7 +8,8 @@ function inspect(file) {
   while (i < b.length && b[i] === 0xff) {
     const marker = b[i + 1];
     const len = b.readUInt16BE(i + 2);
-    if (marker === 0xe1 && b.toString('latin1', i + 4, i + 8) === 'Exif') exif = true;
+    // Any APP1 (Exif or XMP) or APP13 (IPTC) block counts as metadata.
+    if (marker === 0xe1 || marker === 0xed) exif = true;
     if (marker >= 0xc0 && marker <= 0xcf && ![0xc4, 0xc8, 0xcc].includes(marker)) {
       size = { h: b.readUInt16BE(i + 5), w: b.readUInt16BE(i + 7) };
       break;
@@ -25,7 +26,7 @@ const check = (label, ok) => checks.push([label, !!ok]);
 for (const side of ['front', 'back']) {
   const { exif, size } = inspect(`src/images/puzzles/picasso-80-23185-${side}.jpg`);
   check(`${side}: ${size.w}x${size.h}, long side 800`, Math.max(size.w, size.h) === 800);
-  check(`${side}: no EXIF block`, !exif);
+  check(`${side}: no metadata block (APP1 Exif/XMP, APP13 IPTC)`, !exif);
 }
 check(`name "${p.name}"`, p.name === 'Kopf eines Mannes mit Strohhut');
 check(`copyright ${p.copyright}`, p.copyright === 1996);

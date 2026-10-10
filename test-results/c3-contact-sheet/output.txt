@@ -1,0 +1,11 @@
+Contact sheet for the #11 art crops. This check is the owner's visual sign-off (H1).
+
+sheet-1.png … sheet-4.png: each row shows the puzzle's listing photo (left) beside the
+new art crop (right), with the caption: id, title, date, and either the grid ratio or
+"CHECK: no puzzle photo". Page 4 holds the Picasso ride-along: the owner's photos, no art.
+
+crops.json: the crop box of every new art image, in source-image pixels, with the source
+file, its Commons sourceUrl and the output size. "scratchFile" names the download as it
+was saved during sourcing, where that differs from the source.
+
+Built with PowerShell System.Drawing from the downloaded Commons originals.

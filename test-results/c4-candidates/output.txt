@@ -1,3 +1,4 @@
+$ node test-results/c4-candidates/candidates.mjs
 filled   cezanne-mardi-gras
 filled   cezanne-card-players
 filled   cezanne-large-bathers
@@ -24,3 +25,4 @@ filled   van-gogh-sunflowers
 filled   macke-spaziergaenger-am-see
 candidates 24: filled 19, with reason 5, unaccounted 0
 ALL PASS
+exit=0

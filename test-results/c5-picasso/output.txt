@@ -1,7 +1,8 @@
+$ node test-results/c5-picasso/picasso.mjs
 ok   front: 706x800, long side 800
-ok   front: no EXIF block
+ok   front: no metadata block (APP1 Exif/XMP, APP13 IPTC)
 ok   back: 702x800, long side 800
-ok   back: no EXIF block
+ok   back: no metadata block (APP1 Exif/XMP, APP13 IPTC)
 ok   name "Kopf eines Mannes mit Strohhut"
 ok   copyright 1996
 ok   grid {"rows":9,"cols":7}
@@ -10,3 +11,4 @@ ok   owned true
 ok   images picasso-80-23185-front.jpg, picasso-80-23185-back.jpg
 ok   no art
 ALL PASS
+exit=0

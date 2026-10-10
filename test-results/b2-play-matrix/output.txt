@@ -1,3 +1,4 @@
+$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b2-play-matrix < test-results/b2-play-matrix/input.txt
 > nav /
 > wait-for .card
 > eval (async () => { const data = await (await fetch('data/puzzles.json')).json(); const list = Array.isArray(data) ? data : data.puzzles; const out = { checked: 0, shown: [], wrong: [] }; for (const p of list) { location.hash = '#' + p.id; await new Promise(r => setTimeout(r, 150)); const dlg = document.querySelector('#detail'); const has = !!dlg.querySelector('.play-button'); const want = !!(p.art && p.grid && p.grid.rows >= 2 && p.grid.cols >= 2 && p.blank); out.checked++; if (has) out.shown.push(p.id); if (!dlg.open || has !== want) out.wrong.push({ id: p.id, open: dlg.open, has, want }); } return out; })()
@@ -5,6 +6,6 @@
 > nav /#kandinsky-kreise-im-kreis
 > wait-for .play-button
 > shot detail-with-play
-C:\Users\fract\Documents\github\Pussycat\test-results\b2-play-matrix\detail-with-play.png
+test-results\b2-play-matrix\detail-with-play.png
 > errors
 (no errors)

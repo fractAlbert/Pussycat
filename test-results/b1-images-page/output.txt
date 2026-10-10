@@ -1,3 +1,4 @@
+$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-images-page < test-results/b1-images-page/input.txt
 > nav /images.html
 > wait-for main
 > eval [...document.querySelectorAll('main h2')].map(h => h.textContent)
@@ -7,6 +8,6 @@ false
 > eval (() => { const h = [...document.querySelectorAll('main h2')].find(h => h.textContent === 'Public-domain art images'); h.scrollIntoView(); return !!h; })()
 true
 > shot images-page
-C:\Users\fract\Documents\github\Pussycat\test-results\b1-images-page\images-page.png
+test-results\b1-images-page\images-page.png
 > errors
 (no errors)

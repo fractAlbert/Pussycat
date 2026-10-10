@@ -10,7 +10,8 @@
     "out": "src/images/art/cezanne-card-players.jpg",
     "outWidth": 800,
     "outHeight": 637,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Card_Players_MET_DP231550.jpg"
   },
   "cezanne-large-bathers": {
     "source": "cezanne-large-bathers.jpg",
@@ -23,7 +24,8 @@
     "out": "src/images/art/cezanne-large-bathers.jpg",
     "outWidth": 800,
     "outHeight": 669,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne,_French_-_The_Large_Bathers_-_Google_Art_Project.jpg"
   },
   "cezanne-kitchen-table": {
     "source": "cezanne-kitchen-table.jpg",
@@ -36,7 +38,8 @@
     "out": "src/images/art/cezanne-kitchen-table.jpg",
     "outWidth": 800,
     "outHeight": 633,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Table_de_cuisine,_par_Paul_C%C3%A9zanne,_mus%C3%A9e_d%27Orsay,_Yorck.jpg"
   },
   "monet-80-23215": {
     "source": "monet-80-23215.jpg",
@@ -49,10 +52,11 @@
     "out": "src/images/art/monet-80-23215.jpg",
     "outWidth": 640,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_The_Artist%27s_Garden_at_V%C3%A9theuil,_1881,_NGA_52189.jpg"
   },
   "kandinsky-80-2341": {
-    "source": "kandinsky-kreise-im-kreis.jpg",
+    "source": "Wassily_Kandinsky_Color_Study._Squares_with_Concentric_Circles.jpg",
     "sourceWidth": 2400,
     "sourceHeight": 1792,
     "x": 75,
@@ -62,10 +66,12 @@
     "out": "src/images/art/kandinsky-80-2341.jpg",
     "outWidth": 800,
     "outHeight": 622,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Color_Study._Squares_with_Concentric_Circles.jpg",
+    "scratchFile": "kandinsky-kreise-im-kreis.jpg"
   },
   "kandinsky-kreise-im-kreis": {
-    "source": "kandinsky-kreise-im-kreis-ALT-circles-in-a-circle.jpg",
+    "source": "Kandinsky_-_Circles_in_a_Circle,_1923,_1950-134-104.jpg",
     "sourceWidth": 3961,
     "sourceHeight": 4096,
     "x": 80,
@@ -75,7 +81,9 @@
     "out": "src/images/art/kandinsky-kreise-im-kreis.jpg",
     "outWidth": 800,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Circles_in_a_Circle,_1923,_1950-134-104.jpg",
+    "scratchFile": "kandinsky-kreise-im-kreis-ALT-circles-in-a-circle.jpg"
   },
   "kandinsky-auf-weiss-ii": {
     "source": "kandinsky-auf-weiss-ii.jpg",
@@ -88,7 +96,8 @@
     "out": "src/images/art/kandinsky-auf-weiss-ii.jpg",
     "outWidth": 800,
     "outHeight": 800,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1923_-_On_White_II.jpg"
   },
   "renoir-boating-party": {
     "source": "renoir-boating-party.jpg",
@@ -101,7 +110,8 @@
     "out": "src/images/art/renoir-boating-party.jpg",
     "outWidth": 800,
     "outHeight": 637,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg"
   },
   "renoir-1881": {
     "source": "renoir-1881.jpg",
@@ -114,7 +124,8 @@
     "out": "src/images/art/renoir-1881.jpg",
     "outWidth": 672,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girls_in_Black_(1880s)_-_Pierre-Auguste_Renoir_(Pushkin_Museum_of_Fine_Arts).jpg"
   },
   "renoir-1883": {
     "source": "renoir-1883.jpg",
@@ -127,7 +138,8 @@
     "out": "src/images/art/renoir-1883.jpg",
     "outWidth": 509,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir,_The_Umbrellas,_ca._1881-86.jpg"
   },
   "renoir-1876": {
     "source": "renoir-1876.jpg",
@@ -140,7 +152,8 @@
     "out": "src/images/art/renoir-1876.jpg",
     "outWidth": 612,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_The_Swing_-_Google_Art_Project.jpg"
   },
   "klimt-the-kiss": {
     "source": "klimt-the-kiss.jpg",
@@ -153,7 +166,8 @@
     "out": "src/images/art/klimt-the-kiss.jpg",
     "outWidth": 797,
     "outHeight": 800,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg"
   },
   "van-gogh-schwertlilien": {
     "source": "van-gogh-schwertlilien.jpg",
@@ -166,7 +180,8 @@
     "out": "src/images/art/van-gogh-schwertlilien.jpg",
     "outWidth": 800,
     "outHeight": 800,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Irises_(1889).jpg"
   },
   "van-gogh-sunflowers": {
     "source": "van-gogh-sunflowers.jpg",
@@ -179,7 +194,8 @@
     "out": "src/images/art/van-gogh-sunflowers.jpg",
     "outWidth": 640,
     "outHeight": 800,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_128.jpg"
   },
   "macke-modegeschaeft": {
     "source": "macke-modegeschaeft.jpg",
@@ -192,7 +208,8 @@
     "out": "src/images/art/macke-modegeschaeft.jpg",
     "outWidth": 800,
     "outHeight": 686,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke_modegeschaeft.jpg"
   },
   "macke-spaziergaenger-am-see": {
     "source": "macke-spaziergaenger-am-see.jpg",
@@ -205,7 +222,8 @@
     "out": "src/images/art/macke-spaziergaenger-am-see.jpg",
     "outWidth": 800,
     "outHeight": 787,
-    "hasPhoto": true
+    "hasPhoto": true,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke,_Spazierg%C3%A4nger_am_See_I.jpg"
   },
   "marc-cat-under-a-tree": {
     "source": "marc-cat-under-a-tree.jpg",
@@ -218,7 +236,8 @@
     "out": "src/images/art/marc-cat-under-a-tree.jpg",
     "outWidth": 574,
     "outHeight": 800,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marc_-_Kinderbild_(Katze_hinter_einem_Baum),_1910-1911,_lot-5812220.jpg"
   },
   "marc-blauschwarzer-fuchs": {
     "source": "marc-blauschwarzer-fuchs.jpg",
@@ -231,6 +250,7 @@
     "out": "src/images/art/marc-blauschwarzer-fuchs.jpg",
     "outWidth": 800,
     "outHeight": 630,
-    "hasPhoto": false
+    "hasPhoto": false,
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marc-blue-black_fox.jpg"
   }
 }
