@@ -757,7 +757,8 @@ button:focus-visible {
   gap: 2px;
   padding: 4px;
   max-width: 100%;
-  background: var(--line);
+  /* The puzzle's black plastic frame, in either theme. */
+  background: #000;
   border-radius: 6px;
 }
 .play__board:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }

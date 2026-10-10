@@ -1,4 +1,4 @@
-# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# commit 3fd550a + black board frame (style.css); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
 # $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b8-escape-deeplink < test-results/b8-escape-deeplink/input.txt
 > nav /#cezanne-mardi-gras
 > wait-for .play-button
