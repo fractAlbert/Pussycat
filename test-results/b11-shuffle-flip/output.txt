@@ -10,14 +10,14 @@ Moves: 1
 Moves: 1
 > eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
 true
-> sleep 500
+> sleep 250
 > eval document.querySelector('.play__shuffle').hasAttribute('data-holding')
 true
 > shot holding
 C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\holding.png
 > text .play__moves
-Moves: 1
-> sleep 800
+Moves: 0
+> sleep 500
 > text .play__moves
 Moves: 0
 > text .play__time

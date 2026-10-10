@@ -9,7 +9,7 @@ const PADDING = 30;
 // How far the sunken tray reaches past the tiles, so its edges show round them.
 const WELL = 4;
 // Shuffle throws the game away, so it needs a deliberate hold, not a click.
-const HOLD_MS = 1000;
+const HOLD_MS = 500;
 let wellCount = 0;
 
 /**
