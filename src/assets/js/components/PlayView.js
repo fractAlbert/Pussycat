@@ -8,6 +8,8 @@ const GAP = 2;
 const PADDING = 30;
 // How far the sunken tray reaches past the tiles, so its edges show round them.
 const WELL = 3;
+// Shuffle throws the game away, so it needs a deliberate hold, not a click.
+const HOLD_MS = 1000;
 let wellCount = 0;
 
 /**
@@ -37,10 +39,7 @@ export class PlayView {
     this.#render();
     this.#positionAll();
 
-    this.root.querySelector('.play__shuffle').addEventListener('click', () => {
-      this.board.shuffle();
-      this.#restart();
-    });
+    this.#holdToShuffle(this.root.querySelector('.play__shuffle'));
     this.flipEl.addEventListener('click', () => this.#flip(!this.flipped));
     this.boardEl.addEventListener('click', (event) => {
       const tile = event.target.closest('.play__tile');
@@ -117,7 +116,7 @@ export class PlayView {
         <div class="play__header">
           <h2 class="play__name">${this.puzzle.name}</h2>
           <button type="button" class="play__back">Back</button>
-          <button type="button" class="play__shuffle">Shuffle</button>
+          <button type="button" class="play__shuffle" style="--hold:${HOLD_MS}ms">Hold to shuffle</button>
           <button type="button" class="play__flip" aria-pressed="false">Flip</button>
           <span class="play__moves">Moves: 0</span>
           <span class="play__time">Time: 0s</span>
@@ -128,6 +127,8 @@ export class PlayView {
                style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
             ${raw(well + tiles + frame)}
           </div>
+          <div class="play__edge play__edge--left"></div>
+          <div class="play__edge play__edge--right"></div>
           <div class="play__board play__back-face" role="img" aria-label="The finished picture" inert
                style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
             ${raw(well)}
@@ -202,6 +203,44 @@ export class PlayView {
     this.#flip(false);
     this.#positionAll();
     this.#updateCounters();
+  }
+
+  /**
+   * Shuffles only once the button has been held for HOLD_MS, by pointer or by
+   * Space/Enter. The button fills up meanwhile; letting go early cancels.
+   */
+  #holdToShuffle(button) {
+    let timer = null;
+    const start = () => {
+      if (timer) return;
+      button.toggleAttribute('data-holding', true);
+      timer = setTimeout(() => {
+        cancel();
+        this.board.shuffle();
+        this.#restart();
+      }, HOLD_MS);
+    };
+    const cancel = () => {
+      clearTimeout(timer);
+      timer = null;
+      button.removeAttribute('data-holding');
+    };
+    button.addEventListener('pointerdown', (event) => {
+      if (event.button === 0) start();
+    });
+    for (const type of ['pointerup', 'pointerleave', 'pointercancel', 'blur']) {
+      button.addEventListener(type, cancel);
+    }
+    // A long press on a touch screen would otherwise open the context menu.
+    button.addEventListener('contextmenu', (event) => event.preventDefault());
+    button.addEventListener('keydown', (event) => {
+      if (event.key !== ' ' && event.key !== 'Enter') return;
+      event.preventDefault();
+      if (!event.repeat) start();
+    });
+    button.addEventListener('keyup', (event) => {
+      if (event.key === ' ' || event.key === 'Enter') cancel();
+    });
   }
 
   /** Turns the board over to show the finished picture, or back again. */

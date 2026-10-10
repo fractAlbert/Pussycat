@@ -750,19 +750,61 @@ button:focus-visible {
   padding: 0.25rem 0.8rem;
   cursor: pointer;
 }
+.play__shuffle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+/* Fills left to right while held; snaps back if let go early. */
+.play__shuffle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--accent);
+  opacity: 0.35;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.play__shuffle[data-holding]::before {
+  transform: scaleX(1);
+  transition: transform var(--hold) linear;
+}
 .play__flip[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .play__moves, .play__time { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
-/* The board and its back face share one cell and turn over together. */
+/* The board and its back face share one cell and turn over together. The
+   faces sit half the puzzle's thickness in front of and behind the middle,
+   and two edge strips close the sides, so it shows its depth as it turns. */
 .play__card {
+  --thick: 15px;
+  position: relative;
   display: grid;
   max-width: 100%;
   transform: perspective(1200px) rotateY(0);
   transform-style: preserve-3d;
   transition: transform 0.5s ease;
 }
-.play__card > .play__board { grid-area: 1 / 1; backface-visibility: hidden; }
-.play__card > .play__back-face { transform: rotateY(180deg); }
+.play__card > .play__board {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  transform: translateZ(calc(var(--thick) / 2));
+}
+.play__card > .play__back-face { transform: rotateY(180deg) translateZ(calc(var(--thick) / 2)); }
+.play__edge {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: calc(var(--thick) / -2);
+  width: var(--thick);
+  background: linear-gradient(90deg, #000, #222 50%, #000);
+  transform: rotateY(90deg);
+}
+.play__edge--right { left: calc(100% - var(--thick) / 2); }
 .play__card[data-flipped] { transform: perspective(1200px) rotateY(180deg); }
 @media (prefers-reduced-motion: reduce) { .play__card { transition: none; } }
 

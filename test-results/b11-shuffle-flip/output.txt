@@ -5,16 +5,47 @@
 > click .play__tile[data-movable]
 > text .play__moves
 Moves: 1
-> eval JSON.stringify(window.pussycatPlay.state().hole)
-"\"8-6\""
 > click .play__shuffle
+> text .play__moves
+Moves: 1
+> eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
+true
+> sleep 500
+> eval document.querySelector('.play__shuffle').hasAttribute('data-holding')
+true
+> shot holding
+C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\holding.png
+> text .play__moves
+Moves: 1
+> sleep 800
 > text .play__moves
 Moves: 0
 > text .play__time
 Time: 0s
-> eval window.pussycatPlay.state().solved
-false
+> eval [document.querySelector('.play__shuffle').hasAttribute('data-holding'), window.pussycatPlay.state().solved]
+[false,false]
+> eval document.querySelector('.play__board').focus()
+undefined
+> press ArrowLeft
+> press ArrowUp
+> press ArrowRight
+> press ArrowDown
+> eval window.pussycatPlay.state().moves > 0
+true
+> eval document.querySelector('.play__shuffle').focus()
+undefined
+> press Enter
+> eval window.pussycatPlay.state().moves > 0
+true
+> eval document.querySelector('.play__shuffle').dispatchEvent(new KeyboardEvent('keydown', {key: ' ', bubbles: true}))
+true
+> sleep 1300
+> text .play__moves
+Moves: 0
 > click .play__flip
+> sleep 180
+> shot mid-flip
+C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\mid-flip.png
 > sleep 700
 > eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__card').hasAttribute('data-flipped'), document.querySelector('.play__board').inert]
 ["true",true,true]
@@ -26,19 +57,13 @@ C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\flipped.p
 > sleep 700
 > eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__board').inert]
 ["false",false]
-> eval document.querySelector('.play__board').focus()
-undefined
-> press ArrowLeft
-> press ArrowUp
-> press ArrowRight
-> press ArrowDown
-> eval window.pussycatPlay.state().moves > 0
-true
 > eval window.pussycatPlay.nearlySolve()
 undefined
 > click .play__spare .play__tile
 > wait-for .play__solved
-> click .play__shuffle
+> eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
+true
+> sleep 1300
 > text .play__status
 
 > eval window.pussycatPlay.state().solved
