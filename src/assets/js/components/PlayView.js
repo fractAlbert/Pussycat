@@ -7,7 +7,7 @@ const GAP = 2;
 // Keep in step with .play__board's gap and padding in style.css.
 const PADDING = 30;
 // How far the sunken tray reaches past the tiles, so its edges show round them.
-const WELL = 3;
+const WELL = 5;
 // Shuffle throws the game away, so it needs a deliberate hold, not a click.
 const HOLD_MS = 1000;
 let wellCount = 0;
@@ -131,7 +131,6 @@ export class PlayView {
           <div class="play__edge play__edge--right"></div>
           <div class="play__board play__back-face" role="img" aria-label="The finished picture" inert
                style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
-            ${raw(well)}
             <div class="play__picture" style="${picture}"></div>
           </div>
         </div>
@@ -182,12 +181,15 @@ export class PlayView {
         width="${full + 2 * m}" height="${h + 2 * m}" viewBox="${-m} ${-m} ${full + 2 * m} ${h + 2 * m}">
       <defs>
         <clipPath id="${id}-clip"><polygon points="${points}"/></clipPath>
-        <filter id="${id}-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2"/></filter>
+        <filter id="${id}-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="3"/></filter>
+        <linearGradient id="${id}-floor" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#0b0b0b"/><stop offset="1" stop-color="#262626"/>
+        </linearGradient>
       </defs>
-      <polygon points="${points}" fill="#030303"/>
+      <polygon points="${points}" fill="url(#${id}-floor)"/>
       <g clip-path="url(#${id}-clip)" fill="none" stroke-linejoin="round">
-        <path d="${shade}" stroke="rgba(0,0,0,0.95)" stroke-width="8" filter="url(#${id}-blur)"/>
-        <path d="${light}" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+        <path d="${shade}" stroke="#000" stroke-width="12" filter="url(#${id}-blur)"/>
+        <path d="${light}" stroke="rgba(255,255,255,0.32)" stroke-width="3"/>
       </g>
     </svg>`;
   }

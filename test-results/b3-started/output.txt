@@ -11,7 +11,7 @@
 > eval document.activeElement.classList.contains('play__board')
 true
 > eval [...document.querySelectorAll('.play__tile')].filter(t => t.dataset.home !== t.dataset.cell).length
-62
+60
 > shot started
 C:\Users\fract\Documents\github\Pussycat\test-results\b3-started\started.png
 > errors
