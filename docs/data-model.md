@@ -69,8 +69,8 @@ axis, not a universal property.
 
 Both are filterable, and independently of grid size.
 
-**The two formats occur within the same run and the same grid.** Two owned 7×9
-art puzzles differ: the Cézanne is `"extra"` (63 tiles) and the Kandinsky is
+**The two formats occur within the same run and the same grid.** Two owned 63-cell
+art puzzles (7 × 9, the Cézanne held portrait as 9 rows × 7 columns) differ: the Cézanne is `"extra"` (63 tiles) and the Kandinsky is
 `"inline"` (62). This is what the long-running "62 or 63 tiles?" disagreement
 among sellers turned out to be — not a miscount, but two layouts. A tile count
 therefore cannot be inferred from a grid alone; the format has to be seen.
