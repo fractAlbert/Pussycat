@@ -1,0 +1,194 @@
+{
+  "cezanne-card-players": {
+    "filter": {
+      "contrast": 0.95,
+      "saturate": 0.8,
+      "brightness": 1.2,
+      "hueRotate": 0
+    },
+    "loss": 0.00108,
+    "defaultLoss": 0.07302,
+    "target": {
+      "p10": 0.227,
+      "p50": 0.416,
+      "p90": 0.765,
+      "sat": 0.086
+    }
+  },
+  "cezanne-large-bathers": {
+    "filter": {
+      "contrast": 1.35,
+      "saturate": 0.8,
+      "brightness": 1,
+      "hueRotate": 0
+    },
+    "loss": 0.0003,
+    "defaultLoss": 0.01405,
+    "target": {
+      "p10": 0.236,
+      "p50": 0.442,
+      "p90": 0.639,
+      "sat": 0.115
+    }
+  },
+  "monet-80-23215": {
+    "filter": {
+      "contrast": 1.6,
+      "saturate": 0.8,
+      "brightness": 0.9,
+      "hueRotate": 0
+    },
+    "loss": 0.00383,
+    "defaultLoss": 0.04063,
+    "target": {
+      "p10": 0.278,
+      "p50": 0.505,
+      "p90": 0.775,
+      "sat": 0.166
+    }
+  },
+  "kandinsky-80-2341": {
+    "filter": {
+      "contrast": 0.95,
+      "saturate": 0.8,
+      "brightness": 1.1,
+      "hueRotate": 0
+    },
+    "loss": 0.02206,
+    "defaultLoss": 0.19319,
+    "target": {
+      "p10": 0.086,
+      "p50": 0.392,
+      "p90": 0.701,
+      "sat": 0.267
+    }
+  },
+  "kandinsky-kreise-im-kreis": {
+    "filter": {
+      "contrast": 0.9,
+      "saturate": 1.05,
+      "brightness": 1.1,
+      "hueRotate": 0
+    },
+    "loss": 0.00046,
+    "defaultLoss": 0.0403,
+    "target": {
+      "p10": 0.23,
+      "p50": 0.721,
+      "p90": 0.886,
+      "sat": 0.164
+    }
+  },
+  "renoir-boating-party": {
+    "filter": {
+      "contrast": 1,
+      "saturate": 1.1,
+      "brightness": 0.95,
+      "hueRotate": 0
+    },
+    "loss": 0.00021,
+    "defaultLoss": 0.02407,
+    "target": {
+      "p10": 0.209,
+      "p50": 0.482,
+      "p90": 0.722,
+      "sat": 0.141
+    }
+  },
+  "renoir-1881": {
+    "filter": {
+      "contrast": 0.9,
+      "saturate": 1.2,
+      "brightness": 1.2,
+      "hueRotate": 0
+    },
+    "loss": 0.00305,
+    "defaultLoss": 0.04493,
+    "target": {
+      "p10": 0.112,
+      "p50": 0.309,
+      "p90": 0.681,
+      "sat": 0.12
+    }
+  },
+  "renoir-1883": {
+    "filter": {
+      "contrast": 1.6,
+      "saturate": 0.8,
+      "brightness": 0.8,
+      "hueRotate": 0
+    },
+    "loss": 0.00561,
+    "defaultLoss": 0.06616,
+    "target": {
+      "p10": 0.11,
+      "p50": 0.347,
+      "p90": 0.628,
+      "sat": 0.08
+    }
+  },
+  "renoir-1876": {
+    "filter": {
+      "contrast": 1.1,
+      "saturate": 1.2,
+      "brightness": 1.05,
+      "hueRotate": 0
+    },
+    "loss": 0.00007,
+    "defaultLoss": 0.00186,
+    "target": {
+      "p10": 0.189,
+      "p50": 0.418,
+      "p90": 0.685,
+      "sat": 0.095
+    }
+  },
+  "cezanne-kitchen-table": {
+    "filter": {
+      "contrast": 1.2,
+      "saturate": 0.8,
+      "brightness": 0.9,
+      "hueRotate": 0
+    },
+    "loss": 0.01655,
+    "defaultLoss": 0.12701,
+    "target": {
+      "p10": 0.206,
+      "p50": 0.415,
+      "p90": 0.803,
+      "sat": 0.114
+    }
+  },
+  "van-gogh-sunflowers": {
+    "filter": {
+      "contrast": 1.3,
+      "saturate": 0.8,
+      "brightness": 0.8,
+      "hueRotate": 0
+    },
+    "loss": 0.00364,
+    "defaultLoss": 0.23039,
+    "target": {
+      "p10": 0.307,
+      "p50": 0.544,
+      "p90": 0.681,
+      "sat": 0.271
+    }
+  },
+  "macke-spaziergaenger-am-see": {
+    "filter": {
+      "contrast": 0.9,
+      "saturate": 0.95,
+      "brightness": 1.2,
+      "hueRotate": 0
+    },
+    "loss": 0.00777,
+    "defaultLoss": 0.09644,
+    "target": {
+      "p10": 0.214,
+      "p50": 0.457,
+      "p90": 0.667,
+      "sat": 0.125
+    }
+  }
+}

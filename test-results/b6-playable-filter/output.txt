@@ -1,0 +1,12 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b6-playable-filter < test-results/b6-playable-filter/input.txt
+> nav /
+> wait-for .card
+> eval (() => { const b = [...document.querySelectorAll('#filters button')].find(x => x.textContent.trim() === 'Playable'); b.click(); return 'clicked'; })()
+"clicked"
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card')].filter(c => c.offsetParent !== null).map(c => c.querySelector('h2,h3')?.textContent.trim() || c.dataset.id)), 300))
+["kandinsky-auf-weiss-ii","kandinsky-80-2341","kandinsky-kreise-im-kreis","cezanne-mardi-gras","van-gogh-schwertlilien"]
+> shot playable-filter
+<repo>/test-results\b6-playable-filter\playable-filter.png
+> errors
+(no errors)
+exit=0

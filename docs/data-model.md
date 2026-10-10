@@ -112,10 +112,19 @@ The crop box for each image is recorded in the evidence for #11
 (`test-results/c3-contact-sheet/crops.json`). The licence is checked through
 the Commons API.
 
-The files are kept as sourced. Because the printed puzzles are punchier than
-the museum scans, the game shows art through one CSS filter, `--art-filter`
-(`contrast(1.2) saturate(1.3)`) on `.play` in `style.css`, chosen by eye against
-the puzzle photos.
+The files are kept as sourced. The game shows art through a CSS filter instead,
+so it can look like the printed puzzle. The default, `DEFAULT_ART_FILTER` in
+`Puzzle.js` (`contrast(1.2) saturate(1.3)`), was chosen by eye against the
+puzzle photos; an entry can set its own in `art.filter`, and annotate mode has
+sliders for tuning it beside the puzzle photo.
+
+The starting `art.filter` values were fitted against each puzzle photo
+(`test-results/c6-art-filters/`): the luminance spread and mean chroma of the
+puzzle's picture area, matched by a bounded search. Treat them as a first
+guess. The photos are taken through cellophane in room light, and the prints
+often carry a colour cast (bluer, or *Sunflowers*' turquoise) that contrast,
+saturation and brightness cannot reproduce. *Sunflowers* keeps the default for
+that reason.
 
 ## Never read a listing's dimensions as a grid
 

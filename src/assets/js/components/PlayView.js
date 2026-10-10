@@ -1,6 +1,7 @@
 import { html, raw } from '../core/html.js';
 import { Board, SPARE } from '../play/Board.js';
 import { ART_PATH } from '../config.js';
+import { Puzzle } from '../models/Puzzle.js';
 
 const MAX_TILE = 48;
 const GAP = 2;
@@ -112,7 +113,7 @@ export class PlayView {
       + `height:${rows * t + GAP * (rows - 1)}px;background-image:${art}`;
 
     this.container.innerHTML = html`
-      <div class="play">
+      <div class="play" style="--art-filter:${Puzzle.filterCss(this.puzzle.artFilter)}">
         <div class="play__header">
           <h2 class="play__name">${this.puzzle.name}</h2>
           <button type="button" class="play__back">Back</button>

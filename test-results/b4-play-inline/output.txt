@@ -1,4 +1,4 @@
-$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b4-play-inline < test-results/b4-play-inline/input.txt
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b4-play-inline < test-results/b4-play-inline/input.txt
 > nav /#kandinsky-80-2341
 > wait-for .play-button
 > click .play-button
@@ -8,7 +8,7 @@ $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-res
 > count .play__tile
 62
 > shot started
-test-results\b4-play-inline\started.png
+<repo>/test-results\b4-play-inline\started.png
 > eval window.pussycatPlay.nearlySolve()
 undefined
 > eval (() => { const t = [...document.querySelectorAll('.play__tile')].find(t => t.dataset.home !== t.dataset.cell); t.click(); return t.dataset.home; })()
@@ -19,6 +19,7 @@ Solved in 1 move, 0s
 > eval window.pussycatPlay.state().solved
 true
 > shot solved
-test-results\b4-play-inline\solved.png
+<repo>/test-results\b4-play-inline\solved.png
 > errors
 (no errors)
+exit=0

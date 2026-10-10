@@ -4,6 +4,7 @@ import { BrandFilter } from './BrandFilter.js';
 import { SeriesFilter } from './SeriesFilter.js';
 import { SizeFilter } from './SizeFilter.js';
 import { BlankFilter } from './BlankFilter.js';
+import { PlayableFilter } from './PlayableFilter.js';
 
 /**
  * The one place filters are wired up.
@@ -16,5 +17,6 @@ export function buildRegistry() {
     .add(new BrandFilter())
     .add(new SeriesFilter())
     .add(new SizeFilter())
-    .add(new BlankFilter());
+    .add(new BlankFilter())
+    .add(new PlayableFilter());
 }

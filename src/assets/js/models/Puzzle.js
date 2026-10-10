@@ -8,6 +8,13 @@ export const BLANK_LABELS = {
   inline: 'Inline blank',
 };
 
+/**
+ * How play mode shows the art when an entry sets no filter of its own. The
+ * printed puzzles are punchier than the museum scans, so the art files stay as
+ * sourced and the game shows them through a CSS filter instead.
+ */
+export const DEFAULT_ART_FILTER = { contrast: 1.2, saturate: 1.3, brightness: 1, hueRotate: 0 };
+
 /** Corners an inline puzzle's missing tile can belong in. */
 export const BLANK_POSITIONS = ['bottom-right', 'bottom-left', 'top-right', 'top-left'];
 
@@ -108,7 +115,35 @@ export class Puzzle {
       title: art.title ?? null,
       date: art.date ?? null,
       basis: art.basis ?? null,
+      filter: Puzzle.normalizeFilter(art.filter),
     };
+  }
+
+  /**
+   * A per-entry art filter, or null for the default. Missing members take the
+   * default's value, so an entry can record just the one it changes.
+   */
+  static normalizeFilter(filter) {
+    if (!filter || typeof filter !== 'object') return null;
+    const out = {};
+    for (const [name, fallback] of Object.entries(DEFAULT_ART_FILTER)) {
+      const value = Number(filter[name]);
+      out[name] = Number.isFinite(value) ? value : fallback;
+    }
+    return out;
+  }
+
+  /** The filter play mode shows this entry's art through. */
+  get artFilter() {
+    return this.art?.filter ?? DEFAULT_ART_FILTER;
+  }
+
+  /** A filter as a CSS `filter` value, leaving out the parts that do nothing. */
+  static filterCss(filter) {
+    const parts = [`contrast(${filter.contrast})`, `saturate(${filter.saturate})`];
+    if (filter.brightness !== 1) parts.push(`brightness(${filter.brightness})`);
+    if (filter.hueRotate !== 0) parts.push(`hue-rotate(${filter.hueRotate}deg)`);
+    return parts.join(' ');
   }
 
   /**
@@ -169,7 +204,9 @@ export class Puzzle {
       grid: this.grid ? { ...this.grid } : null,
       blank: this.blank,
       blankPosition: this.blankPosition,
-      art: this.art ? { ...this.art } : null,
+      art: this.art
+        ? { ...this.art, filter: this.art.filter ? { ...this.art.filter } : null }
+        : null,
       images: this.images.map((image) => ({ ...image })),
       description: this.description,
       source: this.source,

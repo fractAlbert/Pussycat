@@ -30,6 +30,12 @@ out. The filename is worked out for you from the entry id, following the
 convention in `data-model.md` — `<id>-front.jpg`, then `<id>-2.jpg` and so on.
 The picture appears on the card immediately.
 
+**Match the play picture.** An entry with art shows a *Play picture* section:
+the puzzle photographs beside the art as play mode will show it, with sliders
+for contrast, saturation, brightness and hue. Move them until the two look
+alike. Only the filter is recorded (as a change to `art`); the art file itself
+is never touched. *Reset to default* puts the entry back on the shared default.
+
 **Reorder.** Drag cards around. The sort switches to *Custom order*, and the
 full intended order is recorded.
 

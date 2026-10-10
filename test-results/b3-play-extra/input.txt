@@ -4,6 +4,7 @@ click .play-button
 wait-for .play__board
 eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
 count .play__tile
+eval [window.pussycatPlay.state().hole, window.pussycatPlay.state().cornerHome, document.querySelector('.play__spare').contains(document.querySelector('.play__tile[data-home="6-6"]')) || getComputedStyle(document.querySelector('.play__tile[data-home="6-6"]')).gridColumn]
 eval [getComputedStyle(document.querySelector('.play__tile')).filter, getComputedStyle(document.querySelector('.play__picture')).filter]
 shot started
 eval window.pussycatPlay.nearlySolve()

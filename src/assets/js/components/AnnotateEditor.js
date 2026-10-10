@@ -1,7 +1,7 @@
 import { Component } from '../core/Component.js';
 import { html, raw, esc } from '../core/html.js';
-import { IMAGE_PATH } from '../config.js';
-import { Puzzle } from '../models/Puzzle.js';
+import { IMAGE_PATH, ART_PATH } from '../config.js';
+import { Puzzle, DEFAULT_ART_FILTER } from '../models/Puzzle.js';
 import { FIELDS, DELETE_REASONS, coerce } from '../annotate/fields.js';
 import {
   readAsDataURL,
@@ -99,6 +99,8 @@ export class AnnotateEditor extends Component {
           </p>
         </section>
 
+        ${raw(effective.art ? this.#artSection(puzzle, effective) : '')}
+
         <section class="annoedit__section">
           <h3 class="annoedit__legend">Details</h3>
           ${raw(FIELDS.map((f) => this.#field(f, puzzle, effective)).join(''))}
@@ -177,6 +179,58 @@ export class AnnotateEditor extends Component {
         `;
       })
       .join('');
+  }
+
+  /**
+   * The play picture beside the puzzle photographs, with sliders for the
+   * filter play mode shows it through. Only the filter is saved; the art file
+   * itself is never changed.
+   */
+  #artSection(puzzle, effective) {
+    const filter = effective.artFilter;
+    const changed = 'art' in this.session.doc.fieldsFor(puzzle.id);
+    const photos = effective.images
+      .map(
+        (image, index) => html`
+          <figure class="annoedit__compare-item">
+            <img src="${Puzzle.srcFor(image, IMAGE_PATH)}" alt="${effective.labelFor(image, index)}">
+            <figcaption>${effective.labelFor(image, index)}</figcaption>
+          </figure>
+        `,
+      )
+      .join('');
+    const sliders = ART_FILTER_SLIDERS.map(
+      (s) => html`
+        <label class="annoedit__slider">
+          <span class="field__label">${s.label}</span>
+          <input type="range" data-art-filter="${s.key}" min="${s.min}" max="${s.max}" step="${s.step}"
+            value="${filter[s.key]}">
+          <output data-art-filter-out="${s.key}">${formatFilterValue(s, filter[s.key])}</output>
+        </label>
+      `,
+    ).join('');
+
+    return html`
+      <section class="annoedit__section">
+        <h3 class="annoedit__legend">Play picture</h3>
+        <div class="annoedit__compare">
+          ${raw(photos)}
+          <figure class="annoedit__compare-item">
+            <img class="annoedit__art" src="${ART_PATH + effective.art.file}" alt="Play picture"
+              style="filter:${Puzzle.filterCss(filter)}">
+            <figcaption>Play picture</figcaption>
+          </figure>
+        </div>
+        <div class="annoedit__field annoedit__filter ${raw(changed ? 'is-changed' : '')}">
+          ${raw(sliders)}
+          <button type="button" class="annoedit__btn annoedit__btn--quiet" data-act="reset-filter">Reset to default</button>
+        </div>
+        <p class="annoedit__hint">
+          Adjust until the play picture matches the puzzle photo. This sets the
+          filter play mode shows the art through; the art file is not changed.
+        </p>
+      </section>
+    `;
   }
 
   #field(field, puzzle, effective) {
@@ -264,6 +318,12 @@ export class AnnotateEditor extends Component {
       this.pendingPick = { op: 'replace', replaces: event.target.dataset.file };
       this.el.querySelector('#anno-image-file').click();
     }
+    if (act === 'reset-filter') {
+      for (const input of this.el.querySelectorAll('[data-art-filter]')) {
+        input.value = DEFAULT_ART_FILTER[input.dataset.artFilter];
+      }
+      this.#onFilterInput(event.target);
+    }
     if (act === 'drop-image') {
       const index = Number(event.target.dataset.index);
       this.session.update((doc) => doc.removeImage(puzzleId, index));
@@ -278,6 +338,10 @@ export class AnnotateEditor extends Component {
 
     if (target.dataset.del) {
       this.#onDeleteInput(puzzle);
+      return;
+    }
+    if (target.dataset.artFilter) {
+      this.#onFilterInput(target);
       return;
     }
 
@@ -318,6 +382,31 @@ export class AnnotateEditor extends Component {
       this.el.querySelector('[name="del-reason"]').checked = true;
     }
     this.#applyDeletedState(on);
+  }
+
+  /**
+   * Reads every slider into the entry's art filter. Back at the default, the
+   * filter is dropped (null) rather than stored, so the entry follows any
+   * later change to the default.
+   */
+  #onFilterInput(target) {
+    const puzzle = this.store.state.puzzles.find((p) => p.id === this.shownId);
+    if (!puzzle) return;
+    const filter = {};
+    for (const input of this.el.querySelectorAll('[data-art-filter]')) {
+      filter[input.dataset.artFilter] = Number(input.value);
+    }
+    const isDefault = Object.entries(DEFAULT_ART_FILTER).every(([k, v]) => filter[k] === v);
+    const art = { ...this.session.doc.applyTo(puzzle).art, filter: isDefault ? null : filter };
+
+    this.session.update((doc) => doc.setField(puzzle, 'art', art));
+
+    for (const s of ART_FILTER_SLIDERS) {
+      this.el.querySelector(`[data-art-filter-out="${s.key}"]`).textContent =
+        formatFilterValue(s, filter[s.key]);
+    }
+    this.el.querySelector('.annoedit__art').style.filter = Puzzle.filterCss(filter);
+    this.#markChanged('art', target);
   }
 
   async #onImagePicked(event) {
@@ -406,6 +495,17 @@ export class AnnotateEditor extends Component {
   #applyDeletedState(deleted) {
     this.el.classList.toggle('is-deleted', deleted);
   }
+}
+
+const ART_FILTER_SLIDERS = [
+  { key: 'contrast', label: 'Contrast', min: 0.5, max: 2, step: 0.01 },
+  { key: 'saturate', label: 'Saturation', min: 0, max: 3, step: 0.01 },
+  { key: 'brightness', label: 'Brightness', min: 0.5, max: 1.5, step: 0.01 },
+  { key: 'hueRotate', label: 'Hue shift', min: -180, max: 180, step: 1, unit: '°' },
+];
+
+function formatFilterValue(slider, value) {
+  return slider.unit ? `${value}${slider.unit}` : Number(value).toFixed(2);
 }
 
 /** A file called <id>-front / <id>-back names its own view; the rest do not. */
