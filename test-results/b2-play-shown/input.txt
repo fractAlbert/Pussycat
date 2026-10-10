@@ -1,0 +1,6 @@
+nav /#cezanne-mardi-gras
+wait-for dialog#detail[open]
+text .modal__title
+count .play-button
+shot play-shown
+errors

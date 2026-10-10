@@ -1,0 +1,18 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b9-checklist < test-results/b9-checklist/input.txt
+> nav /checklist.html#cezanne-mardi-gras
+> wait-for dialog#detail[open]
+> count .play-button
+1
+> click .play-button
+> wait-for .play__board
+> count .play__tile
+63
+> press Escape
+> eval document.querySelector('#detail').open
+false
+> shot checklist
+C:\Users\fract\Documents\github\Pussycat\test-results\b9-checklist\checklist.png
+> errors
+(no errors)
+exit 0

@@ -1,0 +1,26 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b6-solved < test-results/b6-solved/input.txt
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> eval window.pussycatPlay.nearlySolve()
+undefined
+> click .play__spare .play__tile
+> wait-for .play__solved
+> text .play__solved
+Solved in 1 move, 0s
+> eval window.pussycatPlay.state().solved
+true
+> count .play__spare .play__tile
+0
+> eval [...document.querySelectorAll('.play__tile')].every(t => t.dataset.home === t.dataset.cell)
+true
+> click .play__tile
+> text .play__moves
+Moves: 1
+> shot solved
+C:\Users\fract\Documents\github\Pussycat\test-results\b6-solved\solved.png
+> errors
+(no errors)
+exit 0

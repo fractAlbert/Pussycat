@@ -1,0 +1,15 @@
+nav /#cezanne-mardi-gras
+wait-for .play-button
+click .play-button
+wait-for .play__board
+eval window.pussycatPlay.nearlySolve()
+click .play__spare .play__tile
+wait-for .play__solved
+text .play__solved
+eval window.pussycatPlay.state().solved
+count .play__spare .play__tile
+eval [...document.querySelectorAll('.play__tile')].every(t => t.dataset.home === t.dataset.cell)
+click .play__tile
+text .play__moves
+shot solved
+errors

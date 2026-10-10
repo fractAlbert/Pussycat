@@ -1,0 +1,9 @@
+nav /#cezanne-mardi-gras
+wait-for .play-button
+click .play-button
+wait-for .play__board
+click .play__back
+wait-for .facts
+eval [location.hash, document.querySelector('#detail').open, typeof window.pussycatPlay, document.activeElement.classList.contains('play-button')]
+shot back
+errors

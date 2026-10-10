@@ -1,0 +1,18 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b4-click-move < test-results/b4-click-move/input.txt
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> click .play__tile[data-movable]
+> text .play__moves
+Moves: 1
+> eval window.pussycatPlay.state().hole
+"8-6"
+> eval new Promise(r => { const t = () => document.querySelector('.play__time').textContent; const a = t(); setTimeout(() => r([a, t()]), 2100); })
+["Time: 0s","Time: 2s"]
+> shot after-click
+C:\Users\fract\Documents\github\Pussycat\test-results\b4-click-move\after-click.png
+> errors
+(no errors)
+exit 0

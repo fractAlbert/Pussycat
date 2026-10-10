@@ -1,0 +1,23 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b5-keyboard < test-results/b5-keyboard/input.txt
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> eval document.querySelector('.play__board').focus()
+undefined
+> press ArrowRight
+> text .play__moves
+Moves: 1
+> eval window.pussycatPlay.state().hole
+"8-6"
+> eval document.querySelector('.play__tile[data-movable]').focus()
+undefined
+> press Enter
+> text .play__moves
+Moves: 2
+> shot keyboard
+C:\Users\fract\Documents\github\Pussycat\test-results\b5-keyboard\keyboard.png
+> errors
+(no errors)
+exit 0

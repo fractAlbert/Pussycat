@@ -1,0 +1,15 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b7-back < test-results/b7-back/input.txt
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> click .play__back
+> wait-for .facts
+> eval [location.hash, document.querySelector('#detail').open, typeof window.pussycatPlay, document.activeElement.classList.contains('play-button')]
+["#cezanne-mardi-gras",true,"undefined",true]
+> shot back
+C:\Users\fract\Documents\github\Pussycat\test-results\b7-back\back.png
+> errors
+(no errors)
+exit 0
