@@ -88,9 +88,8 @@ it, so a file with the wrong ratio plays stretched.
 ### Where the blank sits
 
 - **`"extra"`** — the spare cell sits to the right of the bottom-right image
-  cell. The evidence is the listing photographs of `saurier-49` and
-  `escher-e72-fish`. This convention is **not yet confirmed on Mardi Gras
-  itself**, the pilot.
+  cell. The owner confirmed this holds for every extra-space puzzle
+  (2026-10-10).
 - **`"inline"`** — the gap home comes from `blankPosition`, default
   bottom-right.
 
