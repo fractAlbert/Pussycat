@@ -104,6 +104,14 @@ box at x=12 (exactly 7:9, centred), resized to 622×800 with PowerShell
 System.Drawing (HighQualityBicubic), saved as JPEG at quality 85. Licence as
 returned by the Commons API: `LicenseShortName` "Public domain", `License` "pd".
 
+Every art image follows the same method: a Commons original, cropped to the
+region the puzzle shows (or the whole painting when no puzzle photo exists),
+trimmed centred to exactly cols:rows when a grid is known, resized so the long
+side is 800px with PowerShell System.Drawing, and saved as JPEG at quality 85.
+The crop box for each image is recorded in the evidence for #11
+(`test-results/c3-contact-sheet/crops.json`). The licence is checked through
+the Commons API.
+
 ## Never read a listing's dimensions as a grid
 
 Sellers quote the frame size in inches, and it looks exactly like a grid.
