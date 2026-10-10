@@ -1,0 +1,29 @@
+$ node test-results/c1-art-check/art-check.mjs
+ok   cezanne-mardi-gras             622x800 no metadata, date 1888 (1888) ratio 7:9 off 0.04%
+ok   cezanne-card-players           800x637 no metadata, date 1890–92 (1892) ratio -
+ok   cezanne-large-bathers          800x669 no metadata, date 1898–1905 (1905) ratio -
+ok   monet-80-23215                 640x800 no metadata, date 1881 (1881) ratio -
+ok   kandinsky-80-2341              800x622 no metadata, date 1913 (1913) ratio 9:7 off 0.04%
+ok   kandinsky-auf-weiss-ii         800x800 no metadata, date 1923 (1923) ratio 7:7 off 0.00%
+ok   kandinsky-kreise-im-kreis      800x800 no metadata, date 1923 (1923) ratio 7:7 off 0.00%
+ok   renoir-boating-party           800x637 no metadata, date 1880–81 (1881) ratio -
+ok   renoir-1881                    672x800 no metadata, date c. 1880–82 (1882) ratio -
+ok   renoir-1883                    509x800 no metadata, date c. 1881–86 (1886) ratio -
+ok   renoir-1876                    612x800 no metadata, date 1876 (1876) ratio -
+ok   klimt-the-kiss                 797x800 no metadata, date 1907–08 (1908) ratio -
+ok   van-gogh-schwertlilien         800x800 no metadata, date 1889 (1889) ratio 7:7 off 0.00%
+ok   macke-modegeschaeft            800x686 no metadata, date 1913 (1913) ratio -
+ok   cezanne-kitchen-table          800x633 no metadata, date 1888–90 (1890) ratio -
+ok   marc-cat-under-a-tree          574x800 no metadata, date 1910–11 (1911) ratio -
+ok   marc-blauschwarzer-fuchs       800x630 no metadata, date 1911 (1911) ratio -
+ok   van-gogh-sunflowers            640x800 no metadata, date 1888 (1888) ratio -
+ok   macke-spaziergaenger-am-see    800x787 no metadata, date 1912 (1912) ratio -
+ok   klee-uebermut                  no art, as planned
+ok   klee-80-23155                  no art, as planned
+ok   klee-80-23151                  no art, as planned
+ok   kandinsky-weiches-hart         no art, as planned
+ok   van-gogh-selbstportraet        no art, as planned
+ok   picasso-80-23185               no art, as planned
+entries with art: 19
+ALL PASS
+exit=0

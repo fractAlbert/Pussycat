@@ -1,0 +1,25 @@
+$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b3-play-extra < test-results/b3-play-extra/input.txt
+> nav /#kandinsky-kreise-im-kreis
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+["extra",7,7,false]
+> count .play__tile
+49
+> eval [getComputedStyle(document.querySelector('.play__tile')).filter, getComputedStyle(document.querySelector('.play__picture')).filter]
+["contrast(1.2) saturate(1.3)","grayscale(1) contrast(1.2) saturate(1.3)"]
+> shot started
+test-results\b3-play-extra\started.png
+> eval window.pussycatPlay.nearlySolve()
+undefined
+> click .play__spare .play__tile
+> wait-for .play__solved
+> text .play__solved
+Solved in 1 move, 0s
+> eval window.pussycatPlay.state().solved
+true
+> shot solved
+test-results\b3-play-extra\solved.png
+> errors
+(no errors)

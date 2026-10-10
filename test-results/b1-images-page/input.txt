@@ -1,0 +1,7 @@
+nav /images.html
+wait-for main
+eval [...document.querySelectorAll('main h2')].map(h => h.textContent)
+eval document.body.innerText.includes('Nothing on this site is a reproduction')
+eval (() => { const h = [...document.querySelectorAll('main h2')].find(h => h.textContent === 'Public-domain art images'); h.scrollIntoView(); return !!h; })()
+shot images-page
+errors

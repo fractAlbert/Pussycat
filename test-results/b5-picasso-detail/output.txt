@@ -1,0 +1,13 @@
+$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b5-picasso-detail < test-results/b5-picasso-detail/input.txt
+> nav /#picasso-80-23185
+> wait-for #detail[open]
+> count #detail .play-button
+0
+> eval [...document.querySelectorAll('#detail img')].map(i => i.getAttribute('src') + ' ' + i.naturalWidth + 'x' + i.naturalHeight)
+["images/puzzles/picasso-80-23185-front.jpg 706x800","images/puzzles/picasso-80-23185-front.jpg 706x800","images/puzzles/picasso-80-23185-back.jpg 702x800"]
+> eval document.querySelector('#detail').innerText.slice(0, 400)
+"×\nKopf eines Mannes mit Strohhut\nArtist\nPablo Picasso\nBrand\nPussycat\nSeries\nArt\nArt no.\n80 23185\nCopyright\n1996\nSize\n9×7\nFormat\nInline blank\nTiles\n62\n\nHead of a Man with a Straw Hat (Tête d'homme au chapeau de paille), Mougins, 26 July 1971, Musée Picasso, Paris, as printed on the back. Owned: 9 rows × 7 columns with an inline gap at the top right. Still in copyright (© Succession Picasso / VG Bil"
+> shot detail
+test-results\b5-picasso-detail\detail.png
+> errors
+(no errors)
