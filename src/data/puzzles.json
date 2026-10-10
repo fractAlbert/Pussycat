@@ -45,7 +45,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Card_Players_MET_DP231550.jpg",
       "title": "The Card Players (Les Joueurs de cartes)",
       "date": "1890–92",
-      "basis": "The Metropolitan Museum of Art releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Cézanne died in 1906 (EU life+70) and it was published before 1931 (US)."
+      "basis": "The Metropolitan Museum of Art releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Cézanne died in 1906 (EU life+70) and it was published before 1931 (US).",
+      "filter": {
+        "contrast": 0.95,
+        "saturate": 0.8,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
     },
     "description": "Same 1999 Cézanne run as the Mardi Gras. Art number not visible in the listing photograph.",
     "source": "https://www.ebay.com/itm/389561588862",
@@ -72,7 +78,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne,_French_-_The_Large_Bathers_-_Google_Art_Project.jpg",
       "title": "The Large Bathers (Les Grandes Baigneuses)",
       "date": "1898–1905",
-      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1898–1905) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1898–1905) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.35,
+        "saturate": 0.8,
+        "brightness": 1,
+        "hueRotate": 0
+      }
     },
     "description": "Same 1999 Cézanne run.",
     "source": "https://www.ebay.com/itm/389561530563",
@@ -99,7 +111,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_The_Artist%27s_Garden_at_V%C3%A9theuil,_1881,_NGA_52189.jpg",
       "title": "The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil)",
       "date": "1881",
-      "basis": "The National Gallery of Art, Washington releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Monet died in 1926 (EU life+70) and it was published before 1931 (US)."
+      "basis": "The National Gallery of Art, Washington releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Monet died in 1926 (EU life+70) and it was published before 1931 (US).",
+      "filter": {
+        "contrast": 1.6,
+        "saturate": 0.8,
+        "brightness": 0.9,
+        "hueRotate": 0
+      }
     },
     "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63. The artwork was identified from the puzzle photograph as The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil), 1881.",
     "source": "https://www.ebay.com/itm/158122752744",
@@ -129,7 +147,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Color_Study._Squares_with_Concentric_Circles.jpg",
       "title": "Color Study: Squares with Concentric Circles (Farbstudie – Quadrate mit konzentrischen Ringen)",
       "date": "1913",
-      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1913) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1913) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.95,
+        "saturate": 0.8,
+        "brightness": 1.1,
+        "hueRotate": 0
+      }
     },
     "description": "Listed as 62 tiles. The art number may be truncated in the listing title — the rest of this run uses five digits after the 80. The artwork was identified from the puzzle photograph as Color Study: Squares with Concentric Circles (Farbstudie – Quadrate mit konzentrischen Ringen), 1913.",
     "source": "https://www.ebay.com/itm/158122751325",
@@ -184,7 +208,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Circles_in_a_Circle,_1923,_1950-134-104.jpg",
       "title": "Circles in a Circle (Kreise im Kreis)",
       "date": "1923",
-      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1923) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1923) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 1.05,
+        "brightness": 1.1,
+        "hueRotate": 0
+      }
     },
     "description": "After Kandinsky's Circles in a Circle, 1923.",
     "source": "https://www.ebay.com/itm/364182678058",
@@ -251,7 +281,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg",
       "title": "Luncheon of the Boating Party (Le Déjeuner des canotiers)",
       "date": "1880–81",
-      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1880–81) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1880–81) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1,
+        "saturate": 1.1,
+        "brightness": 0.95,
+        "hueRotate": 0
+      }
     },
     "description": "After the 1880–81 painting. Part of the 1999 run.",
     "source": "https://www.ebay.com/itm/389561655830",
@@ -278,7 +314,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girls_in_Black_(1880s)_-_Pierre-Auguste_Renoir_(Pushkin_Museum_of_Fine_Arts).jpg",
       "title": "Girls in Black (Jeunes filles en noir)",
       "date": "c. 1880–82",
-      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1880–82) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1880–82) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 1.2,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
     },
     "description": "Listed only by the year of the artwork, 1881. A separate listing describes a 72-piece Renoir dated 1881, which may be this same puzzle.",
     "source": "https://www.ebay.com/itm/389561696442",
@@ -305,7 +347,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir,_The_Umbrellas,_ca._1881-86.jpg",
       "title": "The Umbrellas (Les Parapluies)",
       "date": "c. 1881–86",
-      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1881–86) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1881–86) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.6,
+        "saturate": 0.8,
+        "brightness": 0.8,
+        "hueRotate": 0
+      }
     },
     "description": "Listed only by the year of the artwork, 1883.",
     "source": "https://www.ebay.com/itm/389699047978",
@@ -332,7 +380,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_The_Swing_-_Google_Art_Project.jpg",
       "title": "The Swing (La Balançoire)",
       "date": "1876",
-      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1876) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1876) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.1,
+        "saturate": 1.2,
+        "brightness": 1.05,
+        "hueRotate": 0
+      }
     },
     "description": "Listed only by the year of the artwork, 1876 — likely the Moulin de la Galette.",
     "source": "https://www.ebay.com/itm/389561664409",
@@ -1223,7 +1277,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Table_de_cuisine,_par_Paul_C%C3%A9zanne,_mus%C3%A9e_d%27Orsay,_Yorck.jpg",
       "title": "The Kitchen Table (La Table de cuisine)",
       "date": "1888–90",
-      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1888–90) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1888–90) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.2,
+        "saturate": 0.8,
+        "brightness": 0.9,
+        "hueRotate": 0
+      }
     },
     "description": "A fourth Cézanne, from the same seller as the Card Players and the Large Bathers.",
     "source": "https://www.ebay.com/itm/389561565887",
@@ -1981,7 +2041,13 @@
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke,_Spazierg%C3%A4nger_am_See_I.jpg",
       "title": "Walkers by the Lake I (Spaziergänger am See I)",
       "date": "1912",
-      "basis": "Wikimedia Commons tags the file Public domain: Macke died in 1914, so the painting (1912) is public domain in the EU (life+70) and the US (published before 1931)."
+      "basis": "Wikimedia Commons tags the file Public domain: Macke died in 1914, so the painting (1912) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 0.95,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
     },
     "source": "https://www.ebay.com/itm/318217802734",
     "description": "After the 1912 painting, also listed in English as \"Walker by the Lake\". Sold unused.",

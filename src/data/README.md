@@ -37,7 +37,8 @@ Only `id` and `name` are required. Record what is known and leave the rest out.
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:…",
     "title": "Title of the artwork",
     "date": "1888",
-    "basis": "Why this image may be reused."
+    "basis": "Why this image may be reused.",
+    "filter": { "contrast": 1.2, "saturate": 1.3, "brightness": 1, "hueRotate": 0 }
   },
   "description": "",
   "source": "https://…",
@@ -61,6 +62,11 @@ Only `id` and `name` are required. Record what is known and leave the rest out.
 - `art` is the clean artwork the **Play** button slices into tiles (D-012). Only
   `art.file` is required; `sourceUrl`, `title`, `date` and `basis` record where
   the image came from and why it may be reused. It is never hotlinked.
+- `art.filter` is optional: the CSS filter play mode shows the art through, so it
+  can match the printed puzzle. `contrast`, `saturate` and `brightness` are
+  multipliers (1 = unchanged), `hueRotate` is in degrees. Missing members take
+  the default's value; absent or `null` means the default,
+  `contrast(1.2) saturate(1.3)`. Tune it in annotate mode.
 - Art files go in `../images/art/` named `<id>.jpg`, cropped to the aspect
   ratio `cols:rows` (a 7-column, 9-row puzzle needs a 7:9 image). They are kept
   apart from listing photographs so `sync-images` ignores them.

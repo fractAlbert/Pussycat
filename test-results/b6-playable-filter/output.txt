@@ -9,3 +9,4 @@ $ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pus
 <repo>/test-results\b6-playable-filter\playable-filter.png
 > errors
 (no errors)
+exit=0
