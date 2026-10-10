@@ -1,5 +1,3 @@
-# commit 533d23a + recessed black spare (style.css) + stale-close fix (PuzzleModal.js); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
-# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b8-escape-deeplink < test-results/b8-escape-deeplink/input.txt
 > nav /#cezanne-mardi-gras
 > wait-for .play-button
 > click .play-button
@@ -22,4 +20,3 @@ undefined
 C:\Users\fract\Documents\github\Pussycat\test-results\b8-escape-deeplink\reloaded.png
 > errors
 (no errors)
-exit 0

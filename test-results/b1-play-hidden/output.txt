@@ -1,5 +1,3 @@
-# commit 533d23a + recessed black spare (style.css) + stale-close fix (PuzzleModal.js); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
-# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-play-hidden < test-results/b1-play-hidden/input.txt
 > nav /#escher-e72-fish
 > wait-for dialog#detail[open]
 > text .modal__title
@@ -10,4 +8,3 @@ Fish and Boats (E 72)
 C:\Users\fract\Documents\github\Pussycat\test-results\b1-play-hidden\play-hidden.png
 > errors
 (no errors)
-exit 0

@@ -741,7 +741,7 @@ button:focus-visible {
   margin-right: 2rem;
 }
 .play__name { flex: 1 1 100%; margin: 0; font-size: 1.25rem; }
-.play__back {
+.play__back, .play__shuffle, .play__flip {
   font: inherit;
   color: var(--ink);
   background: var(--accent-soft);
@@ -750,9 +750,24 @@ button:focus-visible {
   padding: 0.25rem 0.8rem;
   cursor: pointer;
 }
+.play__flip[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .play__moves, .play__time { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
+/* The board and its back face share one cell and turn over together. */
+.play__card {
+  display: grid;
+  max-width: 100%;
+  transform: perspective(1200px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.play__card > .play__board { grid-area: 1 / 1; backface-visibility: hidden; }
+.play__card > .play__back-face { transform: rotateY(180deg); }
+.play__card[data-flipped] { transform: perspective(1200px) rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) { .play__card { transition: none; } }
+
 .play__board {
+  position: relative;
   display: grid;
   gap: 2px;
   /* px, not rem: PlayView.js sizes the tiles in px from this padding and the
@@ -773,6 +788,7 @@ button:focus-visible {
 .play__board:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 .play__tile {
+  position: relative;
   padding: 0;
   border: 0;
   border-radius: 2px;
@@ -789,15 +805,12 @@ button:focus-visible {
 .play__tile:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; z-index: 1; }
 
 .play__frame { background: transparent; }
-.play__spare {
-  /* An empty slot sunk into the black frame: dark inside, shadowed along the
-     top-left edge and catching light along the bottom-right, the reverse of a
-     raised tile. */
-  background: linear-gradient(145deg, #000 0%, #0a0a0a 60%, #161616 100%);
-  box-shadow:
-    inset 3px 3px 5px rgba(0, 0, 0, 0.95),
-    inset -1px -1px 0 rgba(255, 255, 255, 0.2),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+.play__spare { position: relative; }
+/* The sunken tray under the tiles; see PlayView.#well. */
+.play__well { position: absolute; pointer-events: none; }
+.play__picture {
+  position: absolute;
+  background-size: 100% 100%;
   border-radius: 2px;
 }
 .play__spare .play__tile { width: 100%; height: 100%; }

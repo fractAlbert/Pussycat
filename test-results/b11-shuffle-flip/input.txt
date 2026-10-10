@@ -1,0 +1,34 @@
+nav /#cezanne-mardi-gras
+wait-for .play-button
+click .play-button
+wait-for .play__board
+click .play__tile[data-movable]
+text .play__moves
+eval JSON.stringify(window.pussycatPlay.state().hole)
+click .play__shuffle
+text .play__moves
+text .play__time
+eval window.pussycatPlay.state().solved
+click .play__flip
+sleep 700
+eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__card').hasAttribute('data-flipped'), document.querySelector('.play__board').inert]
+shot flipped
+eval (document.querySelector('.play__tile[data-movable]').dispatchEvent(new MouseEvent('click', {bubbles: true})), window.pussycatPlay.state().moves)
+click .play__flip
+sleep 700
+eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__board').inert]
+eval document.querySelector('.play__board').focus()
+press ArrowLeft
+press ArrowUp
+press ArrowRight
+press ArrowDown
+eval window.pussycatPlay.state().moves > 0
+eval window.pussycatPlay.nearlySolve()
+click .play__spare .play__tile
+wait-for .play__solved
+click .play__shuffle
+text .play__status
+eval window.pussycatPlay.state().solved
+text .play__moves
+shot reshuffled
+errors

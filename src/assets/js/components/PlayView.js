@@ -6,6 +6,9 @@ const MAX_TILE = 48;
 const GAP = 2;
 // Keep in step with .play__board's gap and padding in style.css.
 const PADDING = 30;
+// How far the sunken tray reaches past the tiles, so its edges show round them.
+const WELL = 3;
+let wellCount = 0;
 
 /**
  * The sliding-puzzle game inside the detail modal. A plain class rather than a
@@ -34,6 +37,11 @@ export class PlayView {
     this.#render();
     this.#positionAll();
 
+    this.root.querySelector('.play__shuffle').addEventListener('click', () => {
+      this.board.shuffle();
+      this.#restart();
+    });
+    this.flipEl.addEventListener('click', () => this.#flip(!this.flipped));
     this.boardEl.addEventListener('click', (event) => {
       const tile = event.target.closest('.play__tile');
       if (tile) this.#move(tile.dataset.home);
@@ -45,7 +53,7 @@ export class PlayView {
       if (!direction) return;
       // Stop the arrow keys scrolling the dialog behind the board.
       event.preventDefault();
-      if (this.locked) return;
+      if (this.locked || this.flipped) return;
       const home = this.board.tileInto(direction);
       if (home) this.#move(home);
     });
@@ -56,14 +64,7 @@ export class PlayView {
       state: () => this.board.state(),
       nearlySolve: () => {
         this.board.nearlySolve();
-        clearInterval(this.timer);
-        this.timer = null;
-        this.elapsed = 0;
-        this.locked = false;
-        this.statusEl.textContent = '';
-        this.statusEl.classList.remove('play__solved');
-        this.#positionAll();
-        this.#updateCounters();
+        this.#restart();
       },
     };
   }
@@ -107,24 +108,41 @@ export class PlayView {
       frame += `<div class="play__spare" style="grid-row:${rows};grid-column:${gridCols}"></div>`;
     }
 
+    const well = this.#well(t);
+    const picture = `left:${PADDING}px;top:${PADDING}px;width:${cols * t + GAP * (cols - 1)}px;`
+      + `height:${rows * t + GAP * (rows - 1)}px;background-image:${art}`;
+
     this.container.innerHTML = html`
       <div class="play">
         <div class="play__header">
           <h2 class="play__name">${this.puzzle.name}</h2>
           <button type="button" class="play__back">Back</button>
+          <button type="button" class="play__shuffle">Shuffle</button>
+          <button type="button" class="play__flip" aria-pressed="false">Flip</button>
           <span class="play__moves">Moves: 0</span>
           <span class="play__time">Time: 0s</span>
         </div>
-        <div class="play__board" tabindex="0" role="group"
-             aria-label="Sliding puzzle. Use the arrow keys or click a tile next to the gap to slide it."
-             style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
-          ${raw(tiles + frame)}
+        <div class="play__card">
+          <div class="play__board" tabindex="0" role="group"
+               aria-label="Sliding puzzle. Use the arrow keys or click a tile next to the gap to slide it."
+               style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
+            ${raw(well + tiles + frame)}
+          </div>
+          <div class="play__board play__back-face" role="img" aria-label="The finished picture" inert
+               style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
+            ${raw(well)}
+            <div class="play__picture" style="${picture}"></div>
+          </div>
         </div>
         <p class="play__status" role="status"></p>
       </div>
     `;
     this.root = this.container.querySelector('.play');
     this.boardEl = this.root.querySelector('.play__board');
+    this.cardEl = this.root.querySelector('.play__card');
+    this.backFaceEl = this.root.querySelector('.play__back-face');
+    this.flipEl = this.root.querySelector('.play__flip');
+    this.flipped = false;
     this.spareEl = this.root.querySelector('.play__spare');
     this.movesEl = this.root.querySelector('.play__moves');
     this.timeEl = this.root.querySelector('.play__time');
@@ -132,6 +150,67 @@ export class PlayView {
     this.tiles = new Map(
       [...this.root.querySelectorAll('.play__tile')].map((el) => [el.dataset.home, el]),
     );
+  }
+
+  /**
+   * The sunken tray the tiles sit in, drawn as one outline so its edges run
+   * unbroken round the picture and, on extra boards, step out round the spare.
+   * Top and left edges fall in shadow; bottom and right edges catch the light.
+   */
+  #well(t) {
+    const { rows, cols } = this.board;
+    const m = WELL;
+    const w = cols * t + GAP * (cols - 1);
+    const h = rows * t + GAP * (rows - 1);
+    const extra = this.board.format === 'extra';
+    const full = extra ? w + GAP + t : w;
+    const step = h - t - m; // the top of the spare's slot
+    const outline = extra
+      ? [[-m, -m], [w + m, -m], [w + m, step], [full + m, step], [full + m, h + m], [-m, h + m]]
+      : [[-m, -m], [w + m, -m], [w + m, h + m], [-m, h + m]];
+    const shade = extra
+      ? `M${-m} ${h + m}L${-m} ${-m}L${w + m} ${-m}M${w + m} ${step}L${full + m} ${step}`
+      : `M${-m} ${h + m}L${-m} ${-m}L${w + m} ${-m}`;
+    const light = extra
+      ? `M${w + m} ${-m}L${w + m} ${step}M${full + m} ${step}L${full + m} ${h + m}L${-m} ${h + m}`
+      : `M${w + m} ${-m}L${w + m} ${h + m}L${-m} ${h + m}`;
+    const id = `play-well-${++wellCount}`;
+    const points = outline.map((p) => p.join(',')).join(' ');
+    return `<svg class="play__well" aria-hidden="true" focusable="false"
+        style="left:${PADDING - m}px;top:${PADDING - m}px"
+        width="${full + 2 * m}" height="${h + 2 * m}" viewBox="${-m} ${-m} ${full + 2 * m} ${h + 2 * m}">
+      <defs>
+        <clipPath id="${id}-clip"><polygon points="${points}"/></clipPath>
+        <filter id="${id}-blur" x="-10%" y="-10%" width="120%" height="120%"><feGaussianBlur stdDeviation="2"/></filter>
+      </defs>
+      <polygon points="${points}" fill="#030303"/>
+      <g clip-path="url(#${id}-clip)" fill="none" stroke-linejoin="round">
+        <path d="${shade}" stroke="rgba(0,0,0,0.95)" stroke-width="8" filter="url(#${id}-blur)"/>
+        <path d="${light}" stroke="rgba(255,255,255,0.22)" stroke-width="2"/>
+      </g>
+    </svg>`;
+  }
+
+  /** Back to a fresh game on the current arrangement: no moves, no time. */
+  #restart() {
+    clearInterval(this.timer);
+    this.timer = null;
+    this.elapsed = 0;
+    this.locked = false;
+    this.statusEl.textContent = '';
+    this.statusEl.classList.remove('play__solved');
+    this.#flip(false);
+    this.#positionAll();
+    this.#updateCounters();
+  }
+
+  /** Turns the board over to show the finished picture, or back again. */
+  #flip(flipped) {
+    this.flipped = flipped;
+    this.cardEl.toggleAttribute('data-flipped', flipped);
+    this.flipEl.setAttribute('aria-pressed', String(flipped));
+    this.boardEl.inert = flipped;
+    this.backFaceEl.inert = !flipped;
   }
 
   /** Writes every tile's position and the movable flags from the board. */
@@ -162,7 +241,7 @@ export class PlayView {
   }
 
   #move(home) {
-    if (this.locked || !this.board.move(home)) return;
+    if (this.locked || this.flipped || !this.board.move(home)) return;
     const el = this.tiles.get(home);
     const hadFocus = document.activeElement === el;
     this.#place(el, this.board.cellOf(home));

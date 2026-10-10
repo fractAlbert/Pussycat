@@ -1,0 +1,51 @@
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> click .play__tile[data-movable]
+> text .play__moves
+Moves: 1
+> eval JSON.stringify(window.pussycatPlay.state().hole)
+"\"8-6\""
+> click .play__shuffle
+> text .play__moves
+Moves: 0
+> text .play__time
+Time: 0s
+> eval window.pussycatPlay.state().solved
+false
+> click .play__flip
+> sleep 700
+> eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__card').hasAttribute('data-flipped'), document.querySelector('.play__board').inert]
+["true",true,true]
+> shot flipped
+C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\flipped.png
+> eval (document.querySelector('.play__tile[data-movable]').dispatchEvent(new MouseEvent('click', {bubbles: true})), window.pussycatPlay.state().moves)
+0
+> click .play__flip
+> sleep 700
+> eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__board').inert]
+["false",false]
+> eval document.querySelector('.play__board').focus()
+undefined
+> press ArrowLeft
+> press ArrowUp
+> press ArrowRight
+> press ArrowDown
+> eval window.pussycatPlay.state().moves > 0
+true
+> eval window.pussycatPlay.nearlySolve()
+undefined
+> click .play__spare .play__tile
+> wait-for .play__solved
+> click .play__shuffle
+> text .play__status
+
+> eval window.pussycatPlay.state().solved
+false
+> text .play__moves
+Moves: 0
+> shot reshuffled
+C:\Users\fract\Documents\github\Pussycat\test-results\b11-shuffle-flip\reshuffled.png
+> errors
+(no errors)
