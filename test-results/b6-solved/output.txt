@@ -1,4 +1,4 @@
-# commit 2d1fa40 + raised board frame (style.css, PlayView.js PADDING); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# commit 533d23a + recessed black spare (style.css) + stale-close fix (PuzzleModal.js); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
 # $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b6-solved < test-results/b6-solved/input.txt
 > nav /#cezanne-mardi-gras
 > wait-for .play-button
