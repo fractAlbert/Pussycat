@@ -6,9 +6,11 @@
  * cell it belongs in (its home). Moving, the solved test, shuffling and the
  * solvability parity rule are ported from Shuffle.
  *
- * "extra": rows×cols tiles, every image cell filled, the hole starts in the
- * spare. Only the bottom-right tile can ever enter the spare, so the rest of
- * the board is the usual puzzle with the bottom-right cell as its hole.
+ * "extra": rows×cols tiles, every image cell filled when solved. Only the
+ * bottom-right tile can ever enter the spare, so the rest of the board is the
+ * usual puzzle with the bottom-right cell as its hole. A shuffled board starts
+ * the way the physical one is played: that corner tile already slid out into
+ * the spare.
  * "inline": one tile is missing from the image itself; the hole's home is the
  * corner cell named by `corner`.
  */
@@ -164,8 +166,9 @@ export class Board {
     return key(r, c);
   }
 
-  // Corner tile stays home, spare empty; the other tiles are permuted evenly,
-  // because the hole returns to where it started (distance 0, so even parity).
+  // The other tiles are permuted evenly, because with the corner tile home the
+  // hole would be back where it started (distance 0, so even parity). Then the
+  // corner tile takes its one legal move out into the spare, opening the board.
   shuffleExtra(rng) {
     const corner = key(this.rows - 1, this.cols - 1);
     const spots = this.cells.filter((cell) => cell !== SPARE && cell !== corner);
@@ -177,6 +180,7 @@ export class Board {
     this.occupant.set(corner, corner);
     spots.forEach((spot, i) => this.occupant.set(spot, spots[order[i]]));
     this.hole = SPARE;
+    this.move(corner);
   }
 
   // The hole is shuffled as one more item; solvable when the permutation's
