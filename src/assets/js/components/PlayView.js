@@ -4,6 +4,8 @@ import { ART_PATH } from '../config.js';
 
 const MAX_TILE = 48;
 const GAP = 2;
+// Keep in step with .play__board's gap and padding in style.css.
+const PADDING = 4;
 
 /**
  * The sliding-puzzle game inside the detail modal. A plain class rather than a
@@ -51,9 +53,15 @@ export class PlayView {
     // Test hook: lets the browser driver inspect a shuffled board and skip to
     // the last move. Not used by the page itself.
     window.pussycatPlay = {
-      state: () => ({ ...this.board.state(), moves: this.board.moves }),
+      state: () => this.board.state(),
       nearlySolve: () => {
         this.board.nearlySolve();
+        clearInterval(this.timer);
+        this.timer = null;
+        this.elapsed = 0;
+        this.locked = false;
+        this.statusEl.textContent = '';
+        this.statusEl.classList.remove('play__solved');
         this.#positionAll();
         this.#updateCounters();
       },
@@ -75,12 +83,13 @@ export class PlayView {
     const extra = this.board.format === 'extra';
     const gridCols = cols + (extra ? 1 : 0);
     const available = this.container.clientWidth || 320;
-    this.tile = Math.max(16, Math.min(MAX_TILE, Math.floor((available - GAP * (gridCols - 1)) / gridCols)));
+    const room = available - 2 * PADDING - GAP * (gridCols - 1);
+    this.tile = Math.max(8, Math.min(MAX_TILE, Math.floor(room / gridCols)));
     const t = this.tile;
     const art = `url("${ART_PATH + this.puzzle.art.file}")`;
 
     const tiles = this.board.cells
-      .filter((cell) => cell !== SPARE)
+      .filter((cell) => cell !== this.board.holeHome)
       .map((cell) => {
         const [r, c] = this.board.coords(cell);
         return html`
@@ -111,7 +120,7 @@ export class PlayView {
              style="grid-template-columns:repeat(${gridCols},${t}px);grid-template-rows:repeat(${rows},${t}px)">
           ${raw(tiles + frame)}
         </div>
-        <div class="play__status"></div>
+        <p class="play__status" role="status"></p>
       </div>
     `;
     this.root = this.container.querySelector('.play');
@@ -182,7 +191,9 @@ export class PlayView {
       this.timer = null;
     }
     const moves = this.board.moves;
-    this.statusEl.innerHTML = html`<p class="play__solved" role="status">Solved in ${moves} moves, ${this.elapsed}s</p>`;
+    // The live region already exists, so screen readers announce the change.
+    this.statusEl.classList.add('play__solved');
+    this.statusEl.textContent = `Solved in ${moves} ${moves === 1 ? 'move' : 'moves'}, ${this.elapsed}s`;
   }
 
   #updateCounters() {

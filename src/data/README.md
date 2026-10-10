@@ -39,7 +39,6 @@ Only `id` and `name` are required. Record what is known and leave the rest out.
     "date": "1888",
     "basis": "Why this image may be reused."
   },
-  "blankPosition": "bottom-right",
   "description": "",
   "source": "https://…",
   "verified": false

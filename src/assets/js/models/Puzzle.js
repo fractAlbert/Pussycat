@@ -41,7 +41,8 @@ export class Puzzle {
     this.copyright = record.copyright ?? null;
     // The artwork behind the puzzle, used by play mode (see normalizeArt).
     this.art = Puzzle.normalizeArt(record.art);
-    // Which corner an inline puzzle's missing tile belongs in; null = unknown.
+    // Which corner an inline puzzle's missing tile belongs in; null means the
+    // default, bottom-right (see blankCorner).
     this.blankPosition = BLANK_POSITIONS.includes(record.blankPosition)
       ? record.blankPosition
       : null;
@@ -100,7 +101,7 @@ export class Puzzle {
    * are null when missing; an art record with no file is no art at all.
    */
   static normalizeArt(art) {
-    if (!art || !art.file) return null;
+    if (!art || !Puzzle.isSafeFileName(art.file)) return null;
     return {
       file: art.file,
       sourceUrl: art.sourceUrl ?? null,
@@ -108,6 +109,14 @@ export class Puzzle {
       date: art.date ?? null,
       basis: art.basis ?? null,
     };
+  }
+
+  /**
+   * A bare file name: no path, quotes or parentheses. The art file ends up
+   * inside a CSS url(), where HTML escaping no longer protects it.
+   */
+  static isSafeFileName(file) {
+    return typeof file === 'string' && /^[\w.-]+$/.test(file);
   }
 
   /**
@@ -232,8 +241,8 @@ export class Puzzle {
       console.warn(`"${record.id}": blank type given without a grid`);
     }
     // Play-mode fields only warn: the entry is still a good catalog entry.
-    if (record.art && !record.art.file) {
-      console.warn(`"${record.id}": art given without a file`);
+    if (record.art && !Puzzle.isSafeFileName(record.art.file)) {
+      console.warn(`"${record.id}": art needs a plain file name; ignored`);
     }
     if (record.blankPosition != null) {
       if (!BLANK_POSITIONS.includes(record.blankPosition)) {

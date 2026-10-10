@@ -81,8 +81,9 @@ A puzzle is playable from the detail view (D-012). **Play shows only when `art`,
 `grid` and `blank` are all recorded, and `grid` has `rows` and `cols` each at
 least 2.** No grid, no Play: size is never guessed.
 
-The art image is cropped to the aspect ratio `cols:rows` and sliced into
-`rows × cols` tiles.
+The art file must already be cropped to the aspect ratio `cols:rows` before it
+is added. The page slices it into `rows × cols` tiles as it is and does not crop
+it, so a file with the wrong ratio plays stretched.
 
 ### Where the blank sits
 
