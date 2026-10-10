@@ -1,0 +1,12 @@
+> nav /images.html
+> wait-for main
+> eval [...document.querySelectorAll('main h2')].map(h => h.textContent)
+["Where the photographs come from","Why the files are stored here","Replacing placeholders","If you want a photograph removed","The artworks themselves","Public-domain art images"]
+> eval document.body.innerText.includes('Nothing on this site is a reproduction')
+false
+> eval (() => { const h = [...document.querySelectorAll('main h2')].find(h => h.textContent === 'Public-domain art images'); h.scrollIntoView(); return !!h; })()
+true
+> shot images-page
+C:\Users\fract\Documents\github\Pussycat\test-results\b1-images-page\images-page.png
+> errors
+(no errors)

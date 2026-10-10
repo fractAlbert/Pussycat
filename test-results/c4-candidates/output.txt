@@ -1,0 +1,26 @@
+filled   cezanne-mardi-gras
+filled   cezanne-card-players
+filled   cezanne-large-bathers
+filled   monet-80-23215
+filled   kandinsky-80-2341
+filled   kandinsky-auf-weiss-ii
+filled   kandinsky-kreise-im-kreis
+reason   klee-80-23155: excluded by the rule: the puzzle shows the inscription '1940 … vor einer Stunde … Nacht'
+reason   klee-80-23151: unidentified: no Commons match, so its date cannot be checked
+filled   renoir-boating-party
+filled   renoir-1881
+filled   renoir-1883
+filled   renoir-1876
+filled   klimt-the-kiss
+filled   van-gogh-schwertlilien
+filled   macke-modegeschaeft
+filled   cezanne-kitchen-table
+reason   kandinsky-weiches-hart: unconfirmed identity, and no Commons scan of 800px or more ('Molle rudesse' 520px, 'Softened Construction' 411x800)
+filled   marc-cat-under-a-tree
+filled   marc-blauschwarzer-fuchs
+reason   van-gogh-selbstportraet: unidentifiable: no puzzle photo, and Van Gogh painted more than 35 self-portraits
+reason   klee-uebermut: excluded by the rule: Übermut is from 1939
+filled   van-gogh-sunflowers
+filled   macke-spaziergaenger-am-see
+candidates 24: filled 19, with reason 5, unaccounted 0
+ALL PASS

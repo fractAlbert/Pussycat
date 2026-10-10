@@ -1,0 +1,4 @@
+$ git ls-files "*.js" | xargs -n1 node --check
+exit=0
+$ node -e JSON.parse(puzzles.json)
+json ok
