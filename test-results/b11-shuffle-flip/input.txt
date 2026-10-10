@@ -7,11 +7,10 @@ text .play__moves
 click .play__shuffle
 text .play__moves
 eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
-sleep 250
-eval document.querySelector('.play__shuffle').hasAttribute('data-holding')
+sleep 200
+eval [document.querySelector('.play__shuffle').hasAttribute('data-holding'), window.pussycatPlay.state().moves]
 shot holding
-text .play__moves
-sleep 500
+sleep 600
 text .play__moves
 text .play__time
 eval [document.querySelector('.play__shuffle').hasAttribute('data-holding'), window.pussycatPlay.state().solved]
