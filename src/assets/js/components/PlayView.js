@@ -5,7 +5,7 @@ import { ART_PATH } from '../config.js';
 const MAX_TILE = 48;
 const GAP = 2;
 // Keep in step with .play__board's gap and padding in style.css.
-const PADDING = 4;
+const PADDING = 30;
 
 /**
  * The sliding-puzzle game inside the detail modal. A plain class rather than a

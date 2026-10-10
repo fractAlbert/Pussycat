@@ -1,4 +1,4 @@
-# commit 3fd550a + black board frame (style.css); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# commit 2d1fa40 + raised board frame (style.css, PlayView.js PADDING); v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
 # $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b8-escape-deeplink < test-results/b8-escape-deeplink/input.txt
 > nav /#cezanne-mardi-gras
 > wait-for .play-button
@@ -10,16 +10,5 @@
 > nav /#cezanne-mardi-gras
 > wait-for .play-button
 > click .play-button
-> wait-for .play__board
-> eval location.reload()
-undefined
-> wait-for dialog#detail[open]
-> count .play__board
-0
-> count .facts
-1
-> shot reloaded
-C:\Users\fract\Documents\github\Pussycat\test-results\b8-escape-deeplink\reloaded.png
-> errors
-(no errors)
-exit 0
+[driver] FAILED: locator.click: Timeout 10000ms exceeded.
+exit 1
