@@ -1,0 +1,13 @@
+nav /#cezanne-mardi-gras
+wait-for .play-button
+click .play-button
+wait-for .play__board
+eval document.querySelector('.play__board').focus()
+press ArrowRight
+text .play__moves
+eval window.pussycatPlay.state().hole
+eval document.querySelector('.play__tile[data-movable]').focus()
+press Enter
+text .play__moves
+shot keyboard
+errors

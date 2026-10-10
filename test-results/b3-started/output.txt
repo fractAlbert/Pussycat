@@ -1,0 +1,21 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b3-started < test-results/b3-started/input.txt
+> nav /#cezanne-mardi-gras
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> count .play__tile
+63
+> count .play__spare .play__tile
+0
+> eval (s => [s.rows, s.cols, s.format, s.solved, s.hole, s.moves, s.cornerHome])(window.pussycatPlay.state())
+[9,7,"extra",false,"spare",0,true]
+> eval document.activeElement.classList.contains('play__board')
+true
+> eval [...document.querySelectorAll('.play__tile')].filter(t => t.dataset.home !== t.dataset.cell).length
+60
+> shot started
+C:\Users\fract\Documents\github\Pussycat\test-results\b3-started\started.png
+> errors
+(no errors)
+exit 0

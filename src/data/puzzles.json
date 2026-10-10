@@ -7,12 +7,19 @@
     "artNumber": "80 23244",
     "copyright": 1999,
     "grid": {
-      "rows": 7,
-      "cols": 9
+      "rows": 9,
+      "cols": 7
     },
     "blank": "extra",
     "images": [],
-    "description": "After Cézanne's Mardi Gras (Pierrot and Harlequin), 1888. Measured in hand: 7×9 fully tiled, with the extra empty cell in a corner outside the image.",
+    "art": {
+      "file": "cezanne-mardi-gras.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mardi_gras,_par_Paul_C%C3%A9zanne,_Yorck.jpg",
+      "title": "Mardi Gras (Pierrot and Harlequin)",
+      "date": "1888",
+      "basis": "Wikimedia Commons tags the file Public domain (pd): Cézanne died in 1906, so the painting is public domain worldwide (life+70 in the EU; published before 1931 in the US)."
+    },
+    "description": "After Cézanne's Mardi Gras (Pierrot and Harlequin), 1888. Measured in hand: 7 columns × 9 rows (portrait), fully tiled, with the extra empty cell in a corner outside the image.",
     "source": null,
     "owned": true,
     "verified": true

@@ -13,9 +13,11 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 | `artist` | no | string \| null | `null` means genuinely unknown, rendered as "Unattributed" (D-007). |
 | `grid` | no | `{rows, cols}` \| null | Integers. Dimensions of the **completed image**, not the frame. |
 | `blank` | no | `"extra"` \| `"inline"` \| null | See below. Give it together with `grid`. |
+| `blankPosition` | no | `"bottom-right"` \| `"bottom-left"` \| `"top-right"` \| `"top-left"` \| null | `"inline"` only. Where the gap sits when solved; `null` or absent means bottom-right. Ignored, with a console warning, on `"extra"`. |
 | `brand` | no | string | As marked on the puzzle. Absent means `"Pussycat"`; set only for other names, so far `"Pussy"` (D-011). |
 | `series` | no | string \| null | |
 | `images` | no | array of image objects | Ordered. The first is the catalog card thumbnail. |
+| `art` | no | `{file, sourceUrl, title, date, basis}` \| null | The clean artwork that Play slices into tiles (D-012). Only `file` is required inside; the rest records provenance. Local file in `src/images/art/`, never hotlinked. |
 | `description` | no | string | Free text. |
 | `artNumber` | no | string \| null | Printed on the puzzle, e.g. `80 23244`. Searchable with or without spaces. |
 | `copyright` | no | number \| null | Copyright year printed on the puzzle, not the year of the artwork. |
@@ -67,11 +69,41 @@ axis, not a universal property.
 
 Both are filterable, and independently of grid size.
 
-**The two formats occur within the same run and the same grid.** Two owned 7×9
-art puzzles differ: the Cézanne is `"extra"` (63 tiles) and the Kandinsky is
+**The two formats occur within the same run and the same grid.** Two owned 63-cell
+art puzzles (7 × 9, the Cézanne held portrait as 9 rows × 7 columns) differ: the Cézanne is `"extra"` (63 tiles) and the Kandinsky is
 `"inline"` (62). This is what the long-running "62 or 63 tiles?" disagreement
 among sellers turned out to be — not a miscount, but two layouts. A tile count
 therefore cannot be inferred from a grid alone; the format has to be seen.
+
+## Play
+
+A puzzle is playable from the detail view (D-012). **Play shows only when `art`,
+`grid` and `blank` are all recorded, and `grid` has `rows` and `cols` each at
+least 2.** No grid, no Play: size is never guessed.
+
+The art file must already be cropped to the aspect ratio `cols:rows` before it
+is added. The page slices it into `rows × cols` tiles as it is and does not crop
+it, so a file with the wrong ratio plays stretched.
+
+### Where the blank sits
+
+- **`"extra"`** — the spare cell sits to the right of the bottom-right image
+  cell. The evidence is the listing photographs of `saurier-49` and
+  `escher-e72-fish`. This convention is **not yet confirmed on Mardi Gras
+  itself**, the pilot.
+- **`"inline"`** — the gap home comes from `blankPosition`, default
+  bottom-right.
+
+### Art images
+
+Art files live in `src/images/art/` as `<id>.jpg`, apart from the listing
+photographs in `src/images/puzzles/`, so `sync-images` ignores them.
+
+Pilot provenance, `cezanne-mardi-gras.jpg`: the Wikimedia Commons original
+`File:Mardi gras, par Paul Cézanne, Yorck.jpg` (1580×2000), cropped to a 1556×2000
+box at x=12 (exactly 7:9, centred), resized to 622×800 with PowerShell
+System.Drawing (HighQualityBicubic), saved as JPEG at quality 85. Licence as
+returned by the Commons API: `LicenseShortName` "Public domain", `License` "pd".
 
 ## Never read a listing's dimensions as a grid
 

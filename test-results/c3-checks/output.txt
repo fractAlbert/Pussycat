@@ -1,0 +1,22 @@
+# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
+$ git ls-files "*.js" | xargs -n1 node --check
+exit 0
+$ node --check (untracked-safe) src/assets/js/play/Board.js src/assets/js/components/PlayView.js
+exit 0
+$ node -e "JSON.parse(require('fs').readFileSync('src/data/puzzles.json','utf8'))"
+exit 0
+$ rg -n "D-012" docs/decisions.md docs/open-questions.md docs/requirements.md
+docs/requirements.md:19:- *Amended 2026-10-08 (D-012):* puzzles can also be played from the detail view.
+docs/open-questions.md:18:| 8 | Playable in browser? | ~~No — catalog only, "information for collectors" (§1)~~ Superseded: yes, see D-012 | D-012 |
+docs/decisions.md:204:### D-012 — Puzzles are playable from the detail view
+exit 0
+$ rg -n '`art`|"art"|blankPosition' src/data/README.md docs/data-model.md
+docs/data-model.md:16:| `blankPosition` | no | `"bottom-right"` \| `"bottom-left"` \| `"top-right"` \| `"top-left"` \| null | `"inline"` only. Where the gap sits when solved; `null` or absent means bottom-right. Ignored, with a console warning, on `"extra"`. |
+docs/data-model.md:20:| `art` | no | `{file, sourceUrl, title, date, basis}` \| null | The clean artwork that Play slices into tiles (D-012). Only `file` is required inside; the rest records provenance. Local file in `src/images/art/`, never hotlinked. |
+docs/data-model.md:80:A puzzle is playable from the detail view (D-012). **Play shows only when `art`,
+docs/data-model.md:94:- **`"inline"`** — the gap home comes from `blankPosition`, default
+src/data/README.md:35:  "art": {
+src/data/README.md:61:- `art` is the clean artwork the **Play** button slices into tiles (D-012). Only
+src/data/README.md:67:- `blankPosition` is only for `"inline"` puzzles: `"bottom-right"`,
+src/data/README.md:71:- **Play rule:** a puzzle shows Play only when `art`, `grid` (rows and cols each
+exit 0
