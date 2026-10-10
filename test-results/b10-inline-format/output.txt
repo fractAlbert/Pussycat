@@ -1,5 +1,3 @@
-# commit 5305486 on feature/10-play; v25.8.2; Windows 11; system Chrome via playwright-core 1.63.0
-# $ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b10-inline-format < test-results/b10-inline-format/input.txt
 > nav /
 > wait-for .card
 > eval (async () => { const { PlayView } = await import('/assets/js/components/PlayView.js'); const { Puzzle } = await import('/assets/js/models/Puzzle.js'); const host = document.createElement('div'); host.id = 'inline-probe'; host.style.cssText = 'position:fixed;top:20px;left:20px;width:420px;padding:16px;background:var(--card);z-index:9999'; document.body.append(host); const p = new Puzzle({ id: 'inline-probe', name: 'Inline probe (top-left gap)', grid: { rows: 4, cols: 3 }, blank: 'inline', blankPosition: 'top-left', art: { file: 'cezanne-mardi-gras.jpg' } }); window.__probe = new PlayView(host, p); return [p.isPlayable, p.blankCorner]; })()
@@ -35,4 +33,3 @@ C:\Users\fract\Documents\github\Pussycat\test-results\b10-inline-format\inline-s
 "undefined"
 > errors
 (no errors)
-exit 0

@@ -1,0 +1,48 @@
+nav /#cezanne-mardi-gras
+wait-for .play-button
+click .play-button
+wait-for .play__board
+click .play__tile[data-movable]
+text .play__moves
+click .play__shuffle
+text .play__moves
+eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
+sleep 200
+eval [document.querySelector('.play__shuffle').hasAttribute('data-holding'), window.pussycatPlay.state().moves]
+shot holding
+sleep 600
+text .play__moves
+text .play__time
+eval [document.querySelector('.play__shuffle').hasAttribute('data-holding'), window.pussycatPlay.state().solved]
+eval document.querySelector('.play__board').focus()
+press ArrowLeft
+press ArrowUp
+press ArrowRight
+press ArrowDown
+eval window.pussycatPlay.state().moves > 0
+eval document.querySelector('.play__shuffle').focus()
+press Enter
+eval window.pussycatPlay.state().moves > 0
+eval document.querySelector('.play__shuffle').dispatchEvent(new KeyboardEvent('keydown', {key: ' ', bubbles: true}))
+sleep 1300
+text .play__moves
+click .play__flip
+sleep 180
+shot mid-flip
+sleep 700
+eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__card').hasAttribute('data-flipped'), document.querySelector('.play__board').inert]
+shot flipped
+eval (document.querySelector('.play__tile[data-movable]').dispatchEvent(new MouseEvent('click', {bubbles: true})), window.pussycatPlay.state().moves)
+click .play__flip
+sleep 700
+eval [document.querySelector('.play__flip').getAttribute('aria-pressed'), document.querySelector('.play__board').inert]
+eval window.pussycatPlay.nearlySolve()
+click .play__spare .play__tile
+wait-for .play__solved
+eval document.querySelector('.play__shuffle').dispatchEvent(new PointerEvent('pointerdown', {bubbles: true, button: 0}))
+sleep 1300
+text .play__status
+eval window.pussycatPlay.state().solved
+text .play__moves
+shot reshuffled
+errors

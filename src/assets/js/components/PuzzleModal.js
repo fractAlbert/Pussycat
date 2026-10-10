@@ -39,7 +39,10 @@ export class PuzzleModal extends Component {
     // Escape fires "cancel", not "close" — listening only for the latter
     // leaves the dialog shut but the state and URL still pointing at a puzzle.
     this.el.addEventListener('cancel', () => this.#close());
-    this.el.addEventListener('close', () => this.#close());
+    // "close" arrives a task after the dialog shuts. If the puzzle was reopened
+    // in between, the dialog is open again and this one is stale: ignore it,
+    // or it would shut the dialog it no longer belongs to.
+    this.el.addEventListener('close', () => { if (!this.el.open) this.#close(); });
 
     window.addEventListener('hashchange', () => this.#syncFromHash());
   }

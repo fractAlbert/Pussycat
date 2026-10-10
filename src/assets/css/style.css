@@ -741,7 +741,7 @@ button:focus-visible {
   margin-right: 2rem;
 }
 .play__name { flex: 1 1 100%; margin: 0; font-size: 1.25rem; }
-.play__back {
+.play__back, .play__shuffle, .play__flip {
   font: inherit;
   color: var(--ink);
   background: var(--accent-soft);
@@ -750,22 +750,100 @@ button:focus-visible {
   padding: 0.25rem 0.8rem;
   cursor: pointer;
 }
+.play__shuffle {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+/* Fills left to right while held; snaps back if let go early. */
+.play__shuffle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--accent);
+  opacity: 0.35;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.play__shuffle[data-holding]::before {
+  transform: scaleX(1);
+  transition: transform var(--hold) linear;
+}
+.play__flip[aria-pressed="true"] { background: var(--accent); color: var(--card); }
 .play__moves, .play__time { color: var(--ink-soft); font-variant-numeric: tabular-nums; }
 
+/* The board and its back face share one cell and turn over together. The
+   faces sit half the puzzle's thickness in front of and behind the middle,
+   and two edge strips close the sides, so it shows its depth as it turns. */
+.play__card {
+  --thick: 15px;
+  position: relative;
+  display: grid;
+  max-width: 100%;
+  transform: perspective(1200px) rotateY(0);
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+.play__card > .play__board {
+  grid-area: 1 / 1;
+  backface-visibility: hidden;
+  transform: translateZ(calc(var(--thick) / 2));
+}
+.play__card > .play__back-face {
+  transform: rotateY(180deg) translateZ(calc(var(--thick) / 2));
+  /* A flat printed back: no sheen or bevel, just the drop shadow. */
+  background: #050505;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.35), 0 12px 24px rgba(0, 0, 0, 0.35);
+}
+.play__edge {
+  position: absolute;
+  top: 3px;
+  bottom: 3px;
+  left: calc(var(--thick) / -2);
+  width: var(--thick);
+  background: linear-gradient(90deg, #000, #222 50%, #000);
+  transform: rotateY(90deg);
+}
+.play__edge--right { left: calc(100% - var(--thick) / 2); }
+.play__card[data-flipped] { transform: perspective(1200px) rotateY(180deg); }
+@media (prefers-reduced-motion: reduce) { .play__card { transition: none; } }
+
 .play__board {
+  position: relative;
   display: grid;
   gap: 2px;
-  padding: 4px;
+  /* px, not rem: PlayView.js sizes the tiles in px from this padding and the
+     gap, so the three have to stay in step. */
+  padding: 30px;
   max-width: 100%;
-  background: var(--line);
-  border-radius: 6px;
+  /* The puzzle's black plastic frame, in either theme. A faint sheen across
+     the face plus a lit top-left edge, a shaded bottom-right edge and a drop
+     shadow give it the depth of a physical frame. */
+  background: linear-gradient(145deg, #2b2b2b 0%, #0d0d0d 45%, #000 100%);
+  border-radius: var(--radius);
+  box-shadow:
+    inset 2px 2px 1px rgba(255, 255, 255, 0.22),
+    inset -3px -3px 2px rgba(0, 0, 0, 0.9),
+    0 3px 4px rgba(0, 0, 0, 0.35),
+    0 12px 24px rgba(0, 0, 0, 0.35);
 }
 .play__board:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
 
 .play__tile {
+  position: relative;
   padding: 0;
   border: 0;
   border-radius: 2px;
+  /* Each tile is a raised plastic square: lit top-left, shaded bottom-right. */
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 255, 255, 0.35),
+    inset -1px -1px 0 rgba(0, 0, 0, 0.45),
+    0 1px 2px rgba(0, 0, 0, 0.7);
   background-color: var(--accent-soft);
   background-repeat: no-repeat;
   cursor: default;
@@ -774,10 +852,15 @@ button:focus-visible {
 .play__tile:focus-visible { outline: 3px solid var(--accent); outline-offset: -3px; z-index: 1; }
 
 .play__frame { background: transparent; }
-.play__spare {
-  background: var(--paper);
-  box-shadow: inset 0 0 0 2px var(--ink-soft);
-  border-radius: 2px;
+.play__spare { position: relative; }
+/* The sunken tray under the tiles; see PlayView.#well. */
+.play__well { position: absolute; pointer-events: none; }
+/* The back of the board: the finished picture printed flat in black and
+   white, with no tray or tiles. */
+.play__picture {
+  position: absolute;
+  background-size: 100% 100%;
+  filter: grayscale(1);
 }
 .play__spare .play__tile { width: 100%; height: 100%; }
 
