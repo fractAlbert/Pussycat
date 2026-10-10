@@ -8,6 +8,9 @@ export const BLANK_LABELS = {
   inline: 'Inline blank',
 };
 
+/** Corners an inline puzzle's missing tile can belong in. */
+export const BLANK_POSITIONS = ['bottom-right', 'bottom-left', 'top-right', 'top-left'];
+
 /**
  * One catalog entry.
  *
@@ -36,6 +39,12 @@ export class Puzzle {
     // Printed on the puzzle itself — the closest thing to a catalogue key.
     this.artNumber = record.artNumber ?? null;
     this.copyright = record.copyright ?? null;
+    // The artwork behind the puzzle, used by play mode (see normalizeArt).
+    this.art = Puzzle.normalizeArt(record.art);
+    // Which corner an inline puzzle's missing tile belongs in; null = unknown.
+    this.blankPosition = BLANK_POSITIONS.includes(record.blankPosition)
+      ? record.blankPosition
+      : null;
   }
 
   get artistLabel() {
@@ -62,6 +71,43 @@ export class Puzzle {
     if (!this.grid || !this.blank) return null;
     const cells = this.grid.rows * this.grid.cols;
     return this.blank === 'extra' ? cells : cells - 1;
+  }
+
+  /**
+   * Play mode needs the clean artwork and a grid it can actually slide: at
+   * least 2×2, with a known blank type.
+   */
+  get isPlayable() {
+    return (
+      this.art !== null &&
+      !!this.grid &&
+      this.grid.rows >= 2 &&
+      this.grid.cols >= 2 &&
+      (this.blank === 'extra' || this.blank === 'inline')
+    );
+  }
+
+  /**
+   * Where the hole belongs when solved. An "extra" puzzle's spare is always
+   * past the bottom-right; an inline puzzle defaults there when unrecorded.
+   */
+  get blankCorner() {
+    return this.blank === 'inline' ? this.blankPosition ?? 'bottom-right' : 'bottom-right';
+  }
+
+  /**
+   * The clean artwork, or null when there is none. Members other than `file`
+   * are null when missing; an art record with no file is no art at all.
+   */
+  static normalizeArt(art) {
+    if (!art || !art.file) return null;
+    return {
+      file: art.file,
+      sourceUrl: art.sourceUrl ?? null,
+      title: art.title ?? null,
+      date: art.date ?? null,
+      basis: art.basis ?? null,
+    };
   }
 
   /**
@@ -113,6 +159,8 @@ export class Puzzle {
       copyright: this.copyright,
       grid: this.grid ? { ...this.grid } : null,
       blank: this.blank,
+      blankPosition: this.blankPosition,
+      art: this.art ? { ...this.art } : null,
       images: this.images.map((image) => ({ ...image })),
       description: this.description,
       source: this.source,
@@ -182,6 +230,17 @@ export class Puzzle {
     // a tile count. A blank type with no grid tells us nothing at all.
     if (record.blank && !record.grid) {
       console.warn(`"${record.id}": blank type given without a grid`);
+    }
+    // Play-mode fields only warn: the entry is still a good catalog entry.
+    if (record.art && !record.art.file) {
+      console.warn(`"${record.id}": art given without a file`);
+    }
+    if (record.blankPosition != null) {
+      if (!BLANK_POSITIONS.includes(record.blankPosition)) {
+        console.warn(`"${record.id}": unknown blankPosition "${record.blankPosition}"`);
+      } else if (record.blank !== 'inline') {
+        console.warn(`"${record.id}": blankPosition is ignored on a non-inline entry`);
+      }
     }
     return null;
   }
