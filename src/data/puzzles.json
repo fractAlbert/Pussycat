@@ -659,17 +659,33 @@
   },
   {
     "id": "picasso-80-23185",
-    "name": "Picasso (title unrecorded)",
+    "name": "Kopf eines Mannes mit Strohhut",
     "artist": "Pablo Picasso",
     "series": "Art",
     "artNumber": "80 23185",
-    "copyright": null,
-    "grid": null,
-    "blank": null,
-    "images": [],
-    "description": "Art number places it in the same run as the Monet, Klee and Cézanne puzzles. The artwork is not named in the listing.",
+    "copyright": 1996,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
+    "blankPosition": "top-right",
+    "images": [
+      {
+        "file": "picasso-80-23185-front.jpg",
+        "sourceUrl": null,
+        "label": null
+      },
+      {
+        "file": "picasso-80-23185-back.jpg",
+        "sourceUrl": null,
+        "label": "Back"
+      }
+    ],
+    "description": "Head of a Man with a Straw Hat (Tête d'homme au chapeau de paille), Mougins, 26 July 1971, Musée Picasso, Paris, as printed on the back. Owned: 9 rows × 7 columns with an inline gap at the top right. Still in copyright (© Succession Picasso / VG Bild-Kunst), so it has no art image and no Play.",
     "source": "https://picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-puzzle-PABLO-PICASSO-Art-364124600176.html",
-    "verified": false
+    "owned": true,
+    "verified": true
   },
   {
     "id": "magritte-slide-puzzle",
