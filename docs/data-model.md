@@ -112,6 +112,11 @@ The crop box for each image is recorded in the evidence for #11
 (`test-results/c3-contact-sheet/crops.json`). The licence is checked through
 the Commons API.
 
+The files are kept as sourced. Because the printed puzzles are punchier than
+the museum scans, the game shows art through one CSS filter, `--art-filter`
+(`contrast(1.2) saturate(1.3)`) on `.play` in `style.css`, chosen by eye against
+the puzzle photos.
+
 ## Never read a listing's dimensions as a grid
 
 Sellers quote the frame size in inches, and it looks exactly like a grid.
