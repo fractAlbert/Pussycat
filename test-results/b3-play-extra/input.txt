@@ -1,0 +1,15 @@
+nav /#kandinsky-kreise-im-kreis
+wait-for .play-button
+click .play-button
+wait-for .play__board
+eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+count .play__tile
+eval [getComputedStyle(document.querySelector('.play__tile')).filter, getComputedStyle(document.querySelector('.play__picture')).filter]
+shot started
+eval window.pussycatPlay.nearlySolve()
+click .play__spare .play__tile
+wait-for .play__solved
+text .play__solved
+eval window.pussycatPlay.state().solved
+shot solved
+errors

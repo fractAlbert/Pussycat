@@ -30,8 +30,8 @@ Settled 2026-07-30 from `requirements.md` §3 and the decisions in
 The closest thing to a catalogue key. Two families are visible so far:
 
 - `80 29xx` — 49-tile 7×7 puzzles (wildlife, dinosaurs, crosswords).
-- `80 23xxx` — the fine-art run carrying a 1999 copyright (Cézanne, Monet,
-  Klee, Picasso).
+- `80 23xxx` — the fine-art run (Cézanne, Monet, Klee, Picasso), mostly
+  carrying a 1999 copyright; the owned Picasso `80 23185` is marked 1996.
 
 Escher puzzles instead use an `E nnn` reference from the Escher catalogue
 raisonné, which is stored in the same field.
@@ -103,6 +103,19 @@ Pilot provenance, `cezanne-mardi-gras.jpg`: the Wikimedia Commons original
 box at x=12 (exactly 7:9, centred), resized to 622×800 with PowerShell
 System.Drawing (HighQualityBicubic), saved as JPEG at quality 85. Licence as
 returned by the Commons API: `LicenseShortName` "Public domain", `License` "pd".
+
+Every art image follows the same method: a Commons original, cropped to the
+region the puzzle shows (or the whole painting when no puzzle photo exists),
+trimmed centred to exactly cols:rows when a grid is known, resized so the long
+side is 800px with PowerShell System.Drawing, and saved as JPEG at quality 85.
+The crop box for each image is recorded in the evidence for #11
+(`test-results/c3-contact-sheet/crops.json`). The licence is checked through
+the Commons API.
+
+The files are kept as sourced. Because the printed puzzles are punchier than
+the museum scans, the game shows art through one CSS filter, `--art-filter`
+(`contrast(1.2) saturate(1.3)`) on `.play` in `style.css`, chosen by eye against
+the puzzle photos.
 
 ## Never read a listing's dimensions as a grid
 

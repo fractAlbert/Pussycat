@@ -1,0 +1,24 @@
+$ node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b4-play-inline < test-results/b4-play-inline/input.txt
+> nav /#kandinsky-80-2341
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+["inline",7,9,false]
+> count .play__tile
+62
+> shot started
+test-results\b4-play-inline\started.png
+> eval window.pussycatPlay.nearlySolve()
+undefined
+> eval (() => { const t = [...document.querySelectorAll('.play__tile')].find(t => t.dataset.home !== t.dataset.cell); t.click(); return t.dataset.home; })()
+"5-8"
+> wait-for .play__solved
+> text .play__solved
+Solved in 1 move, 0s
+> eval window.pussycatPlay.state().solved
+true
+> shot solved
+test-results\b4-play-inline\solved.png
+> errors
+(no errors)

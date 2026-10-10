@@ -1,0 +1,14 @@
+nav /#kandinsky-80-2341
+wait-for .play-button
+click .play-button
+wait-for .play__board
+eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+count .play__tile
+shot started
+eval window.pussycatPlay.nearlySolve()
+eval (() => { const t = [...document.querySelectorAll('.play__tile')].find(t => t.dataset.home !== t.dataset.cell); t.click(); return t.dataset.home; })()
+wait-for .play__solved
+text .play__solved
+eval window.pussycatPlay.state().solved
+shot solved
+errors

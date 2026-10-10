@@ -1,0 +1,7 @@
+nav /#picasso-80-23185
+wait-for #detail[open]
+count #detail .play-button
+eval [...document.querySelectorAll('#detail img')].map(i => i.getAttribute('src') + ' ' + i.naturalWidth + 'x' + i.naturalHeight)
+eval document.querySelector('#detail').innerText.slice(0, 400)
+shot detail
+errors
