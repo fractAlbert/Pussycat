@@ -1,0 +1,20 @@
+nav /todo.html
+wait-for .todo__section
+text #summary
+eval [...document.querySelectorAll('.todo__section')].map(s => s.dataset.section + '=' + s.querySelector('.todo__count').textContent + (s.open ? ' (open)' : ' (closed)')).join(', ')
+eval document.querySelector('.todo__section[data-section="art"] .todo__item:nth-child(2) .todo__notes').textContent
+shot todo-page
+click .todo__section[data-section="count"] .todo__open
+wait-for dialog#detail[open]
+eval document.querySelector('#detail .modal__title, #detail h2').textContent
+shot todo-detail
+press Escape
+nav /
+wait-for .masthead__tagline a
+eval [...document.querySelectorAll('.masthead__tagline a')].map(a => a.textContent + '>' + a.getAttribute('href')).join(' | ')
+nav /checklist.html
+wait-for input[type=checkbox]
+eval [...document.querySelectorAll('.colophon a')].map(a => a.textContent).join(' | ')
+nav /images.html
+eval [...document.querySelectorAll('.colophon a')].map(a => a.textContent).join(' | ')
+errors

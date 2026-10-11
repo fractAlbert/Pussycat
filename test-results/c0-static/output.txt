@@ -1,6 +1,3 @@
 $ git ls-files "*.js" | xargs -n1 node --check
-syntax ok (36 tracked files; new files are untracked until commit)
-ok src/assets/js/todo/needs.js
-ok src/assets/js/components/TodoList.js
-ok src/assets/js/todo.js
-data ok, 127 entries
+syntax ok (39 files)
+data ok, 126 entries

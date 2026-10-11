@@ -62,7 +62,7 @@ export function sortOut(puzzles) {
     .filter((p) => p.art && !p.isPlayable)
     .sort(byArtistThenName)
     .map((p) => row(p, [
-      [!p.grid && 'grid', !p.blank && 'layout'].filter(Boolean).join(' and ') + ' missing.',
+      [!p.grid && 'Grid', !p.blank && 'layout'].filter(Boolean).join(' and ').replace(/^layout/, 'Layout') + ' missing.',
       photoNote(p),
     ]));
 
