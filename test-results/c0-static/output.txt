@@ -1,0 +1,5 @@
+$ git ls-files "*.js" | xargs -n1 node --check
+syntax ok (36 files)
+
+$ node -e "JSON.parse(require('fs').readFileSync('src/data/puzzles.json','utf8'))"
+data ok, 127 entries
