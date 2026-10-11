@@ -1,0 +1,8 @@
+$ node test-results/c1-todo/check-todo.mjs
+puzzles 126; playable 15
+needs a tile count 4: macke-modegeschaeft, marc-blauschwarzer-fuchs, marc-cat-under-a-tree, klimt-the-kiss
+needs art 13: macke-indianer, macke-staudacherhaus-in-tegernsee, monet-au-bord-de-leau-bennecourt, monet-jerusalem-artichoke-flowers, monet-le-dejeuner-panneau-decoratif, marc-little-blue-horse, marc-red-horses, klimt-die-drei-lebensalter-der-frau, klimt-die-jungfrau, klee-80-23151, vangogh-cafeterrasse-bei-nacht, van-gogh-selbstportraet, kandinsky-weiches-hart
+held back 3: klee-80-23155, klee-uebermut, kandinsky-trente
+needs a photo 59; needs a grid or layout 73
+ALL PASS
+exit=0

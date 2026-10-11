@@ -1,0 +1,32 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-todo-page < test-results/b1-todo-page/input.txt
+> nav /todo.html
+> wait-for .todo__section
+> text #summary
+15 of 126 puzzles can be played now.
+> eval [...document.querySelectorAll('.todo__section')].map(s => s.dataset.section + '=' + s.querySelector('.todo__count').textContent + (s.open ? ' (open)' : ' (closed)')).join(', ')
+"count=4 (open), art=13 (open), held=3 (closed), photo=59 (closed), grid=73 (closed)"
+> eval document.querySelector('.todo__section[data-section="art"] .todo__item:nth-child(2) .todo__notes').textContent
+"Has a photo: the grid can be counted from it once there is art."
+> shot todo-page
+<repo>/test-results\b1-todo-page\todo-page.png
+> click .todo__section[data-section="count"] .todo__open
+> wait-for dialog#detail[open]
+> eval document.querySelector('#detail .modal__title, #detail h2').textContent
+"Modegeschäft"
+> shot todo-detail
+<repo>/test-results\b1-todo-page\todo-detail.png
+> press Escape
+> nav /
+> wait-for .masthead__tagline a
+> eval [...document.querySelectorAll('.masthead__tagline a')].map(a => a.textContent + '>' + a.getAttribute('href')).join(' | ')
+"Checklist>checklist.html | To do>todo.html | About the brand>about.html | About the images>images.html"
+> nav /checklist.html
+> wait-for input[type=checkbox]
+> eval [...document.querySelectorAll('.colophon a')].map(a => a.textContent).join(' | ')
+"Back to the catalog | To do | About"
+> nav /images.html
+> eval [...document.querySelectorAll('.colophon a')].map(a => a.textContent).join(' | ')
+"Catalog | Checklist | To do | About the brand"
+> errors
+(no errors)
+exit=0
