@@ -18,6 +18,27 @@ WorthPoint 403s as well. Etsy 403s.
 [PicClick](https://picclick.com) mirrors live eBay listings, is fetchable, and
 returns a full page of results in one request. It is the scan surface.
 
+**Update, 2026-10-10 (#15): scripts are now blocked too.** `curl` gets a 403 from
+every PicClick site, and typing a PicClick address straight into a fresh browser
+tab can fail. What works is a real Chrome session (the Claude in Chrome
+extension, with the owner's browser) reached the way a person reaches it:
+
+- Open the site from a search result, or navigate from a page on that same site.
+  Once there, the page's own `fetch('/?q=...')` returns full result pages and can
+  be parsed in place, so no further page loads are needed. Leave a couple of
+  seconds between requests.
+- These pages never finish loading (ad scripts), which makes the extension time
+  out. `window.stop()` run in the page frees it.
+- `window.name` survives a move to another site, so it can carry a matcher and a
+  seen-list from site to site. `localStorage` does not.
+- eBay's own search pages (`/sch/i.html?_nkw=...`) also load in that Chrome. A
+  search page sometimes returns an "Error Page"; loading the site's homepage first
+  and then searching clears it. One or two searches per site is enough, since
+  PicClick already mirrors eBay.
+- Match titles against the catalog by art number, then by name, before reading
+  anything: most listings are further copies of puzzles already catalogued.
+- Do not solve or bypass any bot check; hand it to the owner.
+
 Fetch these four, each of which turns up stock the others miss:
 
 | URL | Covers |
