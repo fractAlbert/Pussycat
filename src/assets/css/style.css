@@ -902,3 +902,66 @@ button:focus-visible {
 
 .play__status { min-height: 1.5rem; margin: 0; }
 .play__solved { margin: 0; font-weight: 700; color: var(--accent); }
+
+/* To do page ---------------------------------------------------------------- */
+
+.todo { max-width: 52rem; }
+
+.todo__section { margin: 0 0 1.25rem; border-bottom: 1px solid var(--line); padding-bottom: 0.75rem; }
+
+.todo__summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  cursor: pointer;
+  list-style-position: outside;
+}
+
+.todo__heading { margin: 0; font-size: 1.05rem; display: inline; }
+
+.todo__count {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0 0.5rem;
+}
+
+.todo__help { margin: 0.5rem 0 0.6rem; font-size: 0.88rem; color: var(--ink-soft); }
+.todo__none { margin: 0; font-size: 0.88rem; color: var(--ink-soft); }
+
+.todo__list { list-style: none; margin: 0; padding: 0; }
+
+.todo__item {
+  display: grid;
+  grid-template-columns: minmax(12rem, 20rem) 1fr;
+  gap: 0.1rem 1rem;
+  padding: 0.3rem 0.4rem;
+  font-size: 0.88rem;
+  border-radius: 4px;
+}
+
+.todo__item:hover { background: var(--accent-soft); }
+
+.todo__open {
+  font: inherit;
+  color: inherit;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  display: block;
+}
+
+.todo__open:hover .todo__name { text-decoration: underline; }
+.todo__open:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.todo__name { display: block; font-weight: 600; }
+.todo__artist { display: block; font-size: 0.75rem; color: var(--ink-soft); }
+.todo__notes { font-size: 0.8rem; color: var(--ink-soft); align-self: center; }
+.todo__notes a { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .todo__item { grid-template-columns: 1fr; }
+}

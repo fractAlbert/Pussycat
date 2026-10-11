@@ -1,4 +1,0 @@
-$ node test-results/c1-restore/check-restore.mjs
-126 entries; 15 entries with front and back photos; 15 playable
-ALL PASS
-exit=0

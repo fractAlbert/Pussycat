@@ -91,6 +91,12 @@ A puzzle is playable from the detail view (D-012). **Play shows only when `art`,
 `grid` and `blank` are all recorded, and `grid` has `rows` and `cols` each at
 least 2.** No grid, no Play: size is never guessed.
 
+The site's **To do** page (`src/todo.html`) lists, from the catalog as it stands,
+what stops each puzzle being playable: a tile count, art, or a photograph. It
+holds one short list of artists whose work can be public domain and the few
+works held back by date (`src/assets/js/todo/needs.js`); everything else is
+worked out from `puzzles.json`.
+
 The art file must already be cropped to the aspect ratio `cols:rows` before it
 is added. The page slices it into `rows × cols` tiles as it is and does not crop
 it, so a file with the wrong ratio plays stretched.

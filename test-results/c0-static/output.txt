@@ -1,6 +1,3 @@
 $ git ls-files "*.js" | xargs -n1 node --check
-syntax ok
+syntax ok (39 files)
 data ok, 126 entries
-
-$ node scripts/sync-images.js
-0 new image(s) added across 0 entr(ies).
