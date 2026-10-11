@@ -1,5 +1,6 @@
 $ git ls-files "*.js" | xargs -n1 node --check
-syntax ok (36 files)
-
-$ node -e "JSON.parse(require('fs').readFileSync('src/data/puzzles.json','utf8'))"
+syntax ok
 data ok, 127 entries
+
+$ node scripts/sync-images.js
+0 new image(s) added across 0 entr(ies).

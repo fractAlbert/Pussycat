@@ -1,0 +1,21 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b2-images < test-results/b2-images/input.txt
+> nav /
+> wait-for .card
+> fill #search twisty puzzle sliding
+> text #count
+11 of 127 puzzles
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card:not([hidden]) img')].map(i => i.complete && i.naturalWidth > 0).filter(Boolean).length + ' images loaded'), 1500))
+"11 images loaded"
+> shot twisty-series
+<repo>/test-results\b2-images\twisty-series.png
+> fill #search Cafeterrasse|Zeitung
+> fill #search
+> eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Pussy').map(b => { b.click(); return 'pussy'; })
+["pussy"]
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card:not([hidden]) img')].map(i => i.complete && i.naturalWidth > 0).filter(Boolean).length + ' images loaded'), 1500))
+"7 images loaded"
+> shot pussy-brand
+<repo>/test-results\b2-images\pussy-brand.png
+> errors
+(no errors)
+exit=0
