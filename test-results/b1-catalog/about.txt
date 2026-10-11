@@ -1,0 +1,6 @@
+nav /about.html
+wait-for main
+eval [...document.querySelectorAll('h2')].map(h => h.textContent).join(' | ')
+eval document.querySelector('main').innerText.includes('80 2321x') && document.querySelector('main').innerText.includes('W. Breiter')
+shot about-page
+errors

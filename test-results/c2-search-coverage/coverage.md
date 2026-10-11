@@ -43,7 +43,7 @@ Others: Van Gogh *Cafeterrasse bei Nacht* (1888, front only), Miró *Die Zeitung
 | Pussy "Dici puzzle matematica" 1970s, 26–99 pieces (177885051630) | `dice` | The catalog `dice` entry has no description to compare |
 | Pussy "Brain Teaser con caja" (287527544304) | unknown | Title only; plastic puzzle in a box |
 | Escher 1963 / E118 and "Birds" copies, Paradise 80 2938, People Puzzle 80 29 43, and about 90 other repeat listings | existing entries | Matched by art number or name; the catalog already records the duplicate numbers where they differ |
-| The same works from the "Twisty" series that also exist as 7×7 or 7×9 puzzles (Kandinsky *Quadrate mit konzentrischen Ringen* 1913, Cézanne *Les Joueurs de cartes* 1890, Renoir *La Colazione dei Canottieri* 1881, Miró *Pygmées sous la lune* 1974, Dalí *Nature morte vivante* 1956, Mickey Mouse) | `kandinsky-80-2341`, `cezanne-card-players`, `renoir-boating-party`, `miro-pygmies-under-the-moon`, `dali-living-still-life`, `micky-maus` | The listings may be small Collector's Edition copies of those designs. They need a photo or a size to tell apart |
+| The same works from the "Twisty" series that also exist as 7×7 or 7×9 puzzles (Kandinsky *Quadrate mit konzentrischen Ringen* 1913, Cézanne *Les Joueurs de cartes* 1890, Renoir *La Colazione dei Canottieri* 1881, Miró *Pygmées sous la lune* 1974, Dalí *Nature morte vivante* 1956, Mickey Mouse) | `kandinsky-80-2341`, `cezanne-card-players`, `renoir-boating-party`, `miro-pygmies-under-the-moon`, `dali-living-still-life`, `micky-maus` | Their backs print an art number, which would show whether they are the same puzzles; the listings give no size or number |
 
 ## Left out, with the reason
 

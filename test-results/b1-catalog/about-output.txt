@@ -1,0 +1,12 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-catalog < test-results/b1-catalog/about.txt
+> nav /about.html
+> wait-for main
+> eval [...document.querySelectorAll('h2')].map(h => h.textContent).join(' | ')
+"The maker | What they made | Pussy | Still in production | The art series | Article numbers | Formats | Dates | About this catalog"
+> eval document.querySelector('main').innerText.includes('80 2321x') && document.querySelector('main').innerText.includes('W. Breiter')
+true
+> shot about-page
+<repo>/test-results\b1-catalog\about-page.png
+> errors
+(no errors)
+exit=0
