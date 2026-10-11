@@ -75,6 +75,16 @@ art puzzles (7 × 9, the Cézanne held portrait as 9 rows × 7 columns) differ: 
 among sellers turned out to be — not a miscount, but two layouts. A tile count
 therefore cannot be inferred from a grid alone; the format has to be seen.
 
+**Grids counted from photographs.** Where a seller's photograph shows the seams
+between tiles clearly enough, the grid and format can be counted from it (a
+contrast-boosted crop helps), with the corner of the white spare-cell cap
+showing where the gap is. Such an entry says so in its description ("counted
+from the listing photo, not measured") and is still `verified: false`. Check
+three things: the row count when the bottom row is out of frame, which corner a
+gap belongs in when the photo is scrambled (the entry then keeps the default),
+and any piece count in the listing against `rows × cols` (minus one for an
+inline gap).
+
 ## Play
 
 A puzzle is playable from the detail view (D-012). **Play shows only when `art`,
