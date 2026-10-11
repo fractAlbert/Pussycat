@@ -1,0 +1,31 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-restored-site < test-results/b1-restored-site/input.txt
+> nav /
+> wait-for .card
+> text #count
+126 puzzles
+> fill #search joker
+> text #count
+1 of 126 puzzles
+> fill #search 2991
+> eval [...document.querySelectorAll('.card:not([hidden])')].map(c => c.textContent.replace(/\s+/g, ' ').trim().slice(0, 70))
+["Die Leitern durchziehen als Feuerrad das Himmelsblau Joan Miró Format "]
+> fill #search
+> eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Playable').map(b => { b.click(); return 'playable'; })
+["playable"]
+> text #count
+15 of 126 puzzles
+> nav /#macke-indianer
+> wait-for dialog#detail[open]
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('#detail img')].map(i => (i.getAttribute('src') || '').split('/').pop() + ':' + (i.complete && i.naturalWidth > 0)).join(' ')), 1500))
+"macke-indianer-front.jpg:true macke-indianer-front.jpg:true macke-indianer-back.jpg:true"
+> shot detail-with-back
+<repo>/test-results\b1-restored-site\detail-with-back.png
+> nav /about.html
+> wait-for main
+> eval ['W. Breiter', '80 2321x', 'They are not', 'counted from sellers'].map(t => document.querySelector('main').innerText.includes(t))
+[true,true,true,true]
+> shot about-page
+<repo>/test-results\b1-restored-site\about-page.png
+> errors
+(no errors)
+exit=0
