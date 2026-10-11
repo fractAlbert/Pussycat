@@ -3,19 +3,23 @@ $ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pus
 > wait-for .card
 > fill #search twisty puzzle sliding
 > text #count
-11 of 127 puzzles
-> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card:not([hidden]) img')].map(i => i.complete && i.naturalWidth > 0).filter(Boolean).length + ' images loaded'), 1500))
-"11 images loaded"
+10 of 126 puzzles
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card:not([hidden]) img')].map(i => i.complete && i.naturalWidth > 0).filter(Boolean).length + ' card photos loaded'), 1500))
+"10 card photos loaded"
 > shot twisty-series
 <repo>/test-results\b2-images\twisty-series.png
-> fill #search Cafeterrasse|Zeitung
-> fill #search
-> eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Pussy').map(b => { b.click(); return 'pussy'; })
-["pussy"]
-> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card:not([hidden]) img')].map(i => i.complete && i.naturalWidth > 0).filter(Boolean).length + ' images loaded'), 1500))
-"7 images loaded"
-> shot pussy-brand
-<repo>/test-results\b2-images\pussy-brand.png
+> nav /#macke-indianer
+> wait-for dialog#detail[open]
+> eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('#detail img')].map(i => (i.getAttribute('src') || '').split('/').pop() + ':' + (i.complete && i.naturalWidth > 0)).join(' ')), 1500))
+"macke-indianer-front.jpg:true macke-indianer-front.jpg:true macke-indianer-back.jpg:true"
+> shot detail-with-back
+<repo>/test-results\b2-images\detail-with-back.png
+> nav /#miro-80-2991
+> wait-for dialog#detail[open]
+> eval new Promise(r => setTimeout(() => r(document.querySelector('#detail').innerText.replace(/\s+/g, ' ').slice(0, 260)), 800))
+"× Die Leitern durchziehen als Feuerrad das Himmelsblau Compiled from a sale listing and not yet checked against the puzzle itself. Artist Joan Miró Brand Pussycat Series Art Art no. 80 2991 Copyright 1991 Back reads \"Die Leitern durchziehen als Feuerrad das Hi"
+> shot detail-miro-80-2991
+<repo>/test-results\b2-images\detail-miro-80-2991.png
 > errors
 (no errors)
 exit=0

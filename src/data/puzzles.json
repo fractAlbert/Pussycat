@@ -1160,7 +1160,7 @@
     "grid": null,
     "blank": null,
     "images": [],
-    "description": "A crossword design rather than a picture. Shares art number 802931 with the French Crossword entry — either Pussycat reused one number across language editions, or one of the two listings misread it.",
+    "description": "A crossword design rather than a picture. Shares art number 802931 with the French Crossword entry — either Pussycat reused one number across language editions, or one of the two listings misread it. The same number, 80 2931, is printed on the back of the Macke puzzle Staudacherhaus in Tegernsee (macke-staudacherhaus-in-tegernsee), so it is more likely that one of the crossword listings misread it.",
     "source": "https://www.ebay.de/itm/187519990789",
     "verified": false
   },
@@ -1180,7 +1180,7 @@
         "label": null
       }
     ],
-    "description": "A French-language version of the crossword design, so at least some puzzles were made for export markets. Its listing gives art number 80 29 31, the same number carried by the German Kreuzwortraetsel entry; the two have not been compared side by side.",
+    "description": "A French-language version of the crossword design, so at least some puzzles were made for export markets. Its listing gives art number 80 29 31, the same number carried by the German Kreuzwortraetsel entry; the two have not been compared side by side. The same number, 80 2931, is printed on the back of the Macke puzzle Staudacherhaus in Tegernsee (macke-staudacherhaus-in-tegernsee), so it is more likely that one of the crossword listings misread it.",
     "source": "https://www.ebay.com/itm/365926143235",
     "verified": false
   },
@@ -1291,15 +1291,26 @@
   },
   {
     "id": "miro-80-2991",
-    "name": "Miró (title unrecorded)",
+    "name": "Die Leitern durchziehen als Feuerrad das Himmelsblau",
     "artist": "Joan Miró",
     "series": "Art",
     "artNumber": "80 2991",
     "copyright": 1991,
     "grid": null,
     "blank": null,
-    "images": [],
-    "description": "The listing gives the art number as 80 2991 but the MPN field as 80 2985; one of the two is a transcription slip.",
+    "images": [
+      {
+        "file": "miro-80-2991-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/235480835315",
+        "label": null
+      },
+      {
+        "file": "miro-80-2991-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/235480835315",
+        "label": "Back"
+      }
+    ],
+    "description": "Back reads \"Die Leitern durchziehen als Feuerrad das Himmelsblau, 1953 / Les échelles en roue de feu traversent l'azur\", art number 80 2991, \"© VG Bild-Kunst, Bonn, 1991\". So 80 2991 is the printed number; the other listing's 80 2985 was a transcription slip. Photos are from a second listing, ebay.com/itm/235480835315.",
     "source": "https://www.ebay.com/itm/147480789992",
     "verified": false
   },
@@ -2280,11 +2291,11 @@
   },
   {
     "id": "kandinsky-trente",
-    "name": "Trente",
+    "name": "Trente (Dreissig)",
     "artist": "Wassily Kandinsky",
     "series": "Art",
-    "artNumber": null,
-    "copyright": null,
+    "artNumber": "80 2345",
+    "copyright": 1999,
     "grid": null,
     "blank": null,
     "images": [
@@ -2292,9 +2303,14 @@
         "file": "kandinsky-trente-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317774034903",
         "label": null
+      },
+      {
+        "file": "kandinsky-trente-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774034903",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1937 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Trente / Dreissig, 1937\", Musée National d'Art Moderne, Centre Pompidou, Paris, \"© VG Bild-Kunst, Bonn 1999\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317774034903",
     "verified": false
   },
@@ -2303,7 +2319,7 @@
     "name": "Indianer",
     "artist": "August Macke",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 2932",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2312,9 +2328,14 @@
         "file": "macke-indianer-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/318217804046",
         "label": null
+      },
+      {
+        "file": "macke-indianer-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217804046",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1911 in the listing. Listed in English as \"Indian\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Indianer (Ausschnitt), 1911\", a detail of the painting; listed in English as \"Indian\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/318217804046",
     "verified": false
   },
@@ -2323,7 +2344,7 @@
     "name": "Die Jungfrau",
     "artist": "Gustav Klimt",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 23194",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2332,9 +2353,14 @@
         "file": "klimt-die-jungfrau-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317774027593",
         "label": null
+      },
+      {
+        "file": "klimt-die-jungfrau-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774027593",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1913 in the listing. Listed in English as \"The Virgin\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Die Jungfrau (Detail), 1913\", Národní Galerie, Prag; listed in English as \"The Virgin\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317774027593",
     "verified": false
   },
@@ -2343,7 +2369,7 @@
     "name": "Die drei Lebensalter der Frau",
     "artist": "Gustav Klimt",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 23191",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2352,9 +2378,14 @@
         "file": "klimt-die-drei-lebensalter-der-frau-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317774032165",
         "label": null
+      },
+      {
+        "file": "klimt-die-drei-lebensalter-der-frau-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774032165",
+        "label": "Back"
       }
     ],
-    "description": "No year in the listing. Listed in English as \"The Three Ages of Woman\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Die drei Lebensalter der Frau (Detail), 1905\", Galleria Nazionale d'Arte Moderna, Rom; listed in English as \"The Three Ages of Woman\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317774032165",
     "verified": false
   },
@@ -2363,7 +2394,7 @@
     "name": "Au bord de l'eau, Bennecourt",
     "artist": "Claude Monet",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 23211",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2372,9 +2403,14 @@
         "file": "monet-au-bord-de-leau-bennecourt-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317772683849",
         "label": null
+      },
+      {
+        "file": "monet-au-bord-de-leau-bennecourt-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772683849",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1868 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Am Fluss, Bennecourt / Au bord de l'eau, Bennecourt, 1868\", The Art Institute of Chicago. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317772683849",
     "verified": false
   },
@@ -2383,7 +2419,7 @@
     "name": "Jerusalem Artichoke Flowers",
     "artist": "Claude Monet",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 23214",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2392,38 +2428,48 @@
         "file": "monet-jerusalem-artichoke-flowers-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317772687196",
         "label": null
+      },
+      {
+        "file": "monet-jerusalem-artichoke-flowers-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772687196",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1880 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Topinambursträuss / Jerusalem Artichoke Flowers, 1880\", National Gallery of Art, Washington. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317772687196",
     "verified": false
   },
   {
-    "id": "monet-dejeuner-sur-lherbe",
-    "name": "Le Déjeuner sur l'herbe",
+    "id": "monet-le-dejeuner-panneau-decoratif",
+    "name": "Le déjeuner (panneau décoratif)",
     "artist": "Claude Monet",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 23212",
     "copyright": null,
     "grid": null,
     "blank": null,
     "images": [
       {
-        "file": "monet-dejeuner-sur-lherbe-front.jpg",
+        "file": "monet-le-dejeuner-panneau-decoratif-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317772692942",
         "label": null
+      },
+      {
+        "file": "monet-le-dejeuner-panneau-decoratif-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772692942",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1873 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Das Mittagsmahl / Le déjeuner; panneau décoratif, 1873\", Musée d'Orsay, Paris. The listing calls it \"Le Déjeuner sur l'herbe\", which the back does not say. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317772692942",
     "verified": false
   },
   {
     "id": "marc-red-horses",
-    "name": "Red Horses",
+    "name": "Die roten Pferde (Red Horses)",
     "artist": "Franz Marc",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 29 123",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2432,18 +2478,23 @@
         "file": "marc-red-horses-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317774072919",
         "label": null
+      },
+      {
+        "file": "marc-red-horses-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774072919",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1911 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Die roten Pferde, 1911 / Red Horses, 1911\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317774072919",
     "verified": false
   },
   {
     "id": "marc-little-blue-horse",
-    "name": "Little Blue Horse",
+    "name": "Das kleine blaue Pferdchen (Little Blue Horse)",
     "artist": "Franz Marc",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 29 125",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2452,9 +2503,14 @@
         "file": "marc-little-blue-horse-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317774068499",
         "label": null
+      },
+      {
+        "file": "marc-little-blue-horse-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774068499",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1912 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "description": "Back reads \"Das kleine blaue Pferdchen, 1912 / Little Blue Horse, 1912\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
     "source": "https://www.ebay.com/itm/317774068499",
     "verified": false
   },
@@ -2463,7 +2519,7 @@
     "name": "Staudacherhaus in Tegernsee",
     "artist": "August Macke",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 2931",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2472,30 +2528,15 @@
         "file": "macke-staudacherhaus-in-tegernsee-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/317772702823",
         "label": null
-      }
-    ],
-    "description": "Artwork dated 1910 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
-    "source": "https://www.ebay.com/itm/317772702823",
-    "verified": false
-  },
-  {
-    "id": "miro-1953",
-    "name": "Miró (title unrecorded, 1953)",
-    "artist": "Joan Miró",
-    "series": "Art",
-    "artNumber": null,
-    "copyright": null,
-    "grid": null,
-    "blank": null,
-    "images": [
+      },
       {
-        "file": "miro-1953-front.jpg",
-        "sourceUrl": "https://www.ebay.com/itm/235480835315",
-        "label": null
+        "file": "macke-staudacherhaus-in-tegernsee-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772702823",
+        "label": "Back"
       }
     ],
-    "description": "Artwork dated 1953 in the listing. The listing gives only the artist and the year. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
-    "source": "https://www.ebay.com/itm/235480835315",
+    "description": "Back reads \"Staudacherhaus in Tegernsee, 1910\", art number 80 2931. That is the number the Crossword entries (kreuzwortraetsel-802931, french-crossword) carry, so one of those listings probably misread it. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size or tile count. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317772702823",
     "verified": false
   },
   {
@@ -2520,10 +2561,10 @@
   },
   {
     "id": "miro-die-zeitung",
-    "name": "Die Zeitung (Le Journal)",
+    "name": "Die Zeitung (Le journal)",
     "artist": "Joan Miró",
     "series": "Art",
-    "artNumber": null,
+    "artNumber": "80 2994",
     "copyright": 1991,
     "grid": null,
     "blank": null,
@@ -2532,18 +2573,23 @@
         "file": "miro-die-zeitung-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/165535819290",
         "label": null
+      },
+      {
+        "file": "miro-die-zeitung-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/165535819290",
+        "label": "Back"
       }
     ],
-    "description": "Sold as \"Puzzle Pussycat 1991 // Die Zeitung Le Journal 1972\" in a case (\"estuche\"), so the artwork is dated 1972 and the puzzle 1991. The listing says \"12 x 15\" with no unit, so that is a size, not a grid. A different 1991 Miró, miro-automobiliste-a-moustaches, is already in the catalog.",
+    "description": "Back reads \"Die Zeitung - Le journal, 1972\" with \"© VG Bild-Kunst, Bonn, 1991\", so the artwork is dated 1972 and the puzzle 1991. Sold in a case (\"estuche\"). The listing says \"12 x 15\" with no unit, so that is a size, not a grid. A different 1991 Miró, miro-automobiliste-a-moustaches, is already in the catalog.",
     "source": "https://www.ebay.com/itm/165535819290",
     "verified": false
   },
   {
     "id": "pussy-egypt-tut-anch-amun",
-    "name": "Egypt (Tut-Anch-Amun)",
+    "name": "Tut-anch-Amun",
     "artist": null,
     "series": null,
-    "artNumber": null,
+    "artNumber": "80 2955",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2552,10 +2598,15 @@
         "file": "pussy-egypt-tut-anch-amun-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/236762516942",
         "label": null
+      },
+      {
+        "file": "pussy-egypt-tut-anch-amun-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236762516942",
+        "label": "Back"
       }
     ],
     "brand": "Pussy",
-    "description": "Sold as \"VTG 90s Pussy EGYPT Tut-Anch-Amun Slide Jigsaw Puzzle Germany\", 6\" x 4 3/4\" in the listing. That is a frame size in inches, not a grid.",
+    "description": "Back reads \"Art. No. 80 2955 Tut-anch-Amun, Made in Germany\". Sold as \"VTG 90s Pussy EGYPT Tut-Anch-Amun Slide Jigsaw Puzzle Germany\", 6\" x 4 3/4\" in the listing. That is a frame size in inches, not a grid.",
     "source": "https://www.ebay.com/itm/236762516942",
     "verified": false
   },
@@ -2573,19 +2624,24 @@
         "file": "pussy-pig-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/188131100981",
         "label": null
+      },
+      {
+        "file": "pussy-pig-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/188131100981",
+        "label": "Back"
       }
     ],
     "brand": "Pussy",
-    "description": "Sold as \"Vintage Pussy Pig Sliding Puzzle Game 1970's\", never used.",
+    "description": "Sold as \"Vintage Pussy Pig Sliding Puzzle Game 1970's\", never used. The back is plain, with no title or art number.",
     "source": "https://www.ebay.com/itm/188131100981",
     "verified": false
   },
   {
     "id": "pussy-joker-poker",
-    "name": "Joker Poker",
+    "name": "Joker",
     "artist": null,
     "series": null,
-    "artNumber": null,
+    "artNumber": "80 2925",
     "copyright": null,
     "grid": null,
     "blank": null,
@@ -2594,10 +2650,15 @@
         "file": "pussy-joker-poker-front.jpg",
         "sourceUrl": "https://www.ebay.com/itm/287092329992",
         "label": null
+      },
+      {
+        "file": "pussy-joker-poker-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287092329992",
+        "label": "Back"
       }
     ],
     "brand": "Pussy",
-    "description": "Sold as \"Vintage Pussy Rare Slide Puzzle Joker Poker PUZZLE 1970's Germany\".",
+    "description": "Back reads \"JOKER\", with instructions in English, German and French (\"re-arrange the tiles so that only one symbol appears in any one row, vertically, horizontally and on the two diagonals\"), a 7 × 7 solution diagram, and \"Art. No. 80 2925, Made in Germany, regd. MR 580\". Sold as \"Vintage Pussy Rare Slide Puzzle Joker Poker PUZZLE 1970's Germany\". The diagram shows the solved layout, not whether the puzzle has a spare cell, so no grid is recorded.",
     "source": "https://www.ebay.com/itm/287092329992",
     "verified": false
   },

@@ -1,22 +1,24 @@
 $ node test-results/c1-new-entries/check-new.mjs
-kandinsky-trente                       Pussycat Trente  <317774034903>
-macke-indianer                         Pussycat Indianer  <318217804046>
-klimt-die-jungfrau                     Pussycat Die Jungfrau  <317774027593>
-klimt-die-drei-lebensalter-der-frau    Pussycat Die drei Lebensalter der Frau  <317774032165>
-monet-au-bord-de-leau-bennecourt       Pussycat Au bord de l'eau, Bennecourt  <317772683849>
-monet-jerusalem-artichoke-flowers      Pussycat Jerusalem Artichoke Flowers  <317772687196>
-monet-dejeuner-sur-lherbe              Pussycat Le Déjeuner sur l'herbe  <317772692942>
-marc-red-horses                        Pussycat Red Horses  <317774072919>
-marc-little-blue-horse                 Pussycat Little Blue Horse  <317774068499>
-macke-staudacherhaus-in-tegernsee      Pussycat Staudacherhaus in Tegernsee  <317772702823>
-miro-1953                              Pussycat Miró (title unrecorded, 1953)  <235480835315>
-vangogh-cafeterrasse-bei-nacht         Pussycat Cafeterrasse bei Nacht  <266931375690>
-miro-die-zeitung                       Pussycat Die Zeitung (Le Journal)  <165535819290>
-pussy-egypt-tut-anch-amun              Pussy    Egypt (Tut-Anch-Amun)  <236762516942>
-pussy-pig                              Pussy    Pig  <188131100981>
-pussy-joker-poker                      Pussy    Joker Poker  <287092329992>
-pussycat-clothespin-slider             Pussycat Clothespin slider  <147520186752>
+kandinsky-trente                         Pussycat 80 2345    2 photo(s)  Trente (Dreissig)
+macke-indianer                           Pussycat 80 2932    2 photo(s)  Indianer
+klimt-die-jungfrau                       Pussycat 80 23194   2 photo(s)  Die Jungfrau
+klimt-die-drei-lebensalter-der-frau      Pussycat 80 23191   2 photo(s)  Die drei Lebensalter der Frau
+monet-au-bord-de-leau-bennecourt         Pussycat 80 23211   2 photo(s)  Au bord de l'eau, Bennecourt
+monet-jerusalem-artichoke-flowers        Pussycat 80 23214   2 photo(s)  Jerusalem Artichoke Flowers
+monet-le-dejeuner-panneau-decoratif      Pussycat 80 23212   2 photo(s)  Le déjeuner (panneau décoratif)
+marc-red-horses                          Pussycat 80 29 123  2 photo(s)  Die roten Pferde (Red Horses)
+marc-little-blue-horse                   Pussycat 80 29 125  2 photo(s)  Das kleine blaue Pferdchen (Little Blue Horse)
+macke-staudacherhaus-in-tegernsee        Pussycat 80 2931    2 photo(s)  Staudacherhaus in Tegernsee
+vangogh-cafeterrasse-bei-nacht           Pussycat -          1 photo(s)  Cafeterrasse bei Nacht
+miro-die-zeitung                         Pussycat 80 2994    2 photo(s)  Die Zeitung (Le journal)
+pussy-egypt-tut-anch-amun                Pussy    80 2955    2 photo(s)  Tut-anch-Amun
+pussy-pig                                Pussy    -          2 photo(s)  Pig
+pussy-joker-poker                        Pussy    80 2925    2 photo(s)  Joker
+pussycat-clothespin-slider               Pussycat -          1 photo(s)  Clothespin slider
+changed: miro-80-2991 (title, photos and printed art number read from the back)
+changed: kreuzwortraetsel-802931 (note that 80 2931 is printed on a Macke puzzle)
+changed: french-crossword (note that 80 2931 is printed on a Macke puzzle)
 
-110 entries on main -> 127 here; 17 added; existing entries unchanged
+110 entries on main -> 126 here; 16 added; 3 existing entries changed (expected 3)
 ALL PASS
 exit=0

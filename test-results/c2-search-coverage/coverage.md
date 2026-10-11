@@ -6,7 +6,7 @@ Searched on 2026-10-10 in the owner's Chrome (Claude in Chrome extension), readi
 
 | Site | Searches | Notes |
 |---|---|---|
-| picclick.de | about 30: schiebepuzzle, Pussy and "original Pussy", slide puzzle, Geduldspiel, Folienpuzzle, twisty, Collector's Edition, and 20 artist/title terms | Found the "Twisty Puzzle Sliding 2D" series (11 new works) |
+| picclick.de | about 30: schiebepuzzle, Pussy and "original Pussy", slide puzzle, Geduldspiel, Folienpuzzle, twisty, Collector's Edition, and 20 artist/title terms | Found the "Twisty Puzzle Sliding 2D" series (10 new works) |
 | picclick.com | 14: Pussycat and Pussy slide puzzle, twisty, art, tile, plus Escher, Kandinsky, Klee, Dalí, Miró, Disney, Collector's Edition | `page=2` and `page=3` returned nothing beyond page 1, so depth past page 1 is not confirmed |
 | picclick.co.uk | 8 | Nothing new |
 | picclick.es | 9 | Found Miró *Die Zeitung (Le Journal)* |
@@ -20,11 +20,19 @@ Searched on 2026-10-10 in the owner's Chrome (Claude in Chrome extension), readi
 | ebay.nl | 2 | First load gave an "Error Page", then worked. Only Escher cube puzzles and music |
 | ebay.com | 1 (240 per page) | Nothing new |
 
-## Added (17), see `check-new.mjs` and `output.txt`
+## Added (16), see `check-new.mjs` and `output.txt`
 
-Single "Twisty Puzzle Sliding 2D" puzzles from one seller (no size or art number in any listing): Kandinsky *Trente* (1937), Macke *Indianer* (1911), Macke *Staudacherhaus in Tegernsee* (1910), Klimt *Die Jungfrau* (1913), Klimt *Die drei Lebensalter der Frau*, Monet *Au bord de l'eau, Bennecourt* (1868), Monet *Jerusalem Artichoke Flowers* (1880), Monet *Le Déjeuner sur l'herbe* (1873), Marc *Red Horses* (1911), Marc *Little Blue Horse* (1912), Miró *title unrecorded* (1953).
+The first pass gave 17 from the listing titles. Reading the back photos corrected that: one of the 17 was already in the catalog, and several titles and numbers changed. The names and art numbers below are the ones printed on the backs.
 
-Others: Van Gogh *Cafeterrasse bei Nacht* (1888), Miró *Die Zeitung (Le Journal)* (copyright 1991), Pussy *Egypt (Tut-Anch-Amun)*, Pussy *Pig*, Pussy *Joker Poker*, and a Pussycat *clothespin slider*.
+Single "Twisty Puzzle Sliding 2D" puzzles from one seller, each with a back photo: Kandinsky *Trente (Dreissig)* 1937 (80 2345), Macke *Indianer* 1911 (80 2932), Macke *Staudacherhaus in Tegernsee* 1910 (80 2931), Klimt *Die Jungfrau* 1913 (80 23194), Klimt *Die drei Lebensalter der Frau* 1905 (80 23191), Monet *Au bord de l'eau, Bennecourt* 1868 (80 23211), Monet *Le déjeuner (panneau décoratif)* 1873 (80 23212), Monet *Jerusalem Artichoke Flowers* 1880 (80 23214), Marc *Die roten Pferde* 1911 (80 29 123), Marc *Das kleine blaue Pferdchen* 1912 (80 29 125).
+
+Others: Van Gogh *Cafeterrasse bei Nacht* (1888, front only), Miró *Die Zeitung (Le journal)* 1972 (80 2994), Pussy *Tut-anch-Amun* (80 2955), Pussy *Pig* (plain back), Pussy *Joker* (80 2925), and a Pussycat *clothespin slider* (front only).
+
+### What the backs changed
+- **Miró "1953" was already in the catalog.** The back reads *Die Leitern durchziehen als Feuerrad das Himmelsblau*, Art. No. **80 2991**. That is `miro-80-2991`, which had no title. It now has the title, the art number confirmed, and these photos; the extra entry was removed.
+- **The Monet "Le Déjeuner sur l'herbe" listing title was wrong.** The back reads *Das Mittagsmahl / Le déjeuner; panneau décoratif*, 1873, Musée d'Orsay (80 23212). The entry id and name changed to match.
+- **Art number 80 2931 now sits on three entries.** The Macke *Staudacherhaus* back prints 80 2931, and the catalog's two Crossword entries also carry it from their listings. Each of the three says so in its description; the Crossword listings probably misread it.
+- Art numbers fall in two runs: 80 23191 to 80 23214 (the Klimt and Monet) next to the catalog's 80 23215 and 80 23244, and 80 2925 to 80 2994.
 
 ## Possible duplicates, left for the owner to decide (not added)
 

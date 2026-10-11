@@ -3,7 +3,6 @@ wait-for .card
 text #count
 fill #search cafeterrasse
 text #count
-eval [...document.querySelectorAll('.card:not([hidden])')].map(c => c.textContent.replace(/\s+/g, ' ').trim().slice(0, 70))
 fill #search joker
 text #count
 fill #search tut-anch
@@ -11,9 +10,11 @@ text #count
 fill #search klimt
 text #count
 shot search-klimt
-fill #search
-eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Pussy').map(b => { b.click(); return 'clicked'; })
+fill #search 2991
 text #count
-eval [...document.querySelectorAll('.card:not([hidden]) .card__title, .card:not([hidden]) h2, .card:not([hidden]) h3')].map(c => c.textContent.trim()).join(' | ')
+eval [...document.querySelectorAll('.card:not([hidden])')].map(c => c.textContent.replace(/\s+/g, ' ').trim().slice(0, 80))
+fill #search
+eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Pussy').map(b => { b.click(); return 'pussy'; })
+text #count
 shot brand-pussy
 errors
