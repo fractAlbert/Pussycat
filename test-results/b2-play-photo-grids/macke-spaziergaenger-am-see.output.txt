@@ -1,0 +1,24 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b2-play-photo-grids < test-results/b2-play-photo-grids/macke-spaziergaenger-am-see.txt
+> nav /#macke-spaziergaenger-am-see
+> wait-for .play-button
+> click .play-button
+> wait-for .play__board
+> eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+["extra",7,7,false]
+> count .play__tile
+49
+> shot started-macke-spaziergaenger-am-see
+<repo>/test-results\b2-play-photo-grids\started-macke-spaziergaenger-am-see.png
+> eval window.pussycatPlay.nearlySolve()
+undefined
+> click .play__spare .play__tile
+> wait-for .play__solved
+> text .play__solved
+Solved in 1 move, 0s
+> eval window.pussycatPlay.state().solved
+true
+> shot solved-macke-spaziergaenger-am-see
+<repo>/test-results\b2-play-photo-grids\solved-macke-spaziergaenger-am-see.png
+> errors
+(no errors)
+exit=0

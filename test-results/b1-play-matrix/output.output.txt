@@ -1,0 +1,16 @@
+$ NODE_PATH="$HOME/.cache/pussycat-run/node_modules" node .claude/skills/run-pussycat/driver.cjs --serve --port 8123 --out test-results/b1-play-matrix < test-results/b1-play-matrix/input.txt
+> nav /
+> wait-for .card
+> eval (async () => { const data = await (await fetch('data/puzzles.json')).json(); const list = Array.isArray(data) ? data : data.puzzles; const out = { checked: 0, shown: [], wrong: [] }; for (const p of list) { location.hash = '#' + p.id; await new Promise(r => setTimeout(r, 150)); const dlg = document.querySelector('#detail'); const has = !!dlg.querySelector('.play-button'); const want = !!(p.art && p.grid && p.grid.rows >= 2 && p.grid.cols >= 2 && p.blank); out.checked++; if (has) out.shown.push(p.id); if (!dlg.open || has !== want) out.wrong.push({ id: p.id, open: dlg.open, has, want }); } return out; })()
+{"checked":127,"shown":["cezanne-mardi-gras","cezanne-card-players","cezanne-large-bathers","monet-80-23215","kandinsky-80-2341","kandinsky-auf-weiss-ii","kandinsky-kreise-im-kreis","renoir-boating-party","renoir-1881","renoir-1883","renoir-1876","van-gogh-schwertlilien","cezanne-kitchen-table","van-gogh-sunflowers","macke-spaziergaenger-am-see"],"wrong":[]}
+> nav /
+> wait-for .card
+> eval [...document.querySelectorAll('#filters button')].filter(b => b.textContent.trim() === 'Playable').map(b => { b.click(); return 'clicked'; })
+["clicked"]
+> text #count
+15 of 127 puzzles
+> shot playable-filter
+<repo>/test-results\b1-play-matrix\playable-filter.png
+> errors
+(no errors)
+exit=0
