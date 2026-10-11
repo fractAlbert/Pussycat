@@ -81,7 +81,7 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 ## One photograph, extra views wanted
 
-30 entries. Numbering continues from 2, in whatever order the
+47 entries. Numbering continues from 2, in whatever order the
 listing shows them — ordering is not meaningful, so do not worry about which
 is the back. If you *can* tell, say so and the entry gets a proper label.
 
@@ -117,3 +117,20 @@ is the back. If you *can* tell, say so and the entry gets a proper label.
 | Dice | `dice-2.jpg`, `dice-3.jpg`, … | [www.ebay.com/itm/364674013571](https://www.ebay.com/itm/364674013571) |
 | IQ Zebra | `iq-zebra-2.jpg`, `iq-zebra-3.jpg`, … | [www.ebay.com/itm/188294229980](https://www.ebay.com/itm/188294229980) |
 | French Crossword | `french-crossword-2.jpg`, `french-crossword-3.jpg`, … | [www.ebay.com/itm/365926143235](https://www.ebay.com/itm/365926143235) |
+| Trente | `kandinsky-trente-2.jpg`, `kandinsky-trente-3.jpg`, … | [www.ebay.com/itm/317774034903](https://www.ebay.com/itm/317774034903) |
+| Indianer | `macke-indianer-2.jpg`, `macke-indianer-3.jpg`, … | [www.ebay.com/itm/318217804046](https://www.ebay.com/itm/318217804046) |
+| Die Jungfrau | `klimt-die-jungfrau-2.jpg`, `klimt-die-jungfrau-3.jpg`, … | [www.ebay.com/itm/317774027593](https://www.ebay.com/itm/317774027593) |
+| Die drei Lebensalter der Frau | `klimt-die-drei-lebensalter-der-frau-2.jpg`, `klimt-die-drei-lebensalter-der-frau-3.jpg`, … | [www.ebay.com/itm/317774032165](https://www.ebay.com/itm/317774032165) |
+| Au bord de l'eau, Bennecourt | `monet-au-bord-de-leau-bennecourt-2.jpg`, `monet-au-bord-de-leau-bennecourt-3.jpg`, … | [www.ebay.com/itm/317772683849](https://www.ebay.com/itm/317772683849) |
+| Jerusalem Artichoke Flowers | `monet-jerusalem-artichoke-flowers-2.jpg`, `monet-jerusalem-artichoke-flowers-3.jpg`, … | [www.ebay.com/itm/317772687196](https://www.ebay.com/itm/317772687196) |
+| Le Déjeuner sur l'herbe | `monet-dejeuner-sur-lherbe-2.jpg`, `monet-dejeuner-sur-lherbe-3.jpg`, … | [www.ebay.com/itm/317772692942](https://www.ebay.com/itm/317772692942) |
+| Red Horses | `marc-red-horses-2.jpg`, `marc-red-horses-3.jpg`, … | [www.ebay.com/itm/317774072919](https://www.ebay.com/itm/317774072919) |
+| Little Blue Horse | `marc-little-blue-horse-2.jpg`, `marc-little-blue-horse-3.jpg`, … | [www.ebay.com/itm/317774068499](https://www.ebay.com/itm/317774068499) |
+| Staudacherhaus in Tegernsee | `macke-staudacherhaus-in-tegernsee-2.jpg`, `macke-staudacherhaus-in-tegernsee-3.jpg`, … | [www.ebay.com/itm/317772702823](https://www.ebay.com/itm/317772702823) |
+| Miró (title unrecorded, 1953) | `miro-1953-2.jpg`, `miro-1953-3.jpg`, … | [www.ebay.com/itm/235480835315](https://www.ebay.com/itm/235480835315) |
+| Cafeterrasse bei Nacht | `vangogh-cafeterrasse-bei-nacht-2.jpg`, `vangogh-cafeterrasse-bei-nacht-3.jpg`, … | [www.ebay.com/itm/266931375690](https://www.ebay.com/itm/266931375690) |
+| Die Zeitung (Le Journal) | `miro-die-zeitung-2.jpg`, `miro-die-zeitung-3.jpg`, … | [www.ebay.com/itm/165535819290](https://www.ebay.com/itm/165535819290) |
+| Egypt (Tut-Anch-Amun) | `pussy-egypt-tut-anch-amun-2.jpg`, `pussy-egypt-tut-anch-amun-3.jpg`, … | [www.ebay.com/itm/236762516942](https://www.ebay.com/itm/236762516942) |
+| Pig | `pussy-pig-2.jpg`, `pussy-pig-3.jpg`, … | [www.ebay.com/itm/188131100981](https://www.ebay.com/itm/188131100981) |
+| Joker Poker | `pussy-joker-poker-2.jpg`, `pussy-joker-poker-3.jpg`, … | [www.ebay.com/itm/287092329992](https://www.ebay.com/itm/287092329992) |
+| Clothespin slider | `pussycat-clothespin-slider-2.jpg`, `pussycat-clothespin-slider-3.jpg`, … | [www.ebay.com/itm/147520186752](https://www.ebay.com/itm/147520186752) |

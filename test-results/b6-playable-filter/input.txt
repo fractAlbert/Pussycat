@@ -1,6 +1,0 @@
-nav /
-wait-for .card
-eval (() => { const b = [...document.querySelectorAll('#filters button')].find(x => x.textContent.trim() === 'Playable'); b.click(); return 'clicked'; })()
-eval new Promise(r => setTimeout(() => r([...document.querySelectorAll('.card')].filter(c => c.offsetParent !== null).map(c => c.querySelector('h2,h3')?.textContent.trim() || c.dataset.id)), 300))
-shot playable-filter
-errors
