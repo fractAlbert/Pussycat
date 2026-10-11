@@ -1,0 +1,14 @@
+nav /#cezanne-card-players
+wait-for .play-button
+click .play-button
+wait-for .play__board
+eval [window.pussycatPlay.state().format, window.pussycatPlay.state().rows, window.pussycatPlay.state().cols, window.pussycatPlay.state().solved]
+count .play__tile
+shot started-cezanne-card-players
+eval window.pussycatPlay.nearlySolve()
+click .play__tile[data-cell="6-8"]
+wait-for .play__solved
+text .play__solved
+eval window.pussycatPlay.state().solved
+shot solved-cezanne-card-players
+errors

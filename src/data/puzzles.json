@@ -31,8 +31,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "cezanne-card-players-front.jpg",
@@ -53,9 +56,10 @@
         "hueRotate": 0
       }
     },
-    "description": "Same 1999 Cézanne run as the Mardi Gras. Art number not visible in the listing photograph.",
+    "description": "Same 1999 Cézanne run as the Mardi Gras. Art number not visible in the listing photograph. Grid and blank type counted from the listing photo, not measured on the puzzle: 7 rows × 9 columns, with the gap in the bottom-right corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389561588862",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-right"
   },
   {
     "id": "cezanne-large-bathers",
@@ -64,8 +68,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "cezanne-large-bathers-front.jpg",
@@ -86,9 +93,10 @@
         "hueRotate": 0
       }
     },
-    "description": "Same 1999 Cézanne run.",
+    "description": "Same 1999 Cézanne run. Grid and blank type counted from the listing photo, not measured on the puzzle: 7 rows × 9 columns, with the gap in the bottom-right corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389561530563",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-right"
   },
   {
     "id": "monet-80-23215",
@@ -97,8 +105,11 @@
     "series": "Art",
     "artNumber": "80 23215",
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "monet-80-23215-front.jpg",
@@ -119,7 +130,7 @@
         "hueRotate": 0
       }
     },
-    "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63. The artwork was identified from the puzzle photograph as The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil), 1881.",
+    "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63. The artwork was identified from the puzzle photograph as The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil), 1881. Grid and blank type counted from the listing photo, not measured on the puzzle: 9 rows × 7 columns, with one tile missing from the picture (62 tiles, matching the listing). The photo is scrambled, so the corner the gap belongs in is not known; the bottom-right default is used.",
     "source": "https://www.ebay.com/itm/158122752744",
     "verified": false
   },
@@ -267,8 +278,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "renoir-boating-party-front.jpg",
@@ -289,9 +303,10 @@
         "hueRotate": 0
       }
     },
-    "description": "After the 1880–81 painting. Part of the 1999 run.",
+    "description": "After the 1880–81 painting. Part of the 1999 run. Grid and blank type counted from the listing photo, not measured on the puzzle: 7 rows × 9 columns, with the gap in the bottom-right corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389561655830",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-right"
   },
   {
     "id": "renoir-1881",
@@ -300,8 +315,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "renoir-1881-front.jpg",
@@ -322,9 +340,10 @@
         "hueRotate": 0
       }
     },
-    "description": "Listed only by the year of the artwork, 1881. A separate listing describes a 72-piece Renoir dated 1881, which may be this same puzzle.",
+    "description": "Listed only by the year of the artwork, 1881. A separate listing describes a 72-piece Renoir dated 1881, which may be this same puzzle. Grid and blank type counted from the listing photo, not measured on the puzzle: 9 rows × 7 columns, with the gap in the bottom-left corner (62 tiles). The listing says \"72 pieces\", which does not fit a 7 × 9 layout with one gap; probably a misprint of 62.",
     "source": "https://www.ebay.com/itm/389561696442",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-left"
   },
   {
     "id": "renoir-1883",
@@ -333,8 +352,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "renoir-1883-front.jpg",
@@ -355,9 +377,10 @@
         "hueRotate": 0
       }
     },
-    "description": "Listed only by the year of the artwork, 1883.",
+    "description": "Listed only by the year of the artwork, 1883. Grid and blank type counted from the listing photo, not measured on the puzzle: 9 rows × 7 columns, with the gap in the bottom-left corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389699047978",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-left"
   },
   {
     "id": "renoir-1876",
@@ -366,8 +389,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": 1999,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "renoir-1876-front.jpg",
@@ -388,9 +414,10 @@
         "hueRotate": 0
       }
     },
-    "description": "Listed only by the year of the artwork, 1876 — likely the Moulin de la Galette.",
+    "description": "Listed only by the year of the artwork, 1876 — likely the Moulin de la Galette. Grid and blank type counted from the listing photo, not measured on the puzzle: 9 rows × 7 columns, with the gap in the bottom-left corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389561664409",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-left"
   },
   {
     "id": "escher-eight-heads",
@@ -1253,8 +1280,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 9
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "cezanne-kitchen-table-front.jpg",
@@ -1285,9 +1315,10 @@
         "hueRotate": 0
       }
     },
-    "description": "A fourth Cézanne, from the same seller as the Card Players and the Large Bathers.",
+    "description": "A fourth Cézanne, from the same seller as the Card Players and the Large Bathers. Grid and blank type counted from the listing photo, not measured on the puzzle: 7 rows × 9 columns, with the gap in the bottom-right corner (62 tiles). The bottom row is partly out of frame, so the row count is inferred.",
     "source": "https://www.ebay.com/itm/389561565887",
-    "verified": false
+    "verified": false,
+    "blankPosition": "bottom-right"
   },
   {
     "id": "miro-80-2991",
@@ -1990,8 +2021,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
     "images": [
       {
         "file": "van-gogh-sunflowers-front.jpg",
@@ -2012,8 +2046,9 @@
       "basis": "Wikimedia Commons tags the file Public domain: Van Gogh died in 1890, so the painting (1888) is public domain in the EU (life+70) and the US (published before 1931)."
     },
     "source": "https://www.ebay.com/itm/394559714255",
-    "description": "After \"Sunflowers, Arles, 1888\". Sold unused; the seller puts the plastic at over 33 years old, so early 1990s.",
-    "verified": false
+    "description": "After \"Sunflowers, Arles, 1888\". Sold unused; the seller puts the plastic at over 33 years old, so early 1990s. Grid and blank type counted from the listing photo, not measured on the puzzle: 9 rows × 7 columns, with the gap in the bottom-left corner (62 tiles).",
+    "verified": false,
+    "blankPosition": "bottom-left"
   },
   {
     "id": "macke-spaziergaenger-am-see",
@@ -2022,8 +2057,11 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
-    "blank": null,
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
     "images": [
       {
         "file": "macke-spaziergaenger-am-see-front.jpg",
@@ -2050,7 +2088,7 @@
       }
     },
     "source": "https://www.ebay.com/itm/318217802734",
-    "description": "After the 1912 painting, also listed in English as \"Walker by the Lake\". Sold unused.",
+    "description": "After the 1912 painting, also listed in English as \"Walker by the Lake\". Sold unused. Grid and blank type counted from the listing photo, not measured on the puzzle: 7 × 7, with the spare cell right of the bottom-right tile.",
     "verified": false
   },
   {
