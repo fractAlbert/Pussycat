@@ -7,12 +7,19 @@
     "artNumber": "80 23244",
     "copyright": 1999,
     "grid": {
-      "rows": 7,
-      "cols": 9
+      "rows": 9,
+      "cols": 7
     },
     "blank": "extra",
     "images": [],
-    "description": "After Cézanne's Mardi Gras (Pierrot and Harlequin), 1888. Measured in hand: 7×9 fully tiled, with the extra empty cell in a corner outside the image.",
+    "art": {
+      "file": "cezanne-mardi-gras.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mardi_gras,_par_Paul_C%C3%A9zanne,_Yorck.jpg",
+      "title": "Mardi Gras (Pierrot and Harlequin)",
+      "date": "1888",
+      "basis": "Wikimedia Commons tags the file Public domain (pd): Cézanne died in 1906, so the painting is public domain worldwide (life+70 in the EU; published before 1931 in the US)."
+    },
+    "description": "After Cézanne's Mardi Gras (Pierrot and Harlequin), 1888. Measured in hand: 7 columns × 9 rows (portrait), fully tiled, with the extra empty cell in a corner outside the image.",
     "source": null,
     "owned": true,
     "verified": true
@@ -33,6 +40,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "cezanne-card-players.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Card_Players_MET_DP231550.jpg",
+      "title": "The Card Players (Les Joueurs de cartes)",
+      "date": "1890–92",
+      "basis": "The Metropolitan Museum of Art releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Cézanne died in 1906 (EU life+70) and it was published before 1931 (US).",
+      "filter": {
+        "contrast": 0.95,
+        "saturate": 0.8,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
+    },
     "description": "Same 1999 Cézanne run as the Mardi Gras. Art number not visible in the listing photograph.",
     "source": "https://www.ebay.com/itm/389561588862",
     "verified": false
@@ -53,13 +73,26 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "cezanne-large-bathers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paul_C%C3%A9zanne,_French_-_The_Large_Bathers_-_Google_Art_Project.jpg",
+      "title": "The Large Bathers (Les Grandes Baigneuses)",
+      "date": "1898–1905",
+      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1898–1905) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.35,
+        "saturate": 0.8,
+        "brightness": 1,
+        "hueRotate": 0
+      }
+    },
     "description": "Same 1999 Cézanne run.",
     "source": "https://www.ebay.com/itm/389561530563",
     "verified": false
   },
   {
     "id": "monet-80-23215",
-    "name": "Monet (title unrecorded)",
+    "name": "The Artist's Garden at Vétheuil",
     "artist": "Claude Monet",
     "series": "Art",
     "artNumber": "80 23215",
@@ -73,13 +106,26 @@
         "label": null
       }
     ],
-    "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63.",
+    "art": {
+      "file": "monet-80-23215.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claude_Monet,_The_Artist%27s_Garden_at_V%C3%A9theuil,_1881,_NGA_52189.jpg",
+      "title": "The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil)",
+      "date": "1881",
+      "basis": "The National Gallery of Art, Washington releases its photograph under CC0 on Wikimedia Commons; the painting itself is public domain: Monet died in 1926 (EU life+70) and it was published before 1931 (US).",
+      "filter": {
+        "contrast": 1.6,
+        "saturate": 0.8,
+        "brightness": 0.9,
+        "hueRotate": 0
+      }
+    },
+    "description": "Listed as 62 tiles. See the note on tile counts in the About page — the owned Cézanne from the same 80 23xxx run is 7×9 with an extra space, which would be 63. The artwork was identified from the puzzle photograph as The Artist's Garden at Vétheuil (Le Jardin de l'artiste à Vétheuil), 1881.",
     "source": "https://www.ebay.com/itm/158122752744",
     "verified": false
   },
   {
     "id": "kandinsky-80-2341",
-    "name": "Kandinsky (title unrecorded)",
+    "name": "Farbstudie – Quadrate mit konzentrischen Ringen",
     "artist": "Wassily Kandinsky",
     "series": "Art",
     "artNumber": "80 2341",
@@ -96,7 +142,20 @@
         "label": null
       }
     ],
-    "description": "Listed as 62 tiles. The art number may be truncated in the listing title — the rest of this run uses five digits after the 80.",
+    "art": {
+      "file": "kandinsky-80-2341.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassily_Kandinsky_Color_Study._Squares_with_Concentric_Circles.jpg",
+      "title": "Color Study: Squares with Concentric Circles (Farbstudie – Quadrate mit konzentrischen Ringen)",
+      "date": "1913",
+      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1913) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.95,
+        "saturate": 0.8,
+        "brightness": 1.1,
+        "hueRotate": 0
+      }
+    },
+    "description": "Listed as 62 tiles. The art number may be truncated in the listing title — the rest of this run uses five digits after the 80. The artwork was identified from the puzzle photograph as Color Study: Squares with Concentric Circles (Farbstudie – Quadrate mit konzentrischen Ringen), 1913.",
     "source": "https://www.ebay.com/itm/158122751325",
     "verified": true,
     "owned": true
@@ -114,6 +173,13 @@
     },
     "blank": "extra",
     "images": [],
+    "art": {
+      "file": "kandinsky-auf-weiss-ii.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vassily_Kandinsky,_1923_-_On_White_II.jpg",
+      "title": "On White II (Auf Weiß II)",
+      "date": "1923",
+      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1923) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "After Kandinsky's 1923 painting. Listed as a 49-tile sliding puzzle.",
     "source": "https://www.worthpoint.com/worthopedia/pussycat-49-sliding-tile-puzzle-1813453910",
     "verified": false
@@ -137,6 +203,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "kandinsky-kreise-im-kreis.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kandinsky_-_Circles_in_a_Circle,_1923,_1950-134-104.jpg",
+      "title": "Circles in a Circle (Kreise im Kreis)",
+      "date": "1923",
+      "basis": "Wikimedia Commons tags the file Public domain: Kandinsky died in 1944, so the painting (1923) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 1.05,
+        "brightness": 1.1,
+        "hueRotate": 0
+      }
+    },
     "description": "After Kandinsky's Circles in a Circle, 1923.",
     "source": "https://www.ebay.com/itm/364182678058",
     "verified": false
@@ -197,6 +276,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "renoir-boating-party.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir_-_Luncheon_of_the_Boating_Party_-_Google_Art_Project.jpg",
+      "title": "Luncheon of the Boating Party (Le Déjeuner des canotiers)",
+      "date": "1880–81",
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1880–81) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1,
+        "saturate": 1.1,
+        "brightness": 0.95,
+        "hueRotate": 0
+      }
+    },
     "description": "After the 1880–81 painting. Part of the 1999 run.",
     "source": "https://www.ebay.com/itm/389561655830",
     "verified": false
@@ -217,6 +309,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "renoir-1881.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Girls_in_Black_(1880s)_-_Pierre-Auguste_Renoir_(Pushkin_Museum_of_Fine_Arts).jpg",
+      "title": "Girls in Black (Jeunes filles en noir)",
+      "date": "c. 1880–82",
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1880–82) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 1.2,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
+    },
     "description": "Listed only by the year of the artwork, 1881. A separate listing describes a 72-piece Renoir dated 1881, which may be this same puzzle.",
     "source": "https://www.ebay.com/itm/389561696442",
     "verified": false
@@ -237,6 +342,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "renoir-1883.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pierre-Auguste_Renoir,_The_Umbrellas,_ca._1881-86.jpg",
+      "title": "The Umbrellas (Les Parapluies)",
+      "date": "c. 1881–86",
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (c. 1881–86) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.6,
+        "saturate": 0.8,
+        "brightness": 0.8,
+        "hueRotate": 0
+      }
+    },
     "description": "Listed only by the year of the artwork, 1883.",
     "source": "https://www.ebay.com/itm/389699047978",
     "verified": false
@@ -257,6 +375,19 @@
         "label": null
       }
     ],
+    "art": {
+      "file": "renoir-1876.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auguste_Renoir_-_The_Swing_-_Google_Art_Project.jpg",
+      "title": "The Swing (La Balançoire)",
+      "date": "1876",
+      "basis": "Wikimedia Commons tags the file Public domain: Renoir died in 1919, so the painting (1876) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.1,
+        "saturate": 1.2,
+        "brightness": 1.05,
+        "hueRotate": 0
+      }
+    },
     "description": "Listed only by the year of the artwork, 1876 — likely the Moulin de la Galette.",
     "source": "https://www.ebay.com/itm/389561664409",
     "verified": false
@@ -458,7 +589,23 @@
     "copyright": 1990,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-stars-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": null
+      },
+      {
+        "file": "escher-stars-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": "Back"
+      },
+      {
+        "file": "escher-stars-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336665144464",
+        "label": null
+      }
+    ],
     "description": "After Escher's 1948 wood engraving. One listing dates the artwork 1959, which is probably an error carried over from the Fishes and Scales puzzle sold alongside it.",
     "source": null,
     "verified": false
@@ -472,7 +619,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-metamorphosis-ii-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/396667724023",
+        "label": null
+      },
+      {
+        "file": "escher-metamorphosis-ii-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/396667724023",
+        "label": "Back"
+      }
+    ],
     "description": "After the 1939–40 woodcut. Seen in a listing title only.",
     "source": null,
     "verified": false
@@ -518,6 +676,13 @@
     "grid": null,
     "blank": null,
     "images": [],
+    "art": {
+      "file": "klimt-the-kiss.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg",
+      "title": "The Kiss (Der Kuss)",
+      "date": "1907–08",
+      "basis": "Wikimedia Commons tags the file Public domain: Klimt died in 1918, so the painting (1907–08) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "After Klimt's 1907–08 painting.",
     "source": "https://www.worthpoint.com/worthopedia/2x-pussycat-art-slide-puzzle-germany-2067248399",
     "verified": false
@@ -535,23 +700,46 @@
     },
     "blank": "extra",
     "images": [],
+    "art": {
+      "file": "van-gogh-schwertlilien.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_van_Gogh_-_Irises_(1889).jpg",
+      "title": "Irises",
+      "date": "1889",
+      "basis": "Wikimedia Commons tags the file Public domain: Van Gogh died in 1890, so the painting (1889) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "After the Saint-Rémy irises of May 1889. Reported at 49 pieces from a search summary rather than a listing I could open — provisional.",
     "source": null,
     "verified": false
   },
   {
     "id": "picasso-80-23185",
-    "name": "Picasso (title unrecorded)",
+    "name": "Kopf eines Mannes mit Strohhut",
     "artist": "Pablo Picasso",
     "series": "Art",
     "artNumber": "80 23185",
-    "copyright": null,
-    "grid": null,
-    "blank": null,
-    "images": [],
-    "description": "Art number places it in the same run as the Monet, Klee and Cézanne puzzles. The artwork is not named in the listing.",
+    "copyright": 1996,
+    "grid": {
+      "rows": 9,
+      "cols": 7
+    },
+    "blank": "inline",
+    "blankPosition": "top-right",
+    "images": [
+      {
+        "file": "picasso-80-23185-front.jpg",
+        "sourceUrl": null,
+        "label": null
+      },
+      {
+        "file": "picasso-80-23185-back.jpg",
+        "sourceUrl": null,
+        "label": "Back"
+      }
+    ],
+    "description": "Head of a Man with a Straw Hat (Tête d'homme au chapeau de paille), Mougins, 26 July 1971, Musée Picasso, Paris, as printed on the back. Owned: 9 rows × 7 columns with an inline gap at the top right. Still in copyright (© Succession Picasso / VG Bild-Kunst), so it has no art image and no Play.",
     "source": "https://picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-puzzle-PABLO-PICASSO-Art-364124600176.html",
-    "verified": false
+    "verified": true,
+    "owned": true
   },
   {
     "id": "magritte-slide-puzzle",
@@ -608,6 +796,13 @@
     "grid": null,
     "blank": null,
     "images": [],
+    "art": {
+      "file": "macke-modegeschaeft.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke_modegeschaeft.jpg",
+      "title": "Modegeschäft",
+      "date": "1913",
+      "basis": "Wikimedia Commons tags the file Public domain: Macke died in 1914, so the painting (1913) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "After Macke's 1913 painting.",
     "source": "https://www.ebay.com/itm/313980779921",
     "verified": false
@@ -1060,7 +1255,36 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "cezanne-kitchen-table-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": null
+      },
+      {
+        "file": "cezanne-kitchen-table-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": "Back"
+      },
+      {
+        "file": "cezanne-kitchen-table-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/389561565887",
+        "label": null
+      }
+    ],
+    "art": {
+      "file": "cezanne-kitchen-table.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Table_de_cuisine,_par_Paul_C%C3%A9zanne,_mus%C3%A9e_d%27Orsay,_Yorck.jpg",
+      "title": "The Kitchen Table (La Table de cuisine)",
+      "date": "1888–90",
+      "basis": "Wikimedia Commons tags the file Public domain: Cézanne died in 1906, so the painting (1888–90) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 1.2,
+        "saturate": 0.8,
+        "brightness": 0.9,
+        "hueRotate": 0
+      }
+    },
     "description": "A fourth Cézanne, from the same seller as the Card Players and the Large Bathers.",
     "source": "https://www.ebay.com/itm/389561565887",
     "verified": false
@@ -1148,7 +1372,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magritte-le-poison-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774050104",
+        "label": null
+      },
+      {
+        "file": "magritte-le-poison-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774050104",
+        "label": "Back"
+      }
+    ],
     "description": "Artwork dated 1939 in the listing.",
     "source": "https://www.ebay.com/itm/317774050104",
     "verified": false
@@ -1177,6 +1412,13 @@
     "grid": null,
     "blank": null,
     "images": [],
+    "art": {
+      "file": "marc-cat-under-a-tree.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marc_-_Kinderbild_(Katze_hinter_einem_Baum),_1910-1911,_lot-5812220.jpg",
+      "title": "Cat Behind a Tree (Katze hinter einem Baum)",
+      "date": "1910–11",
+      "basis": "Wikimedia Commons tags the file Public domain: Marc died in 1916, so the painting (1910–11) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "Artwork dated 1910 in the listing.",
     "source": "https://www.ebay.com/itm/317774070834",
     "verified": false
@@ -1191,6 +1433,13 @@
     "grid": null,
     "blank": null,
     "images": [],
+    "art": {
+      "file": "marc-blauschwarzer-fuchs.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marc-blue-black_fox.jpg",
+      "title": "Blue-Black Fox (Blauschwarzer Fuchs)",
+      "date": "1911",
+      "basis": "Wikimedia Commons tags the file Public domain: Marc died in 1916, so the painting (1911) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "description": "Artwork dated 1911 in the listing.",
     "source": "https://picclick.de/F-Marc-Schiebepuzzle-PUSSYCAT-Blauschwarzer-Fuchs-1911-Kunst-397037208271.html",
     "verified": false
@@ -1599,7 +1848,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-schokolade-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": null
+      },
+      {
+        "file": "pussy-schokolade-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": "Back"
+      },
+      {
+        "file": "pussy-schokolade-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366637828321",
+        "label": null
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/366637828321",
     "description": "Sold as \"Original Pussy\". A narrow slider whose tiles make up a chocolate bar, 15 × 4.5 × 1 cm, described as made in Germany in the early 1980s.",
@@ -1614,7 +1879,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-eis-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      },
+      {
+        "file": "pussy-eis-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      },
+      {
+        "file": "pussy-eis-3.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/366164356613",
+        "label": null
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/366164356613",
     "description": "Sold as \"Original Pussy\". The same narrow 15 × 4.5 × 1 cm format as the chocolate bar, with the tiles making up an ice cream; described as made in Germany in the early 1980s.",
@@ -1629,7 +1910,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-molycorp-chemie-erde-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/237090789758",
+        "label": null
+      },
+      {
+        "file": "pussy-molycorp-chemie-erde-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/237090789758",
+        "label": "Back"
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/237090789758",
     "description": "A promotional puzzle for Molycorp, the rare-earths producer, marked PUSSY and West Germany. The listing gives 15 to 25 pieces without saying which.",
@@ -1644,7 +1936,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "pussy-optical-illusion-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236709407563",
+        "label": null
+      },
+      {
+        "file": "pussy-optical-illusion-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236709407563",
+        "label": "Back"
+      }
+    ],
     "brand": "Pussy",
     "source": "https://www.ebay.com/itm/236709407563",
     "description": "A handheld optical-illusion slider, about 3.5 × 3 inches. The listing says made in China, but the Pussy puzzles carry no such marking, so that is taken to be the seller's mislabelling.",
@@ -1659,7 +1962,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magritte-le-mal-du-pays-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": null
+      },
+      {
+        "file": "magritte-le-mal-du-pays-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": "Back"
+      },
+      {
+        "file": "magritte-le-mal-du-pays-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/117441955266",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/117441955266",
     "description": "After the 1940 painting. About 15.2 × 12.4 cm, bought new in the 1990s according to the seller. May be the title of the Magritte recorded only as art number 80 2923 (magritte-slide-puzzle).",
     "verified": false
@@ -1673,7 +1992,25 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "van-gogh-sunflowers-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/394559714255",
+        "label": null
+      },
+      {
+        "file": "van-gogh-sunflowers-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/394559714255",
+        "label": "Back"
+      }
+    ],
+    "art": {
+      "file": "van-gogh-sunflowers.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vincent_Willem_van_Gogh_128.jpg",
+      "title": "Vase with Twelve Sunflowers",
+      "date": "1888",
+      "basis": "Wikimedia Commons tags the file Public domain: Van Gogh died in 1890, so the painting (1888) is public domain in the EU (life+70) and the US (published before 1931)."
+    },
     "source": "https://www.ebay.com/itm/394559714255",
     "description": "After \"Sunflowers, Arles, 1888\". Sold unused; the seller puts the plastic at over 33 years old, so early 1990s.",
     "verified": false
@@ -1687,7 +2024,31 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "macke-spaziergaenger-am-see-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217802734",
+        "label": null
+      },
+      {
+        "file": "macke-spaziergaenger-am-see-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217802734",
+        "label": "Back"
+      }
+    ],
+    "art": {
+      "file": "macke-spaziergaenger-am-see.jpg",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke,_Spazierg%C3%A4nger_am_See_I.jpg",
+      "title": "Walkers by the Lake I (Spaziergänger am See I)",
+      "date": "1912",
+      "basis": "Wikimedia Commons tags the file Public domain: Macke died in 1914, so the painting (1912) is public domain in the EU (life+70) and the US (published before 1931).",
+      "filter": {
+        "contrast": 0.9,
+        "saturate": 0.95,
+        "brightness": 1.2,
+        "hueRotate": 0
+      }
+    },
     "source": "https://www.ebay.com/itm/318217802734",
     "description": "After the 1912 painting, also listed in English as \"Walker by the Lake\". Sold unused.",
     "verified": false
@@ -1701,7 +2062,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "escher-sun-and-moon-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287499625564",
+        "label": null
+      },
+      {
+        "file": "escher-sun-and-moon-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287499625564",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/287499625564",
     "description": "After the 1948 woodcut. The listing gives 16 pieces and names Pussycat only in its item details, not the title.",
     "verified": false
@@ -1715,7 +2087,18 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "magic-square-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774207686",
+        "label": null
+      },
+      {
+        "file": "magic-square-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774207686",
+        "label": "Back"
+      }
+    ],
     "source": "https://www.ebay.com/itm/317774207686",
     "description": "A number slider in which every row, column and diagonal sums to 30. 75 × 75 × 8 mm.",
     "verified": false
@@ -1729,7 +2112,23 @@
     "copyright": null,
     "grid": null,
     "blank": null,
-    "images": [],
+    "images": [
+      {
+        "file": "reutersvard-dreieck-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": null
+      },
+      {
+        "file": "reutersvard-dreieck-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": "Back"
+      },
+      {
+        "file": "reutersvard-dreieck-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236317691177",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/236317691177",
     "description": "A triangle slider after Reutersvärd's impossible figures, listed as \"Vintage 1997 W. Breiter GmbH & Co. Pussycat\". Possibly one of the IMPUZZABLES Collector's Edition designs.",
     "verified": false
@@ -1858,9 +2257,368 @@
       "cols": 7
     },
     "blank": "extra",
-    "images": [],
+    "images": [
+      {
+        "file": "saurier-49-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": null
+      },
+      {
+        "file": "saurier-49-back.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": "Back"
+      },
+      {
+        "file": "saurier-49-2.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/336259194174",
+        "label": null
+      }
+    ],
     "source": "https://www.ebay.com/itm/336259194174",
     "description": "Sold as \"Saurier Puzzle, Schiebespiel, Geduldspiel 49-teilig\", about 15 × 12 × 0.7 cm, unused. A full-size 49-tile puzzle, not one of the 3 × 3 T-Rex and Stegosaurus minis. The listing does not name the dinosaurs shown.",
+    "verified": false
+  },
+  {
+    "id": "kandinsky-trente",
+    "name": "Trente",
+    "artist": "Wassily Kandinsky",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "kandinsky-trente-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774034903",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1937 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317774034903",
+    "verified": false
+  },
+  {
+    "id": "macke-indianer",
+    "name": "Indianer",
+    "artist": "August Macke",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "macke-indianer-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/318217804046",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1911 in the listing. Listed in English as \"Indian\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/318217804046",
+    "verified": false
+  },
+  {
+    "id": "klimt-die-jungfrau",
+    "name": "Die Jungfrau",
+    "artist": "Gustav Klimt",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "klimt-die-jungfrau-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774027593",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1913 in the listing. Listed in English as \"The Virgin\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317774027593",
+    "verified": false
+  },
+  {
+    "id": "klimt-die-drei-lebensalter-der-frau",
+    "name": "Die drei Lebensalter der Frau",
+    "artist": "Gustav Klimt",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "klimt-die-drei-lebensalter-der-frau-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774032165",
+        "label": null
+      }
+    ],
+    "description": "No year in the listing. Listed in English as \"The Three Ages of Woman\". Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317774032165",
+    "verified": false
+  },
+  {
+    "id": "monet-au-bord-de-leau-bennecourt",
+    "name": "Au bord de l'eau, Bennecourt",
+    "artist": "Claude Monet",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "monet-au-bord-de-leau-bennecourt-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772683849",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1868 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317772683849",
+    "verified": false
+  },
+  {
+    "id": "monet-jerusalem-artichoke-flowers",
+    "name": "Jerusalem Artichoke Flowers",
+    "artist": "Claude Monet",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "monet-jerusalem-artichoke-flowers-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772687196",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1880 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317772687196",
+    "verified": false
+  },
+  {
+    "id": "monet-dejeuner-sur-lherbe",
+    "name": "Le Déjeuner sur l'herbe",
+    "artist": "Claude Monet",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "monet-dejeuner-sur-lherbe-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772692942",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1873 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317772692942",
+    "verified": false
+  },
+  {
+    "id": "marc-red-horses",
+    "name": "Red Horses",
+    "artist": "Franz Marc",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "marc-red-horses-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774072919",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1911 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317774072919",
+    "verified": false
+  },
+  {
+    "id": "marc-little-blue-horse",
+    "name": "Little Blue Horse",
+    "artist": "Franz Marc",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "marc-little-blue-horse-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317774068499",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1912 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317774068499",
+    "verified": false
+  },
+  {
+    "id": "macke-staudacherhaus-in-tegernsee",
+    "name": "Staudacherhaus in Tegernsee",
+    "artist": "August Macke",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "macke-staudacherhaus-in-tegernsee-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/317772702823",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1910 in the listing. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/317772702823",
+    "verified": false
+  },
+  {
+    "id": "miro-1953",
+    "name": "Miró (title unrecorded, 1953)",
+    "artist": "Joan Miró",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "miro-1953-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/235480835315",
+        "label": null
+      }
+    ],
+    "description": "Artwork dated 1953 in the listing. The listing gives only the artist and the year. Listed in a run of single \"Twisty Puzzle Sliding 2D\" Pussycat puzzles that gives no size, tile count or art number. These may be the individual designs of the Collector's Edition sets already in the catalog (such as ce-macke), which the catalog could not name before.",
+    "source": "https://www.ebay.com/itm/235480835315",
+    "verified": false
+  },
+  {
+    "id": "vangogh-cafeterrasse-bei-nacht",
+    "name": "Cafeterrasse bei Nacht",
+    "artist": "Vincent van Gogh",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "vangogh-cafeterrasse-bei-nacht-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/266931375690",
+        "label": null
+      }
+    ],
+    "description": "Sold as \"Pussycat Puzzle Vincent Van Gogh, Made by Pussycat, Bad Salzuflen – Germany\", titled \"Cafeterrasse bei Nacht, Arles, Herbst 1888\". The listing gives no size or tile count.",
+    "source": "https://www.ebay.com/itm/266931375690",
+    "verified": false
+  },
+  {
+    "id": "miro-die-zeitung",
+    "name": "Die Zeitung (Le Journal)",
+    "artist": "Joan Miró",
+    "series": "Art",
+    "artNumber": null,
+    "copyright": 1991,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "miro-die-zeitung-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/165535819290",
+        "label": null
+      }
+    ],
+    "description": "Sold as \"Puzzle Pussycat 1991 // Die Zeitung Le Journal 1972\" in a case (\"estuche\"), so the artwork is dated 1972 and the puzzle 1991. The listing says \"12 x 15\" with no unit, so that is a size, not a grid. A different 1991 Miró, miro-automobiliste-a-moustaches, is already in the catalog.",
+    "source": "https://www.ebay.com/itm/165535819290",
+    "verified": false
+  },
+  {
+    "id": "pussy-egypt-tut-anch-amun",
+    "name": "Egypt (Tut-Anch-Amun)",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "pussy-egypt-tut-anch-amun-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/236762516942",
+        "label": null
+      }
+    ],
+    "brand": "Pussy",
+    "description": "Sold as \"VTG 90s Pussy EGYPT Tut-Anch-Amun Slide Jigsaw Puzzle Germany\", 6\" x 4 3/4\" in the listing. That is a frame size in inches, not a grid.",
+    "source": "https://www.ebay.com/itm/236762516942",
+    "verified": false
+  },
+  {
+    "id": "pussy-pig",
+    "name": "Pig",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "pussy-pig-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/188131100981",
+        "label": null
+      }
+    ],
+    "brand": "Pussy",
+    "description": "Sold as \"Vintage Pussy Pig Sliding Puzzle Game 1970's\", never used.",
+    "source": "https://www.ebay.com/itm/188131100981",
+    "verified": false
+  },
+  {
+    "id": "pussy-joker-poker",
+    "name": "Joker Poker",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "pussy-joker-poker-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/287092329992",
+        "label": null
+      }
+    ],
+    "brand": "Pussy",
+    "description": "Sold as \"Vintage Pussy Rare Slide Puzzle Joker Poker PUZZLE 1970's Germany\".",
+    "source": "https://www.ebay.com/itm/287092329992",
+    "verified": false
+  },
+  {
+    "id": "pussycat-clothespin-slider",
+    "name": "Clothespin slider",
+    "artist": null,
+    "series": null,
+    "artNumber": null,
+    "copyright": null,
+    "grid": null,
+    "blank": null,
+    "images": [
+      {
+        "file": "pussycat-clothespin-slider-front.jpg",
+        "sourceUrl": "https://www.ebay.com/itm/147520186752",
+        "label": null
+      }
+    ],
+    "description": "Sold as a \"Pussycat Games Slider Puzzle\" in the form of a clothespin, unused, with the open-space piece still attached. The design is not named, and it is not clear how it relates to the other Pussy and Pussycat sliders.",
+    "source": "https://www.ebay.com/itm/147520186752",
     "verified": false
   }
 ]

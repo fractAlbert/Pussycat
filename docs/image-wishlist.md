@@ -13,7 +13,7 @@ attribution.
 
 ## No photograph at all
 
-76 entries. Save the first image as `<id>-front.jpg`, then any
+60 entries. Save the first image as `<id>-front.jpg`, then any
 further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 
 | Entry | Save as | Listing |
@@ -21,13 +21,10 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Mardi Gras | `cezanne-mardi-gras-front.jpg`, `cezanne-mardi-gras-2.jpg`, … | — |
 | Auf Weiß II | `kandinsky-auf-weiss-ii-front.jpg`, `kandinsky-auf-weiss-ii-2.jpg`, … | [www.worthpoint.com/worthopedia/pussycat-49-sl…](https://www.worthpoint.com/worthopedia/pussycat-49-sliding-tile-puzzle-1813453910) |
 | Puddle | `escher-puddle-front.jpg`, `escher-puddle-2.jpg`, … | [www.worthpoint.com/worthopedia/c-escher-puddl…](https://www.worthpoint.com/worthopedia/c-escher-puddle-slide-sliding-puzzle-25164216) |
-| Stars | `escher-stars-front.jpg`, `escher-stars-2.jpg`, … | — |
-| Metamorphosis II | `escher-metamorphosis-ii-front.jpg`, `escher-metamorphosis-ii-2.jpg`, … | — |
 | Sky and Water | `escher-sky-and-water-front.jpg`, `escher-sky-and-water-2.jpg`, … | [www.vintagemanstuff.com/product/m-c-escher-sl…](https://www.vintagemanstuff.com/product/m-c-escher-sliding-puzzle-game-1990-pussycat-holland-germany-sky-water/) |
 | E 28 | `escher-e28-front.jpg`, `escher-e28-2.jpg`, … | [www.ebay.com/itm/225912736039](https://www.ebay.com/itm/225912736039) |
 | The Kiss | `klimt-the-kiss-front.jpg`, `klimt-the-kiss-2.jpg`, … | [www.worthpoint.com/worthopedia/2x-pussycat-ar…](https://www.worthpoint.com/worthopedia/2x-pussycat-art-slide-puzzle-germany-2067248399) |
 | Schwertlilien (Irises) | `van-gogh-schwertlilien-front.jpg`, `van-gogh-schwertlilien-2.jpg`, … | — |
-| Picasso (title unrecorded) | `picasso-80-23185-front.jpg`, `picasso-80-23185-2.jpg`, … | [picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-…](https://picclick.co.uk/Vintage-PUSSYCAT-Sliding-tile-puzzle-PABLO-PICASSO-Art-364124600176.html) |
 | Magritte (title unrecorded) | `magritte-slide-puzzle-front.jpg`, `magritte-slide-puzzle-2.jpg`, … | [picclick.fr/Slide-Puzzle-Rene-Magritte-Schieb…](https://picclick.fr/Slide-Puzzle-Rene-Magritte-Schiebepuzzle-Kunst-182308507743.html) |
 | L'automobiliste à moustaches | `miro-automobiliste-a-moustaches-front.jpg`, `miro-automobiliste-a-moustaches-2.jpg`, … | [www.ebay.de/itm/286670921664](https://www.ebay.de/itm/286670921664) |
 | Ziffern und Sternbilder | `miro-ziffern-und-sternbilder-front.jpg`, `miro-ziffern-und-sternbilder-2.jpg`, … | — |
@@ -37,13 +34,11 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Safari | `safari-front.jpg`, `safari-2.jpg`, … | [www.worthpoint.com/worthopedia/safari-slide-s…](https://www.worthpoint.com/worthopedia/safari-slide-sliding-puzzle-german-21136561) |
 | Marilyn Monroe | `marilyn-monroe-front.jpg`, `marilyn-monroe-2.jpg`, … | [www.ebay.com/itm/116378665442](https://www.ebay.com/itm/116378665442) |
 | Apfel (Lufthansa advertising) | `lufthansa-apfel-front.jpg`, `lufthansa-apfel-2.jpg`, … | [www.ebay.com/itm/334759719911](https://www.ebay.com/itm/334759719911) |
-| The Kitchen Table | `cezanne-kitchen-table-front.jpg`, `cezanne-kitchen-table-2.jpg`, … | [www.ebay.com/itm/389561565887](https://www.ebay.com/itm/389561565887) |
 | Miró (title unrecorded) | `miro-80-2991-front.jpg`, `miro-80-2991-2.jpg`, … | [www.ebay.com/itm/147480789992](https://www.ebay.com/itm/147480789992) |
 | Der Rucksackmann | `miro-der-rucksackmann-front.jpg`, `miro-der-rucksackmann-2.jpg`, … | [picclick.co.uk/Rare-vintage-Pussycat-Slide-pu…](https://picclick.co.uk/Rare-vintage-Pussycat-Slide-puzzle-Mir%C3%B3s-Der-Rucksackmann-327306947986.html) |
 | Magie Blanche | `miro-magie-blanche-front.jpg`, `miro-magie-blanche-2.jpg`, … | [picclick.de/Joan-Miro-Schiebepuzzle-Kunst-198…](https://picclick.de/Joan-Miro-Schiebepuzzle-Kunst-1981-Spiel-Puzzle-Magie-227023446101.html) |
 | Pygmies under the Moon | `miro-pygmies-under-the-moon-front.jpg`, `miro-pygmies-under-the-moon-2.jpg`, … | [www.ebay.com/itm/394559761048](https://www.ebay.com/itm/394559761048) |
 | L'Éclat du Jour | `magritte-leclat-du-jour-front.jpg`, `magritte-leclat-du-jour-2.jpg`, … | [picclick.co.uk/Rare-vintage-Pussycat-Slide-pu…](https://picclick.co.uk/Rare-vintage-Pussycat-Slide-puzzle-Magrettes-LEclat-du-327306928996.html) |
-| Le Poison | `magritte-le-poison-front.jpg`, `magritte-le-poison-2.jpg`, … | [www.ebay.com/itm/317774050104](https://www.ebay.com/itm/317774050104) |
 | Soft Hard (Weiches Hart) | `kandinsky-weiches-hart-front.jpg`, `kandinsky-weiches-hart-2.jpg`, … | [www.ebay.com/itm/317774036109](https://www.ebay.com/itm/317774036109) |
 | Cat Under a Tree | `marc-cat-under-a-tree-front.jpg`, `marc-cat-under-a-tree-2.jpg`, … | [www.ebay.com/itm/317774070834](https://www.ebay.com/itm/317774070834) |
 | Blauschwarzer Fuchs | `marc-blauschwarzer-fuchs-front.jpg`, `marc-blauschwarzer-fuchs-2.jpg`, … | [picclick.de/F-Marc-Schiebepuzzle-PUSSYCAT-Bla…](https://picclick.de/F-Marc-Schiebepuzzle-PUSSYCAT-Blauschwarzer-Fuchs-1911-Kunst-397037208271.html) |
@@ -75,16 +70,6 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | BOUTIQUE (Collector's Edition) | `ce-boutique-front.jpg`, `ce-boutique-2.jpg`, … | [www.ebay.com/itm/395814574244](https://www.ebay.com/itm/395814574244) |
 | ZOO (Collector's Edition) | `ce-zoo-front.jpg`, `ce-zoo-2.jpg`, … | [www.ebay.com/itm/395816197949](https://www.ebay.com/itm/395816197949) |
 | WORLD FLAGS 2026 (Collector's Edition) | `ce-world-flags-2026-front.jpg`, `ce-world-flags-2026-2.jpg`, … | [www.ebay.com/itm/318542997430](https://www.ebay.com/itm/318542997430) |
-| Schokolade (chocolate bar) | `pussy-schokolade-front.jpg`, `pussy-schokolade-2.jpg`, … | [www.ebay.com/itm/366637828321](https://www.ebay.com/itm/366637828321) |
-| Eis (ice cream) | `pussy-eis-front.jpg`, `pussy-eis-2.jpg`, … | [www.ebay.com/itm/366164356613](https://www.ebay.com/itm/366164356613) |
-| Chemie Erde (Molycorp advertising) | `pussy-molycorp-chemie-erde-front.jpg`, `pussy-molycorp-chemie-erde-2.jpg`, … | [www.ebay.com/itm/237090789758](https://www.ebay.com/itm/237090789758) |
-| Optical Illusion | `pussy-optical-illusion-front.jpg`, `pussy-optical-illusion-2.jpg`, … | [www.ebay.com/itm/236709407563](https://www.ebay.com/itm/236709407563) |
-| Le Mal du Pays | `magritte-le-mal-du-pays-front.jpg`, `magritte-le-mal-du-pays-2.jpg`, … | [www.ebay.com/itm/117441955266](https://www.ebay.com/itm/117441955266) |
-| Sunflowers | `van-gogh-sunflowers-front.jpg`, `van-gogh-sunflowers-2.jpg`, … | [www.ebay.com/itm/394559714255](https://www.ebay.com/itm/394559714255) |
-| Spaziergänger am See | `macke-spaziergaenger-am-see-front.jpg`, `macke-spaziergaenger-am-see-2.jpg`, … | [www.ebay.com/itm/318217802734](https://www.ebay.com/itm/318217802734) |
-| Sun and Moon | `escher-sun-and-moon-front.jpg`, `escher-sun-and-moon-2.jpg`, … | [www.ebay.com/itm/287499625564](https://www.ebay.com/itm/287499625564) |
-| Magic Square | `magic-square-front.jpg`, `magic-square-2.jpg`, … | [www.ebay.com/itm/317774207686](https://www.ebay.com/itm/317774207686) |
-| Dreieck (triangle slider) | `reutersvard-dreieck-front.jpg`, `reutersvard-dreieck-2.jpg`, … | [www.ebay.com/itm/236317691177](https://www.ebay.com/itm/236317691177) |
 | DINOSAUR (Collector's Edition) | `ce-dinosaur-front.jpg`, `ce-dinosaur-2.jpg`, … | [www.ebay.com/itm/395816335465](https://www.ebay.com/itm/395816335465) |
 | LONDON (Collector's Edition) | `ce-london-front.jpg`, `ce-london-2.jpg`, … | [www.ebay.com/itm/397540664602](https://www.ebay.com/itm/397540664602) |
 | FLAGS (Collector's Edition) | `ce-flags-front.jpg`, `ce-flags-2.jpg`, … | [www.ebay.com/itm/395816261302](https://www.ebay.com/itm/395816261302) |
@@ -93,11 +78,10 @@ further views as `<id>-2.jpg`, `<id>-3.jpg` and so on.
 | Paul Klee (Collector's Edition) | `ce-paul-klee-front.jpg`, `ce-paul-klee-2.jpg`, … | [www.ebay.com/itm/397588563568](https://www.ebay.com/itm/397588563568) |
 | Macke (Collector's Edition) | `ce-macke-front.jpg`, `ce-macke-2.jpg`, … | [www.ebay.com/itm/397588558975](https://www.ebay.com/itm/397588558975) |
 | Toulouse-Lautrec (Collector's Edition) | `ce-toulouse-lautrec-front.jpg`, `ce-toulouse-lautrec-2.jpg`, … | [www.ebay.com/itm/397588567005](https://www.ebay.com/itm/397588567005) |
-| Saurier (dinosaurs) | `saurier-49-front.jpg`, `saurier-49-2.jpg`, … | [www.ebay.com/itm/336259194174](https://www.ebay.com/itm/336259194174) |
 
 ## One photograph, extra views wanted
 
-30 entries. Numbering continues from 2, in whatever order the
+47 entries. Numbering continues from 2, in whatever order the
 listing shows them — ordering is not meaningful, so do not worry about which
 is the back. If you *can* tell, say so and the entry gets a proper label.
 
@@ -105,8 +89,8 @@ is the back. If you *can* tell, say so and the entry gets a proper label.
 | --- | --- | --- |
 | The Card Players | `cezanne-card-players-2.jpg`, `cezanne-card-players-3.jpg`, … | [www.ebay.com/itm/389561588862](https://www.ebay.com/itm/389561588862) |
 | The Large Bathers | `cezanne-large-bathers-2.jpg`, `cezanne-large-bathers-3.jpg`, … | [www.ebay.com/itm/389561530563](https://www.ebay.com/itm/389561530563) |
-| Monet (title unrecorded) | `monet-80-23215-2.jpg`, `monet-80-23215-3.jpg`, … | [www.ebay.com/itm/158122752744](https://www.ebay.com/itm/158122752744) |
-| Kandinsky (title unrecorded) | `kandinsky-80-2341-2.jpg`, `kandinsky-80-2341-3.jpg`, … | [www.ebay.com/itm/158122751325](https://www.ebay.com/itm/158122751325) |
+| The Artist's Garden at Vétheuil | `monet-80-23215-2.jpg`, `monet-80-23215-3.jpg`, … | [www.ebay.com/itm/158122752744](https://www.ebay.com/itm/158122752744) |
+| Farbstudie – Quadrate mit konzentrischen Ringen | `kandinsky-80-2341-2.jpg`, `kandinsky-80-2341-3.jpg`, … | [www.ebay.com/itm/158122751325](https://www.ebay.com/itm/158122751325) |
 | Kreise im Kreis | `kandinsky-kreise-im-kreis-2.jpg`, `kandinsky-kreise-im-kreis-3.jpg`, … | [www.ebay.com/itm/364182678058](https://www.ebay.com/itm/364182678058) |
 | Paul Klee (title unrecorded) | `klee-80-23155-2.jpg`, `klee-80-23155-3.jpg`, … | [www.ebay.com/itm/158122783599](https://www.ebay.com/itm/158122783599) |
 | Paul Klee (title unrecorded, second design) | `klee-80-23151-2.jpg`, `klee-80-23151-3.jpg`, … | [www.ebay.com/itm/158122755839](https://www.ebay.com/itm/158122755839) |
@@ -133,3 +117,20 @@ is the back. If you *can* tell, say so and the entry gets a proper label.
 | Dice | `dice-2.jpg`, `dice-3.jpg`, … | [www.ebay.com/itm/364674013571](https://www.ebay.com/itm/364674013571) |
 | IQ Zebra | `iq-zebra-2.jpg`, `iq-zebra-3.jpg`, … | [www.ebay.com/itm/188294229980](https://www.ebay.com/itm/188294229980) |
 | French Crossword | `french-crossword-2.jpg`, `french-crossword-3.jpg`, … | [www.ebay.com/itm/365926143235](https://www.ebay.com/itm/365926143235) |
+| Trente | `kandinsky-trente-2.jpg`, `kandinsky-trente-3.jpg`, … | [www.ebay.com/itm/317774034903](https://www.ebay.com/itm/317774034903) |
+| Indianer | `macke-indianer-2.jpg`, `macke-indianer-3.jpg`, … | [www.ebay.com/itm/318217804046](https://www.ebay.com/itm/318217804046) |
+| Die Jungfrau | `klimt-die-jungfrau-2.jpg`, `klimt-die-jungfrau-3.jpg`, … | [www.ebay.com/itm/317774027593](https://www.ebay.com/itm/317774027593) |
+| Die drei Lebensalter der Frau | `klimt-die-drei-lebensalter-der-frau-2.jpg`, `klimt-die-drei-lebensalter-der-frau-3.jpg`, … | [www.ebay.com/itm/317774032165](https://www.ebay.com/itm/317774032165) |
+| Au bord de l'eau, Bennecourt | `monet-au-bord-de-leau-bennecourt-2.jpg`, `monet-au-bord-de-leau-bennecourt-3.jpg`, … | [www.ebay.com/itm/317772683849](https://www.ebay.com/itm/317772683849) |
+| Jerusalem Artichoke Flowers | `monet-jerusalem-artichoke-flowers-2.jpg`, `monet-jerusalem-artichoke-flowers-3.jpg`, … | [www.ebay.com/itm/317772687196](https://www.ebay.com/itm/317772687196) |
+| Le Déjeuner sur l'herbe | `monet-dejeuner-sur-lherbe-2.jpg`, `monet-dejeuner-sur-lherbe-3.jpg`, … | [www.ebay.com/itm/317772692942](https://www.ebay.com/itm/317772692942) |
+| Red Horses | `marc-red-horses-2.jpg`, `marc-red-horses-3.jpg`, … | [www.ebay.com/itm/317774072919](https://www.ebay.com/itm/317774072919) |
+| Little Blue Horse | `marc-little-blue-horse-2.jpg`, `marc-little-blue-horse-3.jpg`, … | [www.ebay.com/itm/317774068499](https://www.ebay.com/itm/317774068499) |
+| Staudacherhaus in Tegernsee | `macke-staudacherhaus-in-tegernsee-2.jpg`, `macke-staudacherhaus-in-tegernsee-3.jpg`, … | [www.ebay.com/itm/317772702823](https://www.ebay.com/itm/317772702823) |
+| Miró (title unrecorded, 1953) | `miro-1953-2.jpg`, `miro-1953-3.jpg`, … | [www.ebay.com/itm/235480835315](https://www.ebay.com/itm/235480835315) |
+| Cafeterrasse bei Nacht | `vangogh-cafeterrasse-bei-nacht-2.jpg`, `vangogh-cafeterrasse-bei-nacht-3.jpg`, … | [www.ebay.com/itm/266931375690](https://www.ebay.com/itm/266931375690) |
+| Die Zeitung (Le Journal) | `miro-die-zeitung-2.jpg`, `miro-die-zeitung-3.jpg`, … | [www.ebay.com/itm/165535819290](https://www.ebay.com/itm/165535819290) |
+| Egypt (Tut-Anch-Amun) | `pussy-egypt-tut-anch-amun-2.jpg`, `pussy-egypt-tut-anch-amun-3.jpg`, … | [www.ebay.com/itm/236762516942](https://www.ebay.com/itm/236762516942) |
+| Pig | `pussy-pig-2.jpg`, `pussy-pig-3.jpg`, … | [www.ebay.com/itm/188131100981](https://www.ebay.com/itm/188131100981) |
+| Joker Poker | `pussy-joker-poker-2.jpg`, `pussy-joker-poker-3.jpg`, … | [www.ebay.com/itm/287092329992](https://www.ebay.com/itm/287092329992) |
+| Clothespin slider | `pussycat-clothespin-slider-2.jpg`, `pussycat-clothespin-slider-3.jpg`, … | [www.ebay.com/itm/147520186752](https://www.ebay.com/itm/147520186752) |

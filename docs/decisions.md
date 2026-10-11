@@ -200,3 +200,23 @@ Consequences:
   earlier scans never surfaced them.
 - Listings that say a Pussy puzzle was made in China are treated as
   mislabelled: the puzzles carry no such marking.
+
+### D-012 — Puzzles are playable from the detail view
+Date: 2026-10-08
+Decision: A puzzle can be played in the browser from its detail view. This
+supersedes open question 8 ("Playable in browser? No").
+Alternatives considered: Embedding an existing player in an iframe; using a
+library.
+Rationale: Decided with the project owner. The player is ported, not embedded,
+as vanilla ES modules with no iframe and no library, keeping to D-005.
+Consequences:
+- Both formats are played, per D-008: `"extra"` and `"inline"`.
+- No grid, no Play. Size is never guessed.
+- A new optional `art` field points to a clean artwork in `src/images/art/`,
+  kept apart from listing photographs so `sync-images` ignores it.
+- The Play rule: `art`, `grid` with rows and cols each at least 2, and `blank`
+  must all be recorded.
+- Blank convention: on `"extra"` the spare cell sits right of the bottom-right
+  image cell; on `"inline"` the gap home comes from the new optional
+  `blankPosition` (default bottom-right). See `data-model.md`.
+- The pilot is Mardi Gras (`cezanne-mardi-gras`), recorded as 7 columns × 9 rows.

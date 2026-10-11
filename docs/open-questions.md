@@ -15,7 +15,7 @@ Updated 2026-07-30 against the filled-in `requirements.md`.
 | 4 | How many puzzles? | ~7 owned at launch, ceiling ~100 | D-002 |
 | 6 | Who maintains entries? | Owner only, via agent or hand-edited JSON | D-002 |
 | 7 | Search/filter at launch? | Yes — sort by name/artist, filter by size/artist, text search | §5 |
-| 8 | Playable in browser? | No — catalog only, "information for collectors" (§1) | assumed |
+| 8 | Playable in browser? | ~~No — catalog only, "information for collectors" (§1)~~ Superseded: yes, see D-012 | D-012 |
 | — | Framework or vanilla? | Vanilla ES modules + classes, no build step | D-005 |
 | 9 | Is artist its own field? | Yes, separate from name | D-007 |
 
