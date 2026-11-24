@@ -820,9 +820,18 @@
     "series": "Art",
     "artNumber": null,
     "copyright": null,
-    "grid": null,
-    "blank": null,
-    "images": [],
+    "grid": {
+      "rows": 7,
+      "cols": 7
+    },
+    "blank": "extra",
+    "images": [
+      {
+        "file": "macke-modegeschaeft-front.jpg",
+        "sourceUrl": null,
+        "label": null
+      }
+    ],
     "art": {
       "file": "macke-modegeschaeft.jpg",
       "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macke_modegeschaeft.jpg",
@@ -830,7 +839,7 @@
       "date": "1913",
       "basis": "Wikimedia Commons tags the file Public domain: Macke died in 1914, so the painting (1913) is public domain in the EU (life+70) and the US (published before 1931)."
     },
-    "description": "After Macke's 1913 painting.",
+    "description": "After Macke's 1913 painting. Grid and blank type from a photo supplied by the owner (Twisty 2D sliding series): 7 × 7 with the spare cell right of the bottom-right tile. The photo shows the puzzle's picture as a square crop of the painting.",
     "source": "https://www.ebay.com/itm/313980779921",
     "verified": false
   },
